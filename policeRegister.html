@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Police Station Register</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.register-card {
+			width: min(92%, 560px);
+			margin: 40px auto;
+			background: #ffffff;
+			padding: 24px;
+			border-radius: 10px;
+			box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+			text-align: left;
+		}
+
+		.register-card h2 {
+			margin: 0 0 18px;
+			color: black;
+			text-align: center;
+		}
+
+		.form-group {
+			margin-bottom: 14px;
+		}
+
+		.form-group label {
+			display: block;
+			margin-bottom: 6px;
+			font-weight: 600;
+		}
+
+		.form-group input,
+		.form-group select {
+			width: 100%;
+			padding: 10px 12px;
+			border: 1px solid #c9c9c9;
+			border-radius: 6px;
+			box-sizing: border-box;
+		}
+
+		.btn-submit {
+			width: 100%;
+			padding: 11px;
+			border: none;
+			border-radius: 6px;
+			background: #737000;
+			color: #ffffff;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.btn-submit:hover {
+			background: #978942;
+		}
+	</style>
+</head>
+<body>
+	<div class="register-card">
+		<h2>Police Registration</h2>
+
+		<form>
+			<div class="form-group">
+				<label for="stationID">Station ID</label>
+				<input type="text" id="stationID" name="stationID" required>
+			</div>
+
+			<div class="form-group">
+				<label for="stationName">Station Name</label>
+				<input type="text" id="stationName" name="stationName" required>
+			</div>
+
+			<div class="form-group">
+				<label for="province">Province</label>
+				<select id="province" name="province" required>
+					<option value="">-- Select Province --</option>
+					<option value="Central Province">Central Province</option>
+					<option value="Eastern Province">Eastern Province</option>
+					<option value="North Central Province">North Central Province</option>
+					<option value="Northern Province">Northern Province</option>
+					<option value="North Western Province">North Western Province</option>
+					<option value="Sabaragamuwa Province">Sabaragamuwa Province</option>
+					<option value="Southern Province">Southern Province</option>
+					<option value="Uva Province">Uva Province</option>
+					<option value="Western Province">Western Province</option>
+				</select>
+			</div>
+
+
+			<div class="form-group">
+				<label for="district">District</label>
+				<select id="district" name="district" required>
+					<option value="">-- Select District --</option>
+					<option value="Ampara">Ampara</option>
+					<option value="Anuradhapura">Anuradhapura</option>
+					<option value="Badulla">Badulla</option>
+					<option value="Batticaloa">Batticaloa</option>
+					<option value="Colombo">Colombo</option>
+					<option value="Galle">Galle</option>
+					<option value="Gampaha">Gampaha</option>
+					<option value="Hambantota">Hambantota</option>
+					<option value="Jaffna">Jaffna</option>
+					<option value="Kalutara">Kalutara</option>
+					<option value="Kandy">Kandy</option>
+					<option value="Kegalle">Kegalle</option>
+					<option value="Kilinochchi">Kilinochchi</option>
+					<option value="Kurunegala">Kurunegala</option>
+					<option value="Madurai">Madurai</option>
+					<option value="Mannar">Mannar</option>
+					<option value="Matara">Matara</option>
+					<option value="Monaragala">Monaragala</option>
+					<option value="Mullaitivu">Mullaitivu</option>
+					<option value="Nuwara Eliya">Nuwara Eliya</option>
+					<option value="Polonnaruwa">Polonnaruwa</option>
+					<option value="Puttalam">Puttalam</option>
+					<option value="Ratnapura">Ratnapura</option>
+					<option value="Trincomalee">Trincomalee</option>
+					<option value="Vavuniya">Vavuniya</option>
+				</select>
+			</div>
+
+
+			<div class="form-group">
+				<label for="division">Division</label>
+				<select id="division" name="division" required>
+					<option value="">-- Select Division --</option>
+					<option value="Ampara">Ampara</option>
+					<option value="Anuradhapura">Anuradhapura</option>
+					<option value="Badulla">Badulla</option>
+					<option value="Batticaloa (North)">Batticaloa (North)</option>
+					<option value="Batticaloa (South)">Batticaloa (South)</option>
+					<option value="Colombo">Colombo</option>
+					<option value="Colombo Central">Colombo Central</option>
+					<option value="Galle (North)">Galle (North)</option>
+					<option value="Galle (South)">Galle (South)</option>
+					<option value="Gampaha (East)">Gampaha (East)</option>
+					<option value="Gampaha (North)">Gampaha (North)</option>
+					<option value="Gampaha (West)">Gampaha (West)</option>
+					<option value="Hambantota">Hambantota</option>
+					<option value="Jaffna (North)">Jaffna (North)</option>
+					<option value="Jaffna (South)">Jaffna (South)</option>
+					<option value="Kalutara">Kalutara</option>
+					<option value="Kandy (Central)">Kandy (Central)</option>
+					<option value="Kandy (North)">Kandy (North)</option>
+					<option value="Kandy (South)">Kandy (South)</option>
+					<option value="Kegalle">Kegalle</option>
+					<option value="Kelaniya">Kelaniya</option>
+					<option value="Kilinochchi">Kilinochchi</option>
+					<option value="Kurunegala">Kurunegala</option>
+					<option value="Madurai">Madurai</option>
+					<option value="Mannar">Mannar</option>
+					<option value="Matara (North)">Matara (North)</option>
+					<option value="Matara (South)">Matara (South)</option>
+					<option value="Monaragala">Monaragala</option>
+					<option value="Mount Lavinia">Mount Lavinia</option>
+					<option value="Mullaitivu">Mullaitivu</option>
+					<option value="Negombo">Negombo</option>
+					<option value="Nugegoda">Nugegoda</option>
+					<option value="Nuwara Eliya">Nuwara Eliya</option>
+					<option value="Panadura">Panadura</option>
+					<option value="Polonnaruwa">Polonnaruwa</option>
+					<option value="Puttalam (North)">Puttalam (North)</option>
+					<option value="Puttalam (South)">Puttalam (South)</option>
+					<option value="Ratnapura">Ratnapura</option>
+					<option value="Tangalle">Tangalle</option>
+					<option value="Trincomalee">Trincomalee</option>
+					<option value="Vavuniya">Vavuniya</option>
+					<option value="Colombo (North)">Colombo (North)</option>
+					<option value="Colombo (South)">Colombo (South)</option>
+					<option value="Galle">Galle</option>
+					<option value="Kandy (East)">Kandy (East)</option>
+					<option value="Matara">Matara</option>
+					<option value="Gampaha">Gampaha</option>
+				</select>
+			</div>
+
+			
+
+			
+
+			<div class="form-group">
+				<label for="locationGps">Location GPS</label>
+				<input type="text" id="locationGps" name="locationGps" placeholder="e.g. 6.9271, 79.8612" required>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div class="form-group">
+				<label for="contact">Contact</label>
+				<input type="tel" id="contact" name="contact" required>
+			</div>
+
+			<div class="form-group">
+				<label for="oicId">OIC ID</label>
+				<input type="text" id="oicId" name="oicId" required>
+			</div>
+
+			<div class="form-group">
+				<label for="oicName">OIC Name</label>
+				<input type="text" id="oicName" name="oicName" required>
+			</div>
+
+			<button type="submit" class="btn-submit">Register</button>
+		</form>
+	</div>
+</body>
+</html>

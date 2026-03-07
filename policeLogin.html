@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title>Police Login</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.login-card {
+			width: min(92%, 420px);
+			margin: 60px auto;
+			background: #ffffff;
+			padding: 24px;
+			border-radius: 10px;
+			box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+			text-align: left;
+		}
+
+		.login-card h2 {
+			margin: 0 0 18px;
+			color: black;
+			text-align: center;
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		.form-group label {
+			display: block;
+			margin-bottom: 6px;
+			font-weight: 600;
+			font-size: 16px;
+		}
+
+		.form-group input {
+			width: 100%;
+			padding: 10px 12px;
+			border: 1px solid #c9c9c9;
+			border-radius: 6px;
+			box-sizing: border-box;
+		}
+
+		.btn-login {
+			width: 100%;
+			padding: 11px;
+			border: none;
+			border-radius: 6px;
+			background: #737000;
+			color: #ffffff;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.btn-login:hover {
+			background: #978942;
+		}
+
+        a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        
+    }
+	</style>
+</head>
+<body>
+	<div class="login-card">
+       
+		<h2>Police Login</h2>
+
+		<form id="loginForm">
+			
+
+			<div class="form-group">
+				<label for="stationID">Station ID</label>
+				<input type="text" id="stationID" name="stationID" required>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+
+			<p id="loginMessage" style="margin: 0 0 14px; font-size: 14px;"></p>
+
+			<button type="submit" class="btn-login">Login</button>
+            
+
+		</form>
+	</div>
+</body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+	import {
+		getFirestore,
+		collection,
+		query,
+		where,
+		limit,
+		getDocs
+	} from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCr5xSS_xPQO38JHoZMufQl-HEltwCvqSk",
+    authDomain: "complaint-management-sys-f5d5e.firebaseapp.com",
+    projectId: "complaint-management-sys-f5d5e",
+    storageBucket: "complaint-management-sys-f5d5e.firebasestorage.app",
+    messagingSenderId: "697751596289",
+    appId: "1:697751596289:web:cd218934e92411bd7a7f00"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+	const db = getFirestore(app);
+
+	const loginForm = document.getElementById("loginForm");
+	const stationIdInput = document.getElementById("stationID");
+	const passwordInput = document.getElementById("password");
+	const loginMessage = document.getElementById("loginMessage");
+
+	function showMessage(text, isSuccess) {
+		loginMessage.textContent = text;
+		loginMessage.style.color = isSuccess ? "#0a7f28" : "#c62828";
+	}
+
+	loginForm.addEventListener("submit", async (event) => {
+		event.preventDefault();
+
+		const stationID = stationIdInput.value.trim();
+		const stationPassword = passwordInput.value;
+		const loginButton = loginForm.querySelector("button[type='submit']");
+
+		showMessage("", false);
+		loginButton.disabled = true;
+		loginButton.textContent = "Checking...";
+
+		try {
+			const policeStationsRef = collection(db, "police_stations");
+			const stationQuery = query(
+				policeStationsRef,
+				where("stationID", "==", stationID),
+				limit(1)
+			);
+			const snapshot = await getDocs(stationQuery);
+
+			if (snapshot.empty) {
+				showMessage("Invalid Station ID or Password.", false);
+				return;
+			}
+
+			const stationRecord = snapshot.docs[0].data();
+			const storedPassword =
+				stationRecord.stationPassword ?? stationRecord.statioPassword ?? stationRecord.password;
+
+			if (storedPassword !== stationPassword) {
+				showMessage("Invalid Station ID or Password.", false);
+				return;
+			}
+
+			localStorage.setItem("policeStationID", stationID);
+			localStorage.setItem("policeStationName", stationRecord.stationName ?? "");
+
+			showMessage("Successful login. Redirecting to dashboard...", true);
+			setTimeout(() => {
+				window.location.href = `policeDashboard.html?stationID=${encodeURIComponent(stationID)}`;
+			}, 800);
+		} catch (error) {
+			console.error("Login error:", error);
+			showMessage("Login failed. Please try again.", false);
+		} finally {
+			loginButton.disabled = false;
+			loginButton.textContent = "Login";
+		}
+	});
+</script>
+
+
+
+</html>

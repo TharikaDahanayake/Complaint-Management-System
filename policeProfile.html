@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Police Station Profile</title>
+	<style>
+		:root {
+			--bg-1: #f0f4e8;
+			--bg-2: #f7f8f3;
+			--panel: #ffffff;
+			--ink: #1a1f16;
+			--muted: #5f6758;
+			--brand: #6f7200;
+			--brand-2: #8f8336;
+			--line: #dfe5d6;
+			--success: #0a7f28;
+			--error: #c62828;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			color: var(--ink);
+			background:
+				radial-gradient(circle at 10% 10%, #eef3dc 0, transparent 34%),
+				radial-gradient(circle at 90% 80%, #f6edd7 0, transparent 35%),
+				linear-gradient(120deg, var(--bg-1), var(--bg-2));
+			min-height: 100vh;
+			overflow-y: auto;
+		}
+
+		.profile-container {
+			max-width: 700px;
+			margin: 40px auto;
+			background: rgba(255, 255, 255, 0.95);
+			border: 1px solid var(--line);
+			border-radius: 14px;
+			padding: 36px;
+			box-shadow: 0 10px 25px rgba(12, 20, 7, 0.07);
+		}
+
+		.profile-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 28px;
+			padding-bottom: 16px;
+			border-bottom: 2px solid var(--line);
+		}
+
+		.profile-header h1 {
+			margin: 0;
+			font-size: 28px;
+			letter-spacing: 0.4px;
+		}
+
+		.back-btn {
+			display: inline-block;
+			padding: 10px 16px;
+			background: #f0f4e8;
+			border: 1px solid var(--line);
+			border-radius: 8px;
+			color: var(--ink);
+			text-decoration: none;
+			cursor: pointer;
+			font-weight: 600;
+			transition: all 0.2s ease;
+		}
+
+		.back-btn:hover {
+			background: #e2e8d6;
+			transform: translateX(-2px);
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		.form-group label {
+			display: block;
+			margin-bottom: 8px;
+			font-weight: 600;
+			font-size: 14px;
+			color: #323822;
+		}
+
+		.form-group label small {
+			font-weight: normal;
+			font-size: 12px;
+		}
+
+		.form-group input[type="text"],
+		.form-group input[type="email"],
+		.form-group input[type="tel"] {
+			width: 100%;
+			padding: 12px 14px;
+			border: 1px solid var(--line);
+			border-radius: 8px;
+			font-size: 14px;
+			background: var(--panel);
+			color: var(--ink);
+		}
+
+		.form-group input:disabled {
+			background: #f5f7f0;
+			color: var(--muted);
+			cursor: not-allowed;
+		}
+
+		.form-group input:focus {
+			outline: none;
+			border-color: var(--brand);
+			box-shadow: 0 0 0 3px rgba(111, 114, 0, 0.1);
+		}
+
+		.form-group input:invalid:not(:placeholder-shown) {
+			border-color: #c62828;
+		}
+
+		.form-group input:valid:not(:placeholder-shown) {
+			border-color: #0a7f28;
+		}
+
+		.readonly-label {
+			display: inline-block;
+			padding: 2px 8px;
+			background: #f0f4e8;
+			color: var(--muted);
+			font-size: 12px;
+			border-radius: 4px;
+			margin-left: 8px;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+		}
+
+		.form-section {
+			margin-bottom: 28px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid var(--line);
+		}
+
+		.form-section:last-of-type {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		.section-title {
+			margin: 0 0 16px;
+			font-size: 16px;
+			font-weight: 700;
+			color: var(--brand);
+			text-transform: uppercase;
+			letter-spacing: 0.8px;
+		}
+
+		.button-group {
+			display: flex;
+			gap: 12px;
+			margin-top: 28px;
+		}
+
+		.btn-save,
+		.btn-cancel {
+			flex: 1;
+			padding: 12px 16px;
+			border: none;
+			border-radius: 8px;
+			font-size: 16px;
+			font-weight: 600;
+			cursor: pointer;
+			transition: all 0.2s ease;
+		}
+
+		.btn-save {
+			background: linear-gradient(135deg, var(--brand), var(--brand-2));
+			color: #ffffff;
+		}
+
+		.btn-save:hover:not(:disabled) {
+			transform: translateY(-2px);
+			box-shadow: 0 4px 12px rgba(111, 114, 0, 0.3);
+		}
+
+		.btn-save:disabled {
+			opacity: 0.6;
+			cursor: not-allowed;
+		}
+
+		.btn-cancel {
+			background: #f0f4e8;
+			color: var(--ink);
+			border: 1px solid var(--line);
+		}
+
+		.btn-cancel:hover {
+			background: #e2e8d6;
+		}
+
+		.loading {
+			text-align: center;
+			padding: 40px 20px;
+		}
+
+		.spinner {
+			border: 4px solid #f0f4e8;
+			border-top: 4px solid var(--brand);
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			animation: spin 1s linear infinite;
+			margin: 0 auto;
+		}
+
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+
+		@media (max-width: 600px) {
+			.profile-container {
+				margin: 20px;
+				padding: 24px;
+			}
+
+			.profile-header {
+				flex-direction: column;
+				gap: 12px;
+				text-align: center;
+			}
+
+			.button-group {
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="profile-container">
+		<div class="profile-header">
+			<h1>Police Station Profile</h1>
+			<a href="policeDashboard.html" class="back-btn" id="backBtn">← Back to Dashboard</a>
+		</div>
+
+		<div id="profileContent" class="loading">
+			<div class="spinner"></div>
+		</div>
+	</div>
+
+	<script type="module">
+		// Hide back button if loaded in iframe
+		if (window.self !== window.top) {
+			document.getElementById('backBtn').style.display = 'none';
+		}
+
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+		import {
+			getFirestore,
+			collection,
+			query,
+			where,
+			limit,
+			getDocs,
+			updateDoc,
+			doc
+		} from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+
+		const firebaseConfig = {
+			apiKey: "AIzaSyCr5xSS_xPQO38JHoZMufQl-HEltwCvqSk",
+			authDomain: "complaint-management-sys-f5d5e.firebaseapp.com",
+			projectId: "complaint-management-sys-f5d5e",
+			storageBucket: "complaint-management-sys-f5d5e.firebasestorage.app",
+			messagingSenderId: "697751596289",
+			appId: "1:697751596289:web:cd218934e92411bd7a7f00"
+		};
+
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+
+		const profileContent = document.getElementById("profileContent");
+
+		let currentStationId = null;
+		let currentDocId = null;
+
+		function showMessage(text, isSuccess) {
+			// Show message as alert box
+			alert(text);
+		}
+
+		async function loadProfile() {
+			try {
+				const params = new URLSearchParams(window.location.search);
+				const stationID = params.get("stationID") || localStorage.getItem("policeStationID");
+
+				if (!stationID) {
+					profileContent.innerHTML = `
+						<div class="error-box" style="text-align: center; padding: 40px; color: #c62828;">
+							<p>No station ID found. Please log in first.</p>
+							<a href="policeLogin.html">Go to Login</a>
+						</div>
+					`;
+					return;
+				}
+
+				currentStationId = stationID;
+				const policeStationsRef = collection(db, "police_stations");
+				const stationQuery = query(
+					policeStationsRef,
+					where("stationID", "==", stationID),
+					limit(1)
+				);
+				const snapshot = await getDocs(stationQuery);
+
+				if (snapshot.empty) {
+					profileContent.innerHTML = `
+						<div class="error-box" style="text-align: center; padding: 40px; color: #c62828;">
+							<p>Station not found.</p>
+						</div>
+					`;
+					return;
+				}
+
+				const stationData = snapshot.docs[0].data();
+				currentDocId = snapshot.docs[0].id;
+
+				const oicName = stationData.policeOIC || stationData.policeOIC || "";
+				const contact = stationData.stationContact || stationData.contact || "";
+				const email = stationData.stationEmail || stationData.email || "";
+				const division = stationData.stationDivision || stationData.division || "N/A";
+				const district = stationData.stationDistrict || stationData.district || "N/A";
+				const province = stationData.stationProvince || stationData.province || "N/A";
+
+				profileContent.innerHTML = `
+					<form id="profileForm">
+						<div class="form-section">
+							<h3 class="section-title">Station Information</h3>
+							<div class="form-group">
+								<label>Station ID <span class="readonly-label">Read-only</span></label>
+								<input type="text" value="${stationData.stationID || ''}" disabled>
+							</div>
+							<div class="form-group">
+								<label>Station Name <span class="readonly-label">Read-only</span></label>
+								<input type="text" value="${stationData.stationName || ''}" disabled>
+							</div>
+							<div class="form-group">
+								<label>District <span class="readonly-label">Read-only</span></label>
+								<input type="text" value="${district}" disabled>
+							</div>
+							<div class="form-group">
+								<label>Province <span class="readonly-label">Read-only</span></label>
+								<input type="text" value="${province}" disabled>
+							</div>
+							<div class="form-group">
+								<label>Division <span class="readonly-label">Read-only</span></label>
+								<input type="text" value="${division}" disabled>
+							</div>
+						</div>
+
+						<div class="form-section">
+							<h3 class="section-title">Editable Information</h3>
+							<div class="form-group">
+								<label for="contact">Station Contact <small style="color: var(--muted);"></small></label>
+								<input type="tel" id="contact" name="contact" value="${contact}" 
+									pattern="\\d{10}" 
+									maxlength="10"
+									placeholder="0112345678"
+									title="Enter exactly 10 digits"
+									required>
+							</div>
+							<div class="form-group">
+								<label for="email">Station Email <small style="color: var(--muted);"></small></label>
+								<input type="email" id="email" name="email" value="${email}"
+									placeholder="station@gmail.com"
+									title="Email must start with a letter and end with @gmail.com"
+									required>
+							</div>
+							<div class="form-group">
+								<label for="oicName">OIC Name <small style="color: var(--muted);"></small></label>
+								<input type="text" id="oicName" name="oicName" value="${oicName}"
+									minlength="3"
+									maxlength="100"
+									placeholder="Enter OIC full name"
+									title="Enter the Officer in Charge name (3-100 characters)"
+									required>
+							</div>
+						</div>
+
+						<div class="button-group">
+							<button type="submit" class="btn-save">Save Changes</button>
+							<button type="reset" class="btn-cancel">Cancel</button>
+						</div>
+					</form>
+				`;
+
+				document.getElementById("profileForm").addEventListener("submit", saveProfile);
+				
+				// Restrict contact input to numbers only (real-time validation)
+				const contactInput = document.getElementById("contact");
+				contactInput.addEventListener("input", function(e) {
+					this.value = this.value.replace(/\D/g, ''); // Remove non-digit characters
+				});
+			} catch (error) {
+				console.error("Error loading profile:", error);
+				showMessage("Failed to load profile. Please try again.", false);
+			}
+		}
+
+		async function saveProfile(event) {
+			event.preventDefault();
+
+			const contact = document.getElementById("contact").value.trim();
+			const email = document.getElementById("email").value.trim();
+			const oicName = document.getElementById("oicName").value.trim();
+
+			// Validate all fields are filled
+			if (!contact || !email || !oicName) {
+				showMessage("All editable fields are required.", false);
+				return;
+			}
+
+			// Validate OIC name
+			if (oicName.length < 3) {
+				showMessage("OIC Name must be at least 3 characters long.", false);
+				return;
+			}
+
+			if (oicName.length > 100) {
+				showMessage("OIC Name is too long (maximum 100 characters).", false);
+				return;
+			}
+
+			// Validate contact number - must be exactly 10 digits
+			const contactRegex = /^\d{10}$/;
+			if (!contactRegex.test(contact)) {
+				showMessage("Station Contact must be exactly 10 digits (numbers only).", false);
+				return;
+			}
+
+			// Validate email format - must start with letter and end with @gmail.com
+			const emailRegex = /^[a-zA-Z][a-zA-Z0-9._-]*@gmail\.com$/;
+			if (!emailRegex.test(email)) {
+				showMessage("Please enter a valid email address (e.g., station@gmail.com). ", false);
+				return;
+			}
+
+			const saveBtn = event.target.querySelector(".btn-save");
+			saveBtn.disabled = true;
+			saveBtn.textContent = "Saving...";
+
+			try {
+				const docRef = doc(db, "police_stations", currentDocId);
+				await updateDoc(docRef, {
+					stationContact: contact,
+					stationEmail: email,
+					policeOIC: oicName
+				});
+
+				saveBtn.disabled = false;
+				saveBtn.textContent = "Save Changes";
+				showMessage("Profile updated successfully!", true);
+			} catch (error) {
+				console.error("Error updating profile:", error);
+				showMessage("Failed to save changes. Please try again.", false);
+				saveBtn.disabled = false;
+				saveBtn.textContent = "Save Changes";
+			}
+		}
+
+		loadProfile();
+	</script>
+</body>
+</html>

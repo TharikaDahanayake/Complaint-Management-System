@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sri Lanka Police Complaint System</title>
+
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color:white;
+            font-family: Arial, sans-serif;
+            color:white;
+            text-align:center;
+        }
+
+        .container{
+            animation: fadeIn 2s;
+        }
+
+        img{
+            width:120px;
+            margin-bottom:20px;
+        }
+
+        h1{
+            font-size:28px;
+            letter-spacing:1px;
+        }
+
+        @keyframes fadeIn{
+            from{opacity:0;}
+            to{opacity:1;}
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Police Logo -->
+    <img src="assets/images/policeLogo.jpg" alt="Police Logo">
+
+    <!-- System Name -->
+    <h1>Sri Lanka Police<br>Complaint Web Portal</h1>
+
+</div>
+
+<script>
+
+    // redirect to login page after 3 seconds
+    setTimeout(function(){
+        window.location.href = "policeLogin.html";
+    },3000);
+
+</script>
+
+</body>
+</html>

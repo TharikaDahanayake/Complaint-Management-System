@@ -56,16 +56,33 @@
 			color: #000;
 		}
 
-		.add-section {
-			background: rgba(255, 255, 255, 0.95);
+		.form-section {
+			display: none;
+			position: fixed;
+			inset: 0;
+			background: rgba(12, 20, 7, 0.4);
+			padding: 24px;
+			z-index: 999;
+			overflow-y: auto;
+		}
+
+		.form-section.show {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+		}
+
+		.form-card {
+			width: min(900px, 100%);
+			margin-top: 28px;
+			background: #ffffff;
 			border: 1px solid var(--line);
 			border-radius: 14px;
 			padding: 24px;
-			margin-bottom: 24px;
-			box-shadow: 0 4px 12px rgba(12, 20, 7, 0.05);
+			box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 		}
 
-		.add-section h2 {
+		.form-section h2 {
 			margin: 0 0 20px;
 			font-size: 20px;
 			color: #000;
@@ -304,13 +321,27 @@
 			<h1>Department Management</h1>
 		</div>
 
-		<div class="add-section">
-			<h2 id="formTitle">Add New Department</h2>
-			<form id="departmentForm">
-				<div class="form-row">
-					<div class="form-group">
-						<label for="departmentID">Department ID </label>
-						<input type="text" id="departmentID" name="departmentID" 
+		<div class="table-section">
+			<div class="top-bar" style="display: flex; justify-content: flex-start; margin-bottom: 20px;">
+				<button type="button" class="btn btn-primary" id="addNewBtn">Add New Department</button>
+			</div>
+			<h2>All Departments</h2>
+			<div id="tableContainer">
+				<div class="loading">
+					<div class="spinner"></div>
+					<p>Loading departments...</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-section" id="departmentFormSection">
+			<div class="form-card">
+				<h2 id="formTitle">Add New Department</h2>
+				<form id="departmentForm">
+					<div class="form-row">
+						<div class="form-group">
+							<label for="departmentID">Department ID </label>
+							<input type="text" id="departmentID" name="departmentID" 
 							placeholder="e.g., DEP-TRA-001" 
 							pattern="DEP-[A-Z]{3}-[0-9]{3}"
 							maxlength="12"
@@ -327,18 +358,9 @@
 				
 				<div class="button-group">
 					<button type="submit" class="btn btn-primary" id="submitBtn">Add Department</button>
-					<button type="button" class="btn btn-secondary" id="cancelBtn" style="display: none;">Cancel</button>
+					<button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
 				</div>
 			</form>
-		</div>
-
-		<div class="table-section">
-			<h2>All Departments</h2>
-			<div id="tableContainer">
-				<div class="loading">
-					<div class="spinner"></div>
-					<p>Loading departments...</p>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -377,6 +399,8 @@
 		const cancelBtn = document.getElementById("cancelBtn");
 		const formTitle = document.getElementById("formTitle");
 		const tableContainer = document.getElementById("tableContainer");
+		const addNewBtn = document.getElementById("addNewBtn");
+		const formSection = document.getElementById("departmentFormSection");
 
 		let isEditMode = false;
 		let editDocId = null;
@@ -385,6 +409,18 @@
 
 		// Get station ID from localStorage
 		stationID = localStorage.getItem("policeStationID");
+
+		// Show/hide add department form
+		addNewBtn.addEventListener("click", function() {
+			openFormForAdd();
+		});
+
+		// Close form when clicking on overlay
+		formSection.addEventListener("click", function(event) {
+			if (event.target === formSection) {
+				resetForm();
+			}
+		});
 
 		// Auto-convert department ID to uppercase as user types
 		departmentIDInput.addEventListener("input", function(e) {
@@ -500,7 +536,9 @@
 		});
 
 		// Cancel button handler
-		cancelBtn.addEventListener("click", resetForm);
+		cancelBtn.addEventListener("click", function() {
+			resetForm();
+		});
 
 		// Load all departments
 		async function loadDepartments() {
@@ -575,6 +613,17 @@
 			}
 		}
 
+		// Open form for adding new department
+		function openFormForAdd() {
+			isEditMode = false;
+			editDocId = null;
+			originalDepartmentID = null;
+			formTitle.textContent = "Add New Department";
+			submitBtn.textContent = "Add Department";
+			form.reset();
+			formSection.classList.add("show");
+		}
+
 		// Edit department
 		window.editDepartment = function(docId, departmentID, departmentName) {
 			isEditMode = true;
@@ -586,8 +635,7 @@
 			departmentIDInput.disabled = false;
 			departmentNameInput.value = departmentName;
 			submitBtn.textContent = "Update Department";
-			cancelBtn.style.display = "block";
-			document.querySelector(".add-section").scrollIntoView({ behavior: "smooth" });
+			formSection.classList.add("show");
 		};
 
 		// Delete department
@@ -615,7 +663,7 @@
 			form.reset();
 			departmentIDInput.disabled = false;
 			submitBtn.textContent = "Add Department";
-			cancelBtn.style.display = "none";
+			formSection.classList.remove("show");
 		}
 	</script>
 </body>

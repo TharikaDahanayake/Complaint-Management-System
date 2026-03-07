@@ -315,7 +315,7 @@
 				<li><a href="#" class="nav-link">All Complaints</a></li>
                 <li><a href="#" class="nav-link">Assigned Complaints</a></li>
                 <li><a href="#" class="nav-link">Escalated Complaints</a></li>
-				<li><a href="policeLogin.html">Logout</a></li>
+				<li><a href="#" class="nav-link" id="logoutBtn">Logout</a></li>
 			</ul>
 		</aside>
 
@@ -327,15 +327,15 @@
 				<div class="status-grid">
 					<article class="status-item">
 						<h3>Pending Complaints</h3>
-						<strong>12</strong>
+						<strong id="pendingComplaintsCount">--</strong>
 					</article>
 					<article class="status-item">
-						<h3>Active Officers</h3>
-						<strong>34</strong>
+						<h3>Total Police Officers</h3>
+						<strong id="totalOfficersCount">--</strong>
 					</article>
 					<article class="status-item">
-						<h3>Departments</h3>
-						<strong>8</strong>
+						<h3>Departments in Station</h3>
+						<strong id="totalDepartmentsCount">--</strong>
 					</article>
 				</div>
 			</div>
@@ -363,6 +363,7 @@
 		const welcomeHeading = document.getElementById("welcomeHeading");
 		const homeContent = document.getElementById("homeContent");
 		const contentFrame = document.getElementById("contentFrame");
+		const logoutBtn = document.getElementById("logoutBtn");
 
 		// Navigation handling
 		document.querySelectorAll(".nav-link").forEach(link => {
@@ -398,6 +399,23 @@
 			});
 		});
 
+		// Logout handler
+		logoutBtn.addEventListener("click", function(e) {
+			e.preventDefault();
+			
+			const confirmed = confirm("Are you sure you want to logout?");
+			
+			if (confirmed) {
+				// Clear all session data from localStorage
+				localStorage.removeItem("policeStationID");
+				localStorage.removeItem("stationName");
+				localStorage.removeItem("policeEmail");
+				
+				// Redirect to login page
+				window.location.href = "policeLogin.html";
+			}
+		});
+
 		async function loadStationInfo() {
 			try {
 				const stationID = localStorage.getItem("policeStationID");
@@ -417,7 +435,44 @@
 			}
 		}
 
+		async function loadDashboardCounts() {
+			try {
+				const stationID = localStorage.getItem("policeStationID");
+				if (!stationID) {
+					document.getElementById("totalOfficersCount").textContent = "0";
+					document.getElementById("totalDepartmentsCount").textContent = "0";
+					document.getElementById("pendingComplaintsCount").textContent = "0";
+					return;
+				}
+
+				// Load total officers count
+				const officersRef = collection(db, "officers");
+				const officersQuery = query(officersRef, where("stationID", "==", stationID));
+				const officersSnapshot = await getDocs(officersQuery);
+				const officersCount = officersSnapshot.size;
+				document.getElementById("totalOfficersCount").textContent = officersCount;
+
+				// Load total departments count
+				const departmentsRef = collection(db, "departments");
+				const departmentsQuery = query(departmentsRef, where("stationID", "==", stationID));
+				const departmentsSnapshot = await getDocs(departmentsQuery);
+				const departmentsCount = departmentsSnapshot.size;
+				document.getElementById("totalDepartmentsCount").textContent = departmentsCount;
+
+				// Load pending complaints count (if you have a complaints collection)
+				// For now, setting to 0 as placeholder
+				document.getElementById("pendingComplaintsCount").textContent = "0";
+
+			} catch (error) {
+				console.error("Error loading dashboard counts:", error);
+				document.getElementById("totalOfficersCount").textContent = "Error";
+				document.getElementById("totalDepartmentsCount").textContent = "Error";
+				document.getElementById("pendingComplaintsCount").textContent = "Error";
+			}
+		}
+
 		loadStationInfo();
+		loadDashboardCounts();
 	</script>
 </body>
 </html>

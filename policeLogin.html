@@ -169,6 +169,9 @@
 			localStorage.setItem("policeStationID", stationID);
 			localStorage.setItem("policeStationName", stationRecord.stationName ?? "");
 
+			// Show success alert
+			alert("Login Successful! Welcome to the Police Dashboard.");
+			
 			showMessage("Successful login. Redirecting to dashboard...", true);
 			setTimeout(() => {
 				window.location.href = `policeDashboard.html?stationID=${encodeURIComponent(stationID)}`;

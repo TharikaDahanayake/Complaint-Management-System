@@ -120,6 +120,19 @@
             color: var(--ink);
         }
 
+        .solution-input {
+            width: 220px;
+            min-height: 68px;
+            padding: 7px 8px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            font-size: 12px;
+            resize: vertical;
+            font-family: inherit;
+            color: var(--ink);
+            background: #fff;
+        }
+
         .message {
             position: fixed;
             top: 20px;
@@ -255,6 +268,10 @@
             .select {
                 width: 150px;
             }
+
+            .solution-input {
+                width: 170px;
+            }
         }
     </style>
 </head>
@@ -283,6 +300,7 @@
                         <th>Department Name</th>
                         <th>Police Officer Assigned</th>
                         <th>Status</th>
+                        <th id="solutionHeader">Solution</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -332,6 +350,7 @@
         const db = getFirestore(app);
 
         const complaintsBody = document.getElementById("complaintsBody");
+        const solutionHeader = document.getElementById("solutionHeader");
         const loading = document.getElementById("loading");
         const empty = document.getElementById("empty");
         const tableWrap = document.getElementById("tableWrap");
@@ -341,7 +360,34 @@
         const closeEvidenceBtn = document.getElementById("closeEvidenceBtn");
 
         const statusOptions = ["Pending", "Ongoing", "Escalated", "Resolved"];
-        const viewMode = new URLSearchParams(window.location.search).get("view") || "all";
+
+        function resolveViewMode() {
+            const allowedViews = new Set(["all", "assigned", "escalated", "resolved"]);
+            const queryView = new URLSearchParams(window.location.search).get("view") || "";
+            if (allowedViews.has(queryView)) {
+                return queryView;
+            }
+
+            try {
+                if (window.parent && window.parent !== window) {
+                    const hash = String(window.parent.location.hash || "").replace(/^#/, "");
+                    if (hash === "allComplaints") return "all";
+                    if (hash === "assignedComplaints") return "assigned";
+                    if (hash === "escalatedComplaints") return "escalated";
+                    if (hash === "resolvedComplaints") return "resolved";
+                }
+            } catch (error) {
+                console.warn("Unable to read parent hash for view mode fallback:", error);
+            }
+
+            return "all";
+        }
+
+        const viewMode = resolveViewMode();
+
+        if (viewMode === "resolved" && solutionHeader) {
+            solutionHeader.textContent = "Comment";
+        }
 
         const stationID = localStorage.getItem("policeStationID");
         let complaintsCache = [];
@@ -684,6 +730,10 @@
                 const departmentName = getComplaintDepartmentName(complaint);
                 const officerValue = getOfficerSelectValue(complaint);
                 const statusValue = getStatusValue(complaint);
+                const solutionValue = getValue(complaint, ["comment", "comments", "solution"], "");
+                const commentValue = getValue(complaint, ["comment"], "");
+                const normalizedSolutionValue = solutionValue === "-" ? "" : String(solutionValue);
+                const normalizedCommentValue = commentValue === "-" ? "" : String(commentValue);
                 const officerOptions = buildOfficerOptions(officerValue, departmentName);
 
                 return `
@@ -714,6 +764,11 @@
                                 ${buildStatusOptions(statusValue)}
                             </select>
                         </td>
+                        ${viewMode === "resolved"
+                            ? `<td class="cell-long"><p>${escapeHTML(normalizedCommentValue || "-")}</p></td>`
+                            : viewMode === "all"
+                                ? ""
+                                : `<td><textarea class="solution-input" placeholder="Add solution...">${escapeHTML(normalizedSolutionValue)}</textarea></td>`}
                         <td>
                             <button type="button" class="btn btn-save save-row-btn">Save</button>
                         </td>
@@ -728,6 +783,10 @@
                 document.title = "Assigned Complaints";
                 document.querySelector(".page-head h1").textContent = "Assigned Complaints";
                 document.querySelector(".page-head p").textContent = "Assigned complaints for the logged-in police station.";
+                if (solutionHeader) {
+                    solutionHeader.style.display = "";
+                    solutionHeader.textContent = "Solution";
+                }
                 return;
             }
 
@@ -736,6 +795,10 @@
                 document.title = "Escalated Complaints";
                 document.querySelector(".page-head h1").textContent = "Escalated Complaints";
                 document.querySelector(".page-head p").textContent = "Escalated complaints for the logged-in police station.";
+                if (solutionHeader) {
+                    solutionHeader.style.display = "";
+                    solutionHeader.textContent = "Solution";
+                }
                 return;
             }
 
@@ -744,10 +807,18 @@
                 document.title = "Resolved Complaints";
                 document.querySelector(".page-head h1").textContent = "Resolved Complaints";
                 document.querySelector(".page-head p").textContent = "Resolved complaints for the logged-in police station.";
+                if (solutionHeader) {
+                    solutionHeader.style.display = "";
+                    solutionHeader.textContent = "Comment";
+                }
                 return;
             }
 
             visibleComplaints = complaintsCache;
+            if (solutionHeader) {
+                solutionHeader.style.display = "none";
+                solutionHeader.textContent = "Solution";
+            }
         }
 
         function openEvidenceModal(url) {
@@ -872,6 +943,7 @@
 
     const officerSelect = row.querySelector(".officer-select");
     const statusSelect = row.querySelector(".status-select");
+    const solutionInput = row.querySelector(".solution-input");
 
     if (!(officerSelect instanceof HTMLSelectElement) || !(statusSelect instanceof HTMLSelectElement)) {
         return;
@@ -880,6 +952,9 @@
     const selectedOfficerID = officerSelect.value;
     const selectedStatus = statusSelect.value;
     const complaint = complaintsCache.find((item) => item.docId === docId);
+    const solutionText = solutionInput instanceof HTMLTextAreaElement
+        ? solutionInput.value.trim()
+        : String(getValue(complaint || {}, ["comment", "comments", "solution"], "") === "-" ? "" : getValue(complaint || {}, ["comment", "comments", "solution"], "")).trim();
 
     console.log("=== SAVE BUTTON CLICKED ===");
     console.log("Officer:", selectedOfficerID);
@@ -932,12 +1007,14 @@
         console.log("Update payload:", {
             officerID: selectedOfficerID || "",
             status: selectedStatus || "Pending",
+            comment: solutionText,
             updatedAt: "serverTimestamp()"
         });
 
         await updateDoc(doc(db, "complaints", docId), {
             officerID: selectedOfficerID || "",
             status: selectedStatus || "Pending",
+            comment: solutionText,
             updatedAt: serverTimestamp()
         });
 
@@ -945,6 +1022,7 @@
 
         complaint.officerID = selectedOfficerID || "";
         complaint.status = selectedStatus || "Pending";
+        complaint.comment = solutionText;
         complaint.updatedAt = new Date();
 
         showMessage("Complaint updated successfully.", "success");

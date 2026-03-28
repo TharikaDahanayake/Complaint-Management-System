@@ -441,6 +441,53 @@
             return "Pending";
         }
 
+        function getComplaintTimestamp(complaint) {
+            const rawDate = getValue(complaint, ["date", "complaintDate", "createdAt"], null);
+
+            if (!rawDate) return 0;
+
+            if (rawDate && typeof rawDate.toDate === "function") {
+                return rawDate.toDate().getTime();
+            }
+
+            if (rawDate && typeof rawDate.seconds === "number") {
+                return rawDate.seconds * 1000;
+            }
+
+            if (typeof rawDate === "number") {
+                return rawDate;
+            }
+
+            const parsed = new Date(rawDate).getTime();
+            return Number.isNaN(parsed) ? 0 : parsed;
+        }
+
+        function isAssignedComplaint(complaint) {
+            const status = getStatusValue(complaint);
+            const hasAssignedOfficer = getOfficerSelectValue(complaint) !== "";
+            return hasAssignedOfficer && status !== "Escalated" && status !== "Resolved";
+        }
+
+        function getSortPriority(complaint) {
+            const status = getStatusValue(complaint);
+
+            if (status === "Pending") return 1;
+            if (status === "Ongoing") return 2;
+            if (isAssignedComplaint(complaint)) return 3;
+            if (status === "Escalated") return 4;
+            if (status === "Resolved") return 5;
+            return 6;
+        }
+
+        function sortVisibleComplaints() {
+            visibleComplaints = [...visibleComplaints].sort((a, b) => {
+                const priorityDiff = getSortPriority(a) - getSortPriority(b);
+                if (priorityDiff !== 0) return priorityDiff;
+
+                return getComplaintTimestamp(b) - getComplaintTimestamp(a);
+            });
+        }
+
         function getContactValue(complaint) {
             const complaintType = String(getValue(complaint, ["complaintType", "type"], "")).toLowerCase();
             const isAnonymous = complaintType === "anonymous" || complaint.isAnonymous === true;
@@ -640,10 +687,7 @@
 
         function applyViewFilter() {
             if (viewMode === "assigned") {
-                visibleComplaints = complaintsCache.filter((complaint) => {
-                    const assignedOfficerID = getOfficerSelectValue(complaint);
-                    return assignedOfficerID !== "";
-                });
+                visibleComplaints = complaintsCache.filter((complaint) => isAssignedComplaint(complaint));
                 document.title = "Assigned Complaints";
                 document.querySelector(".page-head h1").textContent = "Assigned Complaints";
                 document.querySelector(".page-head p").textContent = "Assigned complaints for the logged-in police station.";
@@ -846,6 +890,10 @@
 
         showMessage("Complaint updated successfully.", "success");
 
+        applyViewFilter();
+        sortVisibleComplaints();
+        renderTable();
+
     } catch (error) {
         console.error("Error updating complaint:", error);
         showMessage("Failed to update complaint.", "error");
@@ -881,6 +929,7 @@
                 await Promise.all([loadDepartments(), loadOfficers(), loadComplaints()]);
                 await loadCitizens();
                 applyViewFilter();
+                sortVisibleComplaints();
                 renderTable();
             } catch (error) {
                 console.error("Error loading complaint management data:", error);

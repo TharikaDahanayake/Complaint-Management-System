@@ -383,8 +383,20 @@
 
 				<div class="status-grid">
 					<article class="status-item">
-						<h3>Pending Complaints</h3>
-						<strong id="pendingComplaintsCount">--</strong>
+						<h3>All Complaints</h3>
+						<strong id="allComplaintsCount">--</strong>
+					</article>
+					<article class="status-item">
+						<h3>Assigned Complaints</h3>
+						<strong id="assignedComplaintsCount">--</strong>
+					</article>
+					<article class="status-item">
+						<h3>Escalated Complaints</h3>
+						<strong id="escalatedComplaintsCount">--</strong>
+					</article>
+					<article class="status-item">
+						<h3>Resolved Complaints</h3>
+						<strong id="resolvedComplaintsCount">--</strong>
 					</article>
 					<article class="status-item">
 						<h3>Total Police Officers</h3>
@@ -518,11 +530,69 @@
 			try {
 				const stationID = localStorage.getItem("policeStationID");
 				if (!stationID) {
+					document.getElementById("allComplaintsCount").textContent = "0";
+					document.getElementById("assignedComplaintsCount").textContent = "0";
+					document.getElementById("escalatedComplaintsCount").textContent = "0";
+					document.getElementById("resolvedComplaintsCount").textContent = "0";
 					document.getElementById("totalOfficersCount").textContent = "0";
 					document.getElementById("totalDepartmentsCount").textContent = "0";
-					document.getElementById("pendingComplaintsCount").textContent = "0";
 					return;
 				}
+
+				const getValue = (record, keys, fallback = "") => {
+					for (const key of keys) {
+						const value = record[key];
+						if (value !== undefined && value !== null && String(value).trim() !== "") {
+							return value;
+						}
+					}
+					return fallback;
+				};
+
+				const getStatusValue = (complaint) => {
+					const status = getValue(complaint, ["status"], "Pending");
+					if (["Pending", "Ongoing", "Escalated", "Resolved"].includes(status)) return status;
+					return "Pending";
+				};
+
+				const getUpdatedTimestamp = (complaint) => {
+					const rawDate = getValue(complaint, ["updatedAt", "lastUpdated", "createdAt", "date", "complaintDate"], null);
+					if (!rawDate) return 0;
+
+					if (rawDate && typeof rawDate.toDate === "function") {
+						return rawDate.toDate().getTime();
+					}
+
+					if (rawDate && typeof rawDate.seconds === "number") {
+						return rawDate.seconds * 1000;
+					}
+
+					if (typeof rawDate === "number") {
+						return rawDate;
+					}
+
+					const parsed = new Date(rawDate).getTime();
+					return Number.isNaN(parsed) ? 0 : parsed;
+				};
+
+				const getOfficerValue = (complaint) => getValue(complaint, ["assignedOfficerID", "assignedOfficerId", "officerID", "officerId"], "");
+
+				const getEffectiveStatus = (complaint) => {
+					const status = getStatusValue(complaint);
+					if (status === "Resolved" || status === "Escalated") return status;
+
+					const updatedTime = getUpdatedTimestamp(complaint);
+					const olderThan5Days = updatedTime > 0 && (Date.now() - updatedTime) / (1000 * 60 * 60 * 24) > 5;
+					if (olderThan5Days) return "Escalated";
+
+					return status;
+				};
+
+				const isAssignedComplaint = (complaint) => {
+					const status = getEffectiveStatus(complaint);
+					const hasAssignedOfficer = getOfficerValue(complaint) !== "";
+					return hasAssignedOfficer && status !== "Escalated" && status !== "Resolved";
+				};
 
 				// Load total officers count
 				const officersRef = collection(db, "officers");
@@ -538,17 +608,36 @@
 				const departmentsCount = departmentsSnapshot.size;
 				document.getElementById("totalDepartmentsCount").textContent = departmentsCount;
 
-				// Load pending complaints count (if you have a complaints collection)
-				// For now, setting to 0 as placeholder
-				document.getElementById("pendingComplaintsCount").textContent = "0";
+				const complaintsRef = collection(db, "complaints");
+				const complaintsQuery = query(complaintsRef, where("stationID", "==", stationID));
+				const complaintsSnapshot = await getDocs(complaintsQuery);
+				const complaints = complaintsSnapshot.docs.map((item) => ({ docId: item.id, ...item.data() }));
+
+				const allComplaintsCount = complaints.length;
+				const assignedComplaintsCount = complaints.filter((complaint) => isAssignedComplaint(complaint)).length;
+				const escalatedComplaintsCount = complaints.filter((complaint) => getEffectiveStatus(complaint) === "Escalated").length;
+				const resolvedComplaintsCount = complaints.filter((complaint) => getEffectiveStatus(complaint) === "Resolved").length;
+
+				document.getElementById("allComplaintsCount").textContent = String(allComplaintsCount);
+				document.getElementById("assignedComplaintsCount").textContent = String(assignedComplaintsCount);
+				document.getElementById("escalatedComplaintsCount").textContent = String(escalatedComplaintsCount);
+				document.getElementById("resolvedComplaintsCount").textContent = String(resolvedComplaintsCount);
 
 			} catch (error) {
 				console.error("Error loading dashboard counts:", error);
+				document.getElementById("allComplaintsCount").textContent = "Error";
+				document.getElementById("assignedComplaintsCount").textContent = "Error";
+				document.getElementById("escalatedComplaintsCount").textContent = "Error";
+				document.getElementById("resolvedComplaintsCount").textContent = "Error";
 				document.getElementById("totalOfficersCount").textContent = "Error";
 				document.getElementById("totalDepartmentsCount").textContent = "Error";
-				document.getElementById("pendingComplaintsCount").textContent = "Error";
 			}
 		}
+
+		window.addEventListener("message", (event) => {
+			if (!event || !event.data || event.data.type !== "complaint-updated") return;
+			loadDashboardCounts();
+		});
 
 		loadStationInfo();
 		loadDashboardCounts();

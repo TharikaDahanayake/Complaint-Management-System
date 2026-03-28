@@ -953,6 +953,10 @@
         sortVisibleComplaints();
         renderTable();
 
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: "complaint-updated" }, "*");
+        }
+
     } catch (error) {
         console.error("Error updating complaint:", error);
         console.error("Error code:", error.code);

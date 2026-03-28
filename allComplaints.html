@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Complaints</title>
+    <style>
+        :root {
+            --bg: #f6f8f0;
+            --panel: #ffffff;
+            --line: #dfe5d6;
+            --ink: #1a1f16;
+            --muted: #5f6758;
+            --brand: #6f7200;
+            --brand-2: #8f8336;
+            --danger: #b42318;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            padding: 20px;
+        }
+
+        .page-wrap {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(12, 20, 7, 0.08);
+            padding: 20px;
+        }
+
+        .page-head h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .page-head p {
+            margin: 8px 0 0;
+            color: var(--muted);
+        }
+
+        .table-wrap {
+            margin-top: 16px;
+            overflow-x: auto;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1400px;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid var(--line);
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            font-size: 13px;
+        }
+
+        th {
+            background: #f4f7e9;
+            color: #2a311c;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            font-size: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        td p {
+            margin: 0;
+        }
+
+        .cell-long {
+            max-width: 260px;
+            white-space: normal;
+            line-height: 1.4;
+        }
+
+        .btn {
+            border: none;
+            border-radius: 8px;
+            padding: 8px 10px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .btn-evidence,
+        .btn-save {
+            background: linear-gradient(135deg, var(--brand), var(--brand-2));
+            color: #fff;
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .select {
+            width: 180px;
+            padding: 7px 8px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            font-size: 12px;
+            background: #fff;
+            color: var(--ink);
+        }
+
+        .message {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            min-width: 250px;
+            max-width: 350px;
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            display: none;
+            z-index: 2000;
+            animation: slideIn 0.3s ease;
+        }
+
+        .message.show {
+            display: block;
+        }
+
+        .message.success {
+            background: #e8f5e9;
+            color: #1e7c34;
+            border-left: 5px solid #2e7d32;
+        }
+
+        .message.error {
+            background: #fdecea;
+            color: #b42318;
+            border-left: 5px solid #b42318;
+        }
+
+        /* Animation */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .empty {
+            margin-top: 14px;
+            color: var(--muted);
+            background: #fafcf6;
+            border: 1px dashed var(--line);
+            border-radius: 8px;
+            padding: 14px;
+            text-align: center;
+        }
+
+        .loading {
+            margin-top: 14px;
+            color: var(--muted);
+        }
+
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-card {
+            width: min(920px, 100%);
+            max-height: 90vh;
+            overflow: auto;
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid var(--line);
+            padding: 16px;
+        }
+
+        .modal-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .modal-title {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .preview {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 10px;
+            min-height: 160px;
+            background: #fafcf6;
+            display: grid;
+            place-items: center;
+        }
+
+        .preview img,
+        .preview video,
+        .preview iframe {
+            max-width: 100%;
+            width: 100%;
+            max-height: 65vh;
+            border: none;
+            border-radius: 8px;
+            background: #fff;
+        }
+
+        .preview a {
+            color: var(--brand);
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            body {
+                padding: 10px;
+            }
+
+            .page-wrap {
+                padding: 14px;
+            }
+
+            .select {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+        <div class="page-head">
+            <h1>All Complaints</h1>
+            <p>Complaints for the logged-in police station.</p>
+        </div>
+
+        <div id="message" class="message"></div>
+        <div id="loading" class="loading">Loading complaints...</div>
+        <div id="empty" class="empty" style="display: none;">No complaints found for this station.</div>
+
+        <div class="table-wrap" id="tableWrap" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Complaint Title</th>
+                        <th>Complaint Description</th>
+                        <th>Complaint Category</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Contact Number</th>
+                        <th>Evidence</th>
+                        <th>Department Name</th>
+                        <th>Police Officer Assigned</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="complaintsBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal" id="evidenceModal" aria-hidden="true">
+        <div class="modal-card">
+            <div class="modal-head">
+                <h2 class="modal-title">Evidence</h2>
+                <button type="button" class="btn" id="closeEvidenceBtn">Close</button>
+            </div>
+            <div class="preview" id="evidencePreview"></div>
+        </div>
+    </div>
+
+    <div id="message" class="message">
+        <span id="messageText"></span>
+        <button onclick="closeMessage()" style="margin-left:10px;">✖</button>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+        import {
+            getFirestore,
+            collection,
+            query,
+            where,
+            getDocs,
+            doc,
+            updateDoc
+        } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCr5xSS_xPQO38JHoZMufQl-HEltwCvqSk",
+            authDomain: "complaint-management-sys-f5d5e.firebaseapp.com",
+            projectId: "complaint-management-sys-f5d5e",
+            storageBucket: "complaint-management-sys-f5d5e.firebasestorage.app",
+            messagingSenderId: "697751596289",
+            appId: "1:697751596289:web:cd218934e92411bd7a7f00"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const complaintsBody = document.getElementById("complaintsBody");
+        const loading = document.getElementById("loading");
+        const empty = document.getElementById("empty");
+        const tableWrap = document.getElementById("tableWrap");
+        const message = document.getElementById("message");
+        const evidenceModal = document.getElementById("evidenceModal");
+        const evidencePreview = document.getElementById("evidencePreview");
+        const closeEvidenceBtn = document.getElementById("closeEvidenceBtn");
+
+        const statusOptions = ["Pending", "Ongoing", "Escalated", "Resolved"];
+        const viewMode = new URLSearchParams(window.location.search).get("view") || "all";
+
+        const stationID = localStorage.getItem("policeStationID");
+        let complaintsCache = [];
+        let visibleComplaints = [];
+        let officersCache = [];
+        let departmentsCache = [];
+        let citizensCache = [];
+
+        function getValue(record, keys, fallback = "-") {
+            for (const key of keys) {
+                const value = record[key];
+                if (value !== undefined && value !== null && String(value).trim() !== "") {
+                    return value;
+                }
+            }
+            return fallback;
+        }
+
+        function escapeHTML(value) {
+            return String(value)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/\"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+        }
+
+        function normalizeDate(rawDate) {
+            if (!rawDate || rawDate === "-") return "-";
+
+            if (typeof rawDate === "string") {
+                return rawDate;
+            }
+
+            if (rawDate && typeof rawDate.toDate === "function") {
+                return rawDate.toDate().toLocaleString();
+            }
+
+            if (rawDate && typeof rawDate.seconds === "number") {
+                return new Date(rawDate.seconds * 1000).toLocaleString();
+            }
+
+            return String(rawDate);
+        }
+
+        function getDepartmentName(complaint) {
+            const complaintDepartmentID = getValue(complaint, ["departmentID", "departmentId"], "");
+            console.log(`getDepartmentName: Looking for department ID: "${complaintDepartmentID}"`);
+            if (!complaintDepartmentID) {
+                console.warn("Complaint has no departmentID!");
+                return "-";
+            }
+
+            const found = departmentsCache.find((dept) => {
+                const deptId = getValue(dept, ["departmentID", "departmentId"], "");
+                const deptStationID = getValue(dept, ["stationID", "stationId"], "");
+                return deptId === complaintDepartmentID && deptStationID === stationID;
+            });
+
+            if (!found) {
+                console.warn(`Department not found for ID: "${complaintDepartmentID}" in departments cache (size: ${departmentsCache.length})`);
+                return "-";
+            }
+            const deptName = getValue(found, ["departmentName", "name"], "-");
+            console.log(`getDepartmentName: Found department name: "${deptName}"`);
+            return deptName;
+        }
+
+        function normalizeDepartmentName(value) {
+            if (!value || value === "-") return "";
+            return String(value).trim().toLowerCase().replace(/\s+/g, " ");
+        }
+
+        function normalizeId(value) {
+            if (!value || value === "-") return "";
+            return String(value).trim().toUpperCase();
+        }
+
+        function getComplaintDepartmentName(complaint) {
+            const directName = getValue(complaint, ["departmentName", "department", "complaintDepartment"], "");
+            if (directName && directName !== "-") {
+                return String(directName).trim();
+            }
+            return getDepartmentName(complaint);
+        }
+
+        function getComplaintDepartmentId(complaint) {
+            return getValue(complaint, ["departmentID", "departmentId"], "");
+        }
+
+        function getOfficerSelectValue(complaint) {
+            return getValue(complaint, ["assignedOfficerID", "assignedOfficerId", "officerID", "officerId"], "");
+        }
+
+        function getStatusValue(complaint) {
+            const status = getValue(complaint, ["status"], "Pending");
+            if (statusOptions.includes(status)) return status;
+            return "Pending";
+        }
+
+        function getContactValue(complaint) {
+            const complaintType = String(getValue(complaint, ["complaintType", "type"], "")).toLowerCase();
+            const isAnonymous = complaintType === "anonymous" || complaint.isAnonymous === true;
+            if (isAnonymous) return "Anonymous";
+
+            const directContact = getValue(complaint, ["contactNumber", "phoneNumber", "contact", "mobile"], "");
+            if (directContact) {
+                return directContact;
+            }
+
+            const citizenRef = getValue(complaint, ["citizenID"], "");
+            if (!citizenRef) {
+                return "-";
+            }
+
+            const citizen = citizensCache.find((item) => {
+                const citizenUid = getValue(item, ["citizenUid"], "");
+                return citizenUid === citizenRef;
+            });
+
+            if (!citizen) {
+                console.warn(`Citizen not found for citizenID: ${citizenRef}. citizensCache size: ${citizensCache.length}`);
+                return "-";
+            }
+
+            const contact = getValue(citizen, ["citizenContact"], "-");
+            console.log(`Found citizen ${citizenRef}: citizenContact=${contact}`);
+            return contact;
+        }
+
+        function getEvidenceUrl(complaint) {
+            const urlArray = complaint.evidenceUrls || complaint.evidenceURLs || complaint.evidences;
+            if (Array.isArray(urlArray)) {
+                const firstValid = urlArray.find((value) => typeof value === "string" && value.trim() !== "");
+                if (firstValid) {
+                    return firstValid.trim();
+                }
+            }
+
+            const url = getValue(complaint, ["evidenceUrl", "evidenceURL", "evidence", "evidenceLink"], "");
+            return url === "-" ? "" : String(url);
+        }
+
+        function getGoogleMapsUrl(locationText) {
+            if (!locationText || locationText === "-") return "";
+
+            const normalized = String(locationText).trim().replace(/\s+/g, "");
+            const coordinatePattern = /^-?\d+(?:\.\d+)?,-?\d+(?:\.\d+)?$/;
+            if (!coordinatePattern.test(normalized)) return "";
+
+            return `https://www.google.com/maps?q=${encodeURIComponent(normalized)}`;
+        }
+
+        function showMessage(text, type = "success") {
+            message.textContent = text;
+            message.className = `message show ${type}`;
+
+            // Auto hide after 3 seconds
+            setTimeout(() => {
+                message.classList.remove("show");
+            }, 3000);
+        }
+
+        function closeMessage() {
+            message.classList.remove("show");
+        }
+        function buildOfficerOptions(selectedValue, complaintDepartment) {
+            const options = ['<option value="">Not Assigned</option>'];
+            const normalizedComplaintDept = normalizeDepartmentName(complaintDepartment);
+            officersCache.forEach((officer) => {
+                const officerID = getValue(officer, ["officerID", "officerId"], "");
+                const officerName = getValue(officer, ["officerName", "name"], "Officer");
+                const officerDepartment = getValue(officer, ["departmentName", "department"], "");
+                const normalizedOfficerDept = normalizeDepartmentName(officerDepartment);
+                
+                if (!officerID) return;
+                
+                // Only show officers from the same department as the complaint
+                if (normalizedComplaintDept && normalizedOfficerDept !== normalizedComplaintDept) return;
+                
+                const selected = officerID === selectedValue ? "selected" : "";
+                options.push(`<option value="${escapeHTML(officerID)}" data-officer-dept="${escapeHTML(officerDepartment)}" ${selected}>${escapeHTML(officerName)} (${escapeHTML(officerID)})</option>`);
+            });
+            return options.join("");
+        }
+
+        function buildStatusOptions(selectedValue) {
+            return statusOptions
+                .map((status) => {
+                    const selected = status === selectedValue ? "selected" : "";
+                    return `<option value="${status}" ${selected}>${status}</option>`;
+                })
+                .join("");
+        }
+
+
+        function getOfficerDepartment(officerID) {
+            const officer = officersCache.find((o) => getValue(o, ["officerID", "officerId"], "") === officerID);
+            if (!officer) {
+                console.warn(`Officer not found for ID: ${officerID}`);
+                return null;
+            }
+            const deptName = getValue(officer, ["departmentName", "department"], "");
+            console.log(`getOfficerDepartment: Officer ${officerID} has department: "${deptName}"`);
+            return deptName;
+        }
+
+        function getOfficerById(officerID) {
+            return officersCache.find((o) => getValue(o, ["officerID", "officerId"], "") === officerID) || null;
+        }
+
+        function validateOfficerAssignment(complaint, selectedOfficerID) {
+            if (!selectedOfficerID) {
+                console.log("No officer selected - validation passes");
+                return true; // Valid: no officer assigned
+            }
+            
+            const complaintDeptName = getComplaintDepartmentName(complaint);
+            const officerDeptName = getOfficerDepartment(selectedOfficerID);
+            const normalizedComplaintDept = normalizeDepartmentName(complaintDeptName);
+            const normalizedOfficerDept = normalizeDepartmentName(officerDeptName);
+            
+            console.log(`validateOfficerAssignment:
+                - Complaint Department: "${complaintDeptName}"
+                - Officer Department: "${officerDeptName}"
+                - Match: ${normalizedComplaintDept === normalizedOfficerDept}`);
+            
+            if (!normalizedComplaintDept || !normalizedOfficerDept) {
+                console.warn(`Validation FAILED - Missing department info. Complaint: "${complaintDeptName}", Officer: "${officerDeptName}"`);
+                return false; // Invalid: department info missing
+            }
+            
+            const isMatch = normalizedComplaintDept === normalizedOfficerDept;
+            console.log(`Validation ${isMatch ? "PASSED" : "FAILED"}`);
+            return isMatch; // Valid only if departments match
+        }
+
+        function renderTable() {
+            if (!visibleComplaints.length) {
+                tableWrap.style.display = "none";
+                empty.style.display = "block";
+                return;
+            }
+
+            empty.style.display = "none";
+            tableWrap.style.display = "block";
+
+            complaintsBody.innerHTML = visibleComplaints.map((complaint) => {
+                const title = getValue(complaint, ["complaintTitle", "title"], "-");
+                const description = getValue(complaint, ["complaintDescription", "description"], "-");
+                const category = getValue(complaint, ["complaintCategory", "category"], "-");
+                const location = getValue(complaint, ["incidentLocation", "location", "address"], "-");
+                const locationMapUrl = getGoogleMapsUrl(location);
+                const date = normalizeDate(getValue(complaint, ["date", "complaintDate", "createdAt"], "-"));
+                const contact = getContactValue(complaint);
+                const evidenceUrl = getEvidenceUrl(complaint);
+                const departmentName = getComplaintDepartmentName(complaint);
+                const officerValue = getOfficerSelectValue(complaint);
+                const statusValue = getStatusValue(complaint);
+                const officerOptions = buildOfficerOptions(officerValue, departmentName);
+
+                return `
+                    <tr data-id="${complaint.docId}">
+                        <td class="cell-long">${escapeHTML(title)}</td>
+                        <td class="cell-long"><p>${escapeHTML(description)}</p></td>
+                        <td>${escapeHTML(category)}</td>
+                        <td class="cell-long">
+                            ${locationMapUrl
+                                ? `<a href="${escapeHTML(locationMapUrl)}" target="_blank" rel="noopener noreferrer">View on Map</a>`
+                                : escapeHTML(location)}
+                        </td>
+                        <td>${escapeHTML(date)}</td>
+                        <td>${escapeHTML(contact)}</td>
+                        <td>
+                            ${evidenceUrl
+                                ? `<a href="#" class="evidence-link" data-evidence-url="${escapeHTML(evidenceUrl)}">View Evidence</a>`
+                                : "-"}
+                        </td>
+                        <td>${escapeHTML(departmentName)}</td>
+                        <td>
+                            <select class="select officer-select" data-complaint-dept="${escapeHTML(departmentName)}" data-complaint-dept-id="${escapeHTML(getComplaintDepartmentId(complaint))}">
+                                ${officerOptions}
+                            </select>
+                        </td>
+                        <td>
+                            <select class="select status-select">
+                                ${buildStatusOptions(statusValue)}
+                            </select>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-save save-row-btn">Save</button>
+                        </td>
+                    </tr>
+                `;
+            }).join("");
+        }
+
+        function applyViewFilter() {
+            if (viewMode === "assigned") {
+                visibleComplaints = complaintsCache.filter((complaint) => {
+                    const assignedOfficerID = getOfficerSelectValue(complaint);
+                    return assignedOfficerID !== "";
+                });
+                document.title = "Assigned Complaints";
+                document.querySelector(".page-head h1").textContent = "Assigned Complaints";
+                document.querySelector(".page-head p").textContent = "Assigned complaints for the logged-in police station.";
+                return;
+            }
+
+            if (viewMode === "escalated") {
+                visibleComplaints = complaintsCache.filter((complaint) => getStatusValue(complaint) === "Escalated");
+                document.title = "Escalated Complaints";
+                document.querySelector(".page-head h1").textContent = "Escalated Complaints";
+                document.querySelector(".page-head p").textContent = "Escalated complaints for the logged-in police station.";
+                return;
+            }
+
+            if (viewMode === "resolved") {
+                visibleComplaints = complaintsCache.filter((complaint) => getStatusValue(complaint) === "Resolved");
+                document.title = "Resolved Complaints";
+                document.querySelector(".page-head h1").textContent = "Resolved Complaints";
+                document.querySelector(".page-head p").textContent = "Resolved complaints for the logged-in police station.";
+                return;
+            }
+
+            visibleComplaints = complaintsCache;
+        }
+
+        function openEvidenceModal(url) {
+            const safeUrl = String(url).trim();
+            evidencePreview.innerHTML = "";
+
+            const lower = safeUrl.toLowerCase();
+            if (/(\.png|\.jpg|\.jpeg|\.gif|\.webp)(\?|$)/.test(lower)) {
+                evidencePreview.innerHTML = `<img src="${escapeHTML(safeUrl)}" alt="Evidence image">`;
+            } else if (/(\.mp4|\.webm|\.ogg)(\?|$)/.test(lower)) {
+                evidencePreview.innerHTML = `<video controls src="${escapeHTML(safeUrl)}"></video>`;
+            } else if (/^https?:\/\//.test(lower)) {
+                evidencePreview.innerHTML = `<iframe src="${escapeHTML(safeUrl)}" title="Evidence preview"></iframe><p><a href="${escapeHTML(safeUrl)}" target="_blank" rel="noopener noreferrer">Open in new tab</a></p>`;
+            } else {
+                evidencePreview.innerHTML = "<p>No preview available for this evidence.</p>";
+            }
+
+            evidenceModal.classList.add("show");
+            evidenceModal.setAttribute("aria-hidden", "false");
+        }
+
+        function closeEvidenceModal() {
+            evidenceModal.classList.remove("show");
+            evidenceModal.setAttribute("aria-hidden", "true");
+            evidencePreview.innerHTML = "";
+        }
+
+
+        async function loadDepartments() {
+            const departmentsRef = collection(db, "departments");
+            const departmentQuery = query(departmentsRef, where("stationID", "==", stationID));
+            const snapshot = await getDocs(departmentQuery);
+            departmentsCache = snapshot.docs.map((item) => ({ docId: item.id, ...item.data() }));
+            console.log("=== DEPARTMENTS CACHE ===");
+            departmentsCache.forEach((dept) => {
+                console.log(`Department: "${getValue(dept, ["departmentName", "name"], "?")}" (ID: ${getValue(dept, ["departmentID", "departmentId"], "?")})`);
+            });
+        }
+
+        async function loadOfficers() {
+            const officersRef = collection(db, "officers");
+            const snapshot = await getDocs(officersRef);
+            const allOfficers = snapshot.docs.map((item) => ({ docId: item.id, ...item.data() }));
+
+            officersCache = allOfficers.filter((officer) => {
+                const officerStation = getValue(officer, ["stationID", "stationId"], "");
+                return !officerStation || officerStation === stationID;
+            });
+
+            console.log(`Loaded ${officersCache.length} officers from 'officers' collection`);
+        }
+        async function loadComplaints() {
+            const complaintsRef = collection(db, "complaints");
+            const complaintsQuery = query(complaintsRef, where("stationID", "==", stationID));
+            const snapshot = await getDocs(complaintsQuery);
+            complaintsCache = snapshot.docs.map((item) => ({ docId: item.id, ...item.data() }));
+        }
+
+        async function loadCitizens() {
+            const citizenIDs = Array.from(new Set(
+                complaintsCache
+                    .map((complaint) => getValue(complaint, ["citizenID"], ""))
+                    .filter((id) => id)
+            ));
+
+            console.log(`Looking for ${citizenIDs.length} unique citizens:`, citizenIDs);
+
+            if (citizenIDs.length === 0) {
+                citizensCache = [];
+                return;
+            }
+
+            const candidateCollections = ["citizens", "citizen"];
+
+            for (const collectionName of candidateCollections) {
+                try {
+                    const citizensRef = collection(db, collectionName);
+                    const snapshot = await getDocs(citizensRef);
+                    const allCitizens = snapshot.docs.map((item) => ({ docId: item.id, ...item.data() }));
+                    console.log(`Loaded ${allCitizens.length} total citizens from '${collectionName}'`);
+                    
+                    citizensCache = allCitizens.filter((citizen) => {
+                        const citizenUid = getValue(citizen, ["citizenUid"], "");
+                        return citizenIDs.includes(citizenUid);
+                    });
+                    
+                    console.log(`Filtered to ${citizensCache.length} matching citizens`);
+                    citizensCache.forEach((c) => {
+                        console.log(`Cached citizen: uid=${getValue(c, ["citizenUid"], "?")} contact=${getValue(c, ["citizenContact"], "?")}`);
+                    });
+                    return;
+                } catch (error) {
+                    console.warn(`Failed loading ${collectionName} collection:`, error);
+                }
+            }
+
+            citizensCache = [];
+        }
+
+        complaintsBody.addEventListener("click", async (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return;
+
+    // Evidence click
+    const evidenceLink = target.closest(".evidence-link");
+    if (evidenceLink instanceof HTMLAnchorElement) {
+        event.preventDefault();
+        const evidenceUrl = evidenceLink.dataset.evidenceUrl || "";
+        if (evidenceUrl) openEvidenceModal(evidenceUrl);
+        return;
+    }
+
+    // Save button click
+    const saveBtn = target.closest(".save-row-btn");
+    if (!(saveBtn instanceof HTMLButtonElement)) return;
+
+    const row = saveBtn.closest("tr");
+    if (!row) return;
+
+    const docId = row.dataset.id;
+    if (!docId) return;
+
+    const officerSelect = row.querySelector(".officer-select");
+    const statusSelect = row.querySelector(".status-select");
+
+    if (!(officerSelect instanceof HTMLSelectElement) || !(statusSelect instanceof HTMLSelectElement)) {
+        return;
+    }
+
+    const selectedOfficerID = officerSelect.value;
+    const complaint = complaintsCache.find((item) => item.docId === docId);
+
+    console.log("=== SAVE BUTTON CLICKED ===");
+    console.log("Officer:", selectedOfficerID);
+    console.log("Complaint:", docId);
+
+    if (!complaint) {
+        showMessage("Complaint not found.", "error");
+        return;
+    }
+
+    // ✅ CLEAN VALIDATION
+    if (selectedOfficerID) {
+        const complaintDeptId = getComplaintDepartmentId(complaint);
+
+        const officerObj = getOfficerById(selectedOfficerID);
+        const officerDeptId = officerObj ? officerObj.departmentID : "";
+
+        console.log("Complaint Dept:", complaintDeptId);
+        console.log("Officer Dept:", officerDeptId);
+
+        if (!complaintDeptId || !officerDeptId) {
+            showMessage("Missing department information.", "error");
+            return;
+        }
+
+        if (complaintDeptId !== officerDeptId) {
+            showMessage("Selected officer does not belong to the correct department.", "error");
+            return;
+        }
+    }
+
+    // ✅ SAVE
+    console.log("Validation PASSED");
+
+    saveBtn.disabled = true;
+    saveBtn.textContent = "Saving...";
+
+    try {
+        await updateDoc(doc(db, "complaints", docId), {
+            officerID: selectedOfficerID || "",
+            status: statusSelect.value || "Pending"
+        });
+
+        complaint.officerID = selectedOfficerID || "";
+        complaint.status = statusSelect.value || "Pending";
+
+        showMessage("Complaint updated successfully.", "success");
+
+    } catch (error) {
+        console.error("Error updating complaint:", error);
+        showMessage("Failed to update complaint.", "error");
+
+    } finally {
+        saveBtn.disabled = false;
+        saveBtn.textContent = "Save";
+    }
+});
+
+        closeEvidenceBtn.addEventListener("click", closeEvidenceModal);
+        evidenceModal.addEventListener("click", (event) => {
+            if (event.target === evidenceModal) {
+                closeEvidenceModal();
+            }
+        });
+
+        function formatFirebaseError(error) {
+            const code = error && error.code ? String(error.code) : "unknown";
+            const messageText = error && error.message ? String(error.message) : "No message";
+            return `Firebase error [${code}]: ${messageText}`;
+        }
+
+        async function init() {
+            if (!stationID) {
+                loading.style.display = "none";
+                empty.style.display = "block";
+                empty.textContent = "Station ID not found. Please login again.";
+                return;
+            }
+
+            try {
+                await Promise.all([loadDepartments(), loadOfficers(), loadComplaints()]);
+                await loadCitizens();
+                applyViewFilter();
+                renderTable();
+            } catch (error) {
+                console.error("Error loading complaint management data:", error);
+                empty.style.display = "block";
+                empty.textContent = `Failed to load complaint data. ${formatFirebaseError(error)}`;
+            } finally {
+                loading.style.display = "none";
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html> 

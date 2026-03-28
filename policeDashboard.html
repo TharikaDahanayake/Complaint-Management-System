@@ -117,6 +117,57 @@
 			gap: 10px;
 		}
 
+		.menu-group-title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			color: #1f2c11;
+			background: #f8faef;
+			border: 1px solid #e2e8d6;
+			border-radius: 10px;
+			padding: 12px 14px;
+			font-family: inherit;
+			font-weight: 600;
+			font-size: 15px;
+			cursor: pointer;
+			transition: all 0.2s ease;
+		}
+
+		.menu-group-title:hover {
+			transform: translateX(-4px);
+			background: #eef4d8;
+			border-color: #d1dcb5;
+		}
+
+		.menu-group-title::after {
+			content: "\25BE";
+			font-size: 12px;
+			color: var(--muted);
+			transition: transform 0.2s ease;
+		}
+
+		.menu-group.open .menu-group-title::after {
+			transform: rotate(180deg);
+		}
+
+		.submenu {
+			list-style: none;
+			margin: 8px 0 0;
+			padding: 0 0 0 14px;
+			display: none;
+			gap: 8px;
+		}
+
+		.menu-group.open .submenu {
+			display: grid;
+		}
+
+		.submenu a {
+			font-size: 14px;
+			padding: 10px 12px;
+		}
+
 		.menu a {
 			display: block;
 			text-decoration: none;
@@ -312,9 +363,15 @@
 				<li><a href="#policeProfile" class="nav-link">Profile</a></li>
 				<li><a href="#officerManagement" class="nav-link">Police Officer Management</a></li>
 				<li><a href="#departmentManagement" class="nav-link">Department Management</a></li>
-				<li><a href="#" class="nav-link">All Complaints</a></li>
-                <li><a href="#" class="nav-link">Assigned Complaints</a></li>
-                <li><a href="#" class="nav-link">Escalated Complaints</a></li>
+				<li class="menu-group" id="complaintMenuGroup">
+					<button type="button" class="menu-group-title" id="complaintMenuToggle" aria-expanded="false">Complaint Management</button>
+					<ul class="submenu">
+						<li><a href="#allComplaints" class="nav-link">All Complaints</a></li>
+						<li><a href="#assignedComplaints" class="nav-link">Assigned Complaints</a></li>
+						<li><a href="#escalatedComplaints" class="nav-link">Escalated Complaints</a></li>
+						<li><a href="#resolvedComplaints" class="nav-link">Resolved Complaints</a></li>
+					</ul>
+				</li>
 				<li><a href="#" class="nav-link" id="logoutBtn">Logout</a></li>
 			</ul>
 		</aside>
@@ -364,6 +421,8 @@
 		const homeContent = document.getElementById("homeContent");
 		const contentFrame = document.getElementById("contentFrame");
 		const logoutBtn = document.getElementById("logoutBtn");
+		const complaintMenuGroup = document.getElementById("complaintMenuGroup");
+		const complaintMenuToggle = document.getElementById("complaintMenuToggle");
 
 		// Navigation handling
 		document.querySelectorAll(".nav-link").forEach(link => {
@@ -394,9 +453,29 @@
 						homeContent.style.display = "none";
 						contentFrame.classList.add("show");
 						contentFrame.src = "departmentManagement.html";
-					}
+					} else if (href === "#allComplaints") {
+						homeContent.style.display = "none";
+						contentFrame.classList.add("show");
+						contentFrame.src = "allComplaints.html?view=all";
+					} else if (href === "#assignedComplaints") {
+						homeContent.style.display = "none";
+						contentFrame.classList.add("show");
+						contentFrame.src = "allComplaints.html?view=assigned";
+					} else if (href === "#escalatedComplaints") {
+						homeContent.style.display = "none";
+						contentFrame.classList.add("show");
+						contentFrame.src = "allComplaints.html?view=escalated";					} else if (href === "#resolvedComplaints") {
+						homeContent.style.display = "none";
+						contentFrame.classList.add("show");
+						contentFrame.src = "allComplaints.html?view=resolved";					}
 				}
 			});
+		});
+
+		complaintMenuToggle.addEventListener("click", () => {
+			const isExpanded = complaintMenuToggle.getAttribute("aria-expanded") === "true";
+			complaintMenuToggle.setAttribute("aria-expanded", String(!isExpanded));
+			complaintMenuGroup.classList.toggle("open", !isExpanded);
 		});
 
 		// Logout handler

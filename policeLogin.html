@@ -7,19 +7,27 @@
 	<title>Police Login</title>
 	<link rel="stylesheet" href="css/style.css">
 	<style>
+		body {
+			background:
+				radial-gradient(circle at 10% 10%, rgba(30, 58, 138, 0.18), transparent 34%),
+				radial-gradient(circle at 90% 80%, rgba(30, 58, 138, 0.12) 0, transparent 35%),
+				linear-gradient(120deg, #eef4ff, #f7faff);
+			min-height: 100vh;
+		}
+
 		.login-card {
 			width: min(92%, 420px);
 			margin: 60px auto;
 			background: #ffffff;
 			padding: 24px;
 			border-radius: 10px;
-			box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+			box-shadow: 0 8px 24px rgba(30, 58, 138, 0.08);
 			text-align: left;
 		}
 
 		.login-card h2 {
 			margin: 0 0 18px;
-			color: black;
+			color: #1E3A8A;
 			text-align: center;
 		}
 
@@ -37,9 +45,15 @@
 		.form-group input {
 			width: 100%;
 			padding: 10px 12px;
-			border: 1px solid #c9c9c9;
+			border: 1px solid #c7d7f5;
 			border-radius: 6px;
 			box-sizing: border-box;
+		}
+
+		.form-group input:focus {
+			outline: none;
+			border-color: #1E3A8A;
+			box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.14);
 		}
 
 		.btn-login {
@@ -47,24 +61,37 @@
 			padding: 11px;
 			border: none;
 			border-radius: 6px;
-			background: #737000;
+			background: #1E3A8A;
 			color: #ffffff;
 			font-size: 16px;
 			cursor: pointer;
+			transition: all 0.2s ease;
 		}
 
 		.btn-login:hover {
-			background: #978942;
+			background: #152d6b;
+			transform: translateY(-1px);
+			box-shadow: 0 4px 12px rgba(30, 58, 138, 0.28);
+		}
+
+		.btn-login:disabled {
+			opacity: 0.6;
+			cursor: not-allowed;
 		}
 
         a {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: white;
-        color: black;
-        text-decoration: none;
-        
-    }
+        	display: inline-block;
+        	padding: 10px 20px;
+        	background-color: #dbe7ff;
+        	color: #1E3A8A;
+        	text-decoration: none;
+        	border-radius: 6px;
+        	transition: all 0.2s ease;
+        }
+
+        a:hover {
+        	background-color: #c7d7f5;
+        }
 	</style>
 </head>
 <body>
@@ -129,7 +156,7 @@
 
 	function showMessage(text, isSuccess) {
 		loginMessage.textContent = text;
-		loginMessage.style.color = isSuccess ? "#0a7f28" : "#c62828";
+		loginMessage.style.color = isSuccess ? "#0f766e" : "#b91c1c";
 	}
 
 	loginForm.addEventListener("submit", async (event) => {

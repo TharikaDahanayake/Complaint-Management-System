@@ -851,7 +851,7 @@
                 const evidenceUrl = getEvidenceUrl(complaint);
                 const departmentName = getComplaintDepartmentName(complaint);
                 const officerValue = getOfficerSelectValue(complaint);
-                const statusValue = getStatusValue(complaint);
+                const statusValue = getEffectiveStatus(complaint);
                 const solutionValue = getValue(complaint, ["comment", "comments", "solution"], "");
                 const commentValue = getValue(complaint, ["comment"], "");
                 const normalizedSolutionValue = solutionValue === "-" ? "" : String(solutionValue);
@@ -998,6 +998,42 @@
             const complaintsQuery = query(complaintsRef, where("stationID", "==", stationID));
             const snapshot = await getDocs(complaintsQuery);
             complaintsCache = snapshot.docs.map((item) => ({ docId: item.id, ...item.data() }));
+
+            const escalatedComplaintsToSync = complaintsCache.filter((complaint) => {
+                const storedStatus = getStatusValue(complaint);
+                const effectiveStatus = getEffectiveStatus(complaint);
+
+                // Do not touch resolved complaints when syncing escalations.
+                if (storedStatus === "Resolved") return false;
+
+                return effectiveStatus === "Escalated" && storedStatus !== "Escalated";
+            });
+
+            if (escalatedComplaintsToSync.length > 0) {
+                const syncResults = await Promise.allSettled(
+                    escalatedComplaintsToSync.map(async (complaint) => {
+                        await updateDoc(doc(db, "complaints", complaint.docId), {
+                            status: "Escalated",
+                            updatedAt: serverTimestamp()
+                        });
+
+                        complaint.status = "Escalated";
+                        complaint.updatedAt = new Date();
+                    })
+                );
+
+                const successCount = syncResults.filter((result) => result.status === "fulfilled").length;
+                const failedResults = syncResults.filter((result) => result.status === "rejected");
+
+                if (failedResults.length > 0) {
+                    console.warn(
+                        `Escalation sync completed with partial failures. Updated: ${successCount}, Failed: ${failedResults.length}`,
+                        failedResults.map((result) => result.reason)
+                    );
+                } else {
+                    console.log(`Escalation sync completed. Updated: ${successCount}`);
+                }
+            }
         }
 
         async function loadCitizens() {
@@ -1093,8 +1129,15 @@
         return;
     }
 
-    const currentStatus = getStatusValue(complaint);
-    if (currentStatus === "Resolved" && selectedStatus !== "Resolved") {
+    const currentStatus = getEffectiveStatus(complaint);
+    const nextStatus = selectedStatus;
+
+    if (currentStatus === "Escalated" && nextStatus === "Pending") {
+        showMessage("Escalated complaints cannot be changed to Pending.", "error");
+        return;
+    }
+
+    if (currentStatus === "Resolved" && nextStatus !== "Resolved") {
         showMessage("This complaint is already resolved and cannot be changed.", "error");
         setTimeout(() => {
             window.location.reload();
@@ -1103,7 +1146,7 @@
         
     }
 
-    if (isAssignedComplaint(complaint) && selectedStatus === "Pending") {
+    if (isAssignedComplaint(complaint) && nextStatus === "Pending") {
         showMessage("This complaint is already assigned and cannot be changed back to Pending.", "error");
         setTimeout(() => {
             window.location.reload();
@@ -1111,7 +1154,7 @@
         return;
     }
 
-    if (viewMode === "all" && selectedOfficerID && selectedStatus === "Pending") {
+    if (viewMode === "all" && selectedOfficerID && nextStatus === "Pending") {
         showMessage("Please change status from Pending when assigning an officer.", "error");
         return;
     }
@@ -1147,14 +1190,14 @@
         console.log("Updating complaint:", docId);
         console.log("Update payload:", {
             officerID: selectedOfficerID || "",
-            status: selectedStatus || "Pending",
+            status: nextStatus || "Pending",
             comment: solutionText,
             updatedAt: "serverTimestamp()"
         });
 
         await updateDoc(doc(db, "complaints", docId), {
             officerID: selectedOfficerID || "",
-            status: selectedStatus || "Pending",
+            status: nextStatus || "Pending",
             comment: solutionText,
             updatedAt: serverTimestamp()
         });
@@ -1162,7 +1205,7 @@
         console.log("Update successful for complaint:", docId);
 
         complaint.officerID = selectedOfficerID || "";
-        complaint.status = selectedStatus || "Pending";
+        complaint.status = nextStatus || "Pending";
         complaint.comment = solutionText;
         complaint.updatedAt = new Date();
 

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Notifications</title>
+	<style>
+		:root {
+			color-scheme: light;
+			--bg-1: #eef4ff;
+			--bg-2: #f7faff;
+			--panel: #ffffff;
+			--panel-2: #eef3fb;
+			--text: #132238;
+			--muted: #5a6b82;
+			--line: #d9e2ef;
+			--accent: #b42318;
+			--accent-soft: #fee4e2;
+			--shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			min-height: 100vh;
+			font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+			color: var(--text);
+			background:
+				radial-gradient(circle at 10% 10%, rgba(30, 58, 138, 0.18) 0, transparent 34%),
+				radial-gradient(circle at 90% 80%, rgba(30, 58, 138, 0.12) 0, transparent 35%),
+				linear-gradient(120deg, var(--bg-1), var(--bg-2));
+		}
+
+		.page {
+			max-width: 1120px;
+			margin: 0 auto;
+			padding: 28px 22px 36px;
+		}
+
+		.hero {
+			display: grid;
+			gap: 14px;
+			padding: 28px;
+			border: 1px solid var(--line);
+			border-radius: 24px;
+			background: linear-gradient(135deg, var(--panel) 0%, #fbfcfe 100%);
+			box-shadow: var(--shadow);
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 28px;
+			letter-spacing: 0.4px;
+			color: var(--brand);
+		}
+
+       
+
+		.hero p,
+		.empty-state p,
+		.notification-card p {
+			margin: 0;
+			color: var(--muted);
+			line-height: 1.6;
+		}
+
+		.list {
+			margin-top: 22px;
+			display: grid;
+			gap: 16px;
+		}
+
+		.notification-card {
+			padding: 20px;
+			border-radius: 20px;
+			border: 1px solid var(--line);
+			background: rgba(255, 255, 255, 0.92);
+			box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+		}
+
+		.notification-top {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 12px;
+			margin-bottom: 10px;
+		}
+
+		.notification-title {
+			margin: 0;
+			font-size: 1.05rem;
+			font-weight: 700;
+		}
+
+		.badge {
+			flex: 0 0 auto;
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			padding: 8px 12px;
+			border-radius: 999px;
+			background: var(--accent-soft);
+			color: var(--accent);
+			font-size: 0.82rem;
+			font-weight: 700;
+		}
+
+		.meta {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-top: 14px;
+			font-size: 0.9rem;
+			color: var(--muted);
+		}
+
+		.meta span {
+			padding: 7px 10px;
+			border-radius: 999px;
+			background: #f7f9fc;
+			border: 1px solid var(--line);
+		}
+
+		.empty-state {
+			margin-top: 22px;
+			padding: 30px;
+			border-radius: 20px;
+			border: 1px dashed var(--line);
+			background: rgba(255, 255, 255, 0.75);
+			text-align: center;
+		}
+
+		.loading {
+			margin-top: 22px;
+			padding: 18px 20px;
+			border-radius: 18px;
+			border: 1px solid var(--line);
+			background: rgba(255, 255, 255, 0.85);
+			color: var(--muted);
+		}
+
+		@media (max-width: 640px) {
+			.page {
+				padding: 18px 14px 24px;
+			}
+
+			.hero,
+			.notification-card,
+			.empty-state {
+				border-radius: 18px;
+			}
+
+			.notification-top {
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="page">
+		<section class="hero">
+			<h1 class="h1">Notifications</h1>
+		
+		</section>
+
+		<section id="loading" class="loading" hidden>Loading complaints...</section>
+		<section id="emptyState" class="empty-state" hidden>
+			<h2 style="margin: 0 0 8px;">No escalations right now</h2>
+			<p>When a complaint becomes escalated, it will appear here with an immediate action notice.</p>
+		</section>
+
+		<section id="notificationList" class="list" aria-live="polite"></section>
+	</main>
+
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+		import { getFirestore, collection, query, where, onSnapshot } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+
+		const firebaseConfig = {
+			apiKey: "AIzaSyCr5xSS_xPQO38JHoZMufQl-HEltwCvqSk",
+			authDomain: "complaint-management-sys-f5d5e.firebaseapp.com",
+			projectId: "complaint-management-sys-f5d5e",
+			storageBucket: "complaint-management-sys-f5d5e.firebasestorage.app",
+			messagingSenderId: "697751596289",
+			appId: "1:697751596289:web:cd218934e92411bd7a7f00"
+		};
+
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+
+		const loading = document.getElementById("loading");
+		const emptyState = document.getElementById("emptyState");
+		const notificationList = document.getElementById("notificationList");
+
+		const stationID = localStorage.getItem("policeStationID");
+
+		function getValue(record, keys, fallback = "") {
+			for (const key of keys) {
+				const value = record[key];
+				if (value !== undefined && value !== null && String(value).trim() !== "") {
+					return value;
+				}
+			}
+			return fallback;
+		}
+
+		function normalizeDate(rawDate) {
+			if (!rawDate) return "-";
+
+			if (typeof rawDate === "string") {
+				return rawDate;
+			}
+
+			if (rawDate && typeof rawDate.toDate === "function") {
+				return rawDate.toDate().toLocaleString();
+			}
+
+			if (rawDate && typeof rawDate.seconds === "number") {
+				return new Date(rawDate.seconds * 1000).toLocaleString();
+			}
+
+			if (typeof rawDate === "number") {
+				return new Date(rawDate).toLocaleString();
+			}
+
+			const parsed = new Date(rawDate).getTime();
+			return Number.isNaN(parsed) ? String(rawDate) : new Date(parsed).toLocaleString();
+		}
+
+		function getComplaintTimestamp(complaint) {
+			const rawDate = getValue(complaint, ["date", "complaintDate", "createdAt"], null);
+
+			if (!rawDate) return 0;
+			if (rawDate && typeof rawDate.toDate === "function") return rawDate.toDate().getTime();
+			if (rawDate && typeof rawDate.seconds === "number") return rawDate.seconds * 1000;
+			if (typeof rawDate === "number") return rawDate;
+
+			const parsed = new Date(rawDate).getTime();
+			return Number.isNaN(parsed) ? 0 : parsed;
+		}
+
+		function getComplaintUpdatedTimestamp(complaint) {
+			const rawDate = getValue(complaint, ["updatedAt", "lastUpdated"], null);
+
+			if (!rawDate) return getComplaintTimestamp(complaint);
+			if (rawDate && typeof rawDate.toDate === "function") return rawDate.toDate().getTime();
+			if (rawDate && typeof rawDate.seconds === "number") return rawDate.seconds * 1000;
+			if (typeof rawDate === "number") return rawDate;
+
+			const parsed = new Date(rawDate).getTime();
+			return Number.isNaN(parsed) ? getComplaintTimestamp(complaint) : parsed;
+		}
+
+		function isComplaintOlderThan30Days(complaint) {
+			const updatedTime = getComplaintUpdatedTimestamp(complaint);
+			const ageInDays = (Date.now() - updatedTime) / (1000 * 60 * 60 * 24);
+			return ageInDays > 30;
+		}
+
+		function getEffectiveStatus(complaint) {
+			const status = getValue(complaint, ["status"], "Pending");
+			if (status === "Resolved") return "Resolved";
+			if (status === "Escalated") return "Escalated";
+			if (isComplaintOlderThan30Days(complaint)) return "Escalated";
+			return status;
+		}
+
+		function getFeedbackContainer(complaint) {
+			const feedback = complaint.feedback;
+			if (feedback && typeof feedback === "object" && !Array.isArray(feedback)) {
+				return feedback;
+			}
+
+			return complaint;
+		}
+
+		function getFeedbackText(complaint) {
+			const feedbackSource = getFeedbackContainer(complaint);
+			const feedbackText = getValue(feedbackSource, [
+				"feedback",
+				"feedbackText",
+				"feedbackMessage",
+				"userFeedback",
+				"userFeedbackText",
+				"customerFeedback",
+				"citizenFeedback",
+				"userComment",
+				"citizenComment",
+				"review",
+				"reviewComment",
+				"reviewText",
+				"feedbackNote",
+				"feedbackNotes"
+			], "");
+
+			return String(feedbackText).trim();
+		}
+
+		function getFeedbackTimestamp(complaint) {
+			const feedbackSource = getFeedbackContainer(complaint);
+			const rawDate = getValue(feedbackSource, [
+				"feedbackAt",
+				"feedbackDate",
+				"userFeedbackAt",
+				"userFeedbackDate",
+				"reviewAt",
+				"reviewDate",
+				"createdAt",
+				"updatedAt",
+				"lastUpdated"
+			], null);
+
+			if (!rawDate) return getComplaintUpdatedTimestamp(complaint);
+			if (rawDate && typeof rawDate.toDate === "function") return rawDate.toDate().getTime();
+			if (rawDate && typeof rawDate.seconds === "number") return rawDate.seconds * 1000;
+			if (typeof rawDate === "number") return rawDate;
+
+			const parsed = new Date(rawDate).getTime();
+			return Number.isNaN(parsed) ? getComplaintUpdatedTimestamp(complaint) : parsed;
+		}
+
+		function getFeedbackMeta(complaint) {
+			const feedbackText = getFeedbackText(complaint);
+			if (!feedbackText) return null;
+			const complaintId = getComplaintIdentifier(complaint);
+
+			return {
+				type: "feedback",
+				timestamp: getFeedbackTimestamp(complaint),
+				complaintId,
+				title: getValue(complaint, ["complaintTitle", "title"], "Complaint feedback"),
+				department: getValue(complaint, ["departmentName", "department", "complaintDepartment"], "-"),
+				message: `Feedback has been received for Complaint ID ${complaintId}. Review the user's comments.`
+			};
+		}
+
+		function getEscalationMeta(complaint) {
+			if (getEffectiveStatus(complaint) !== "Escalated") return null;
+
+			return {
+				type: "escalated",
+				timestamp: getComplaintUpdatedTimestamp(complaint),
+				complaintId: getComplaintIdentifier(complaint),
+				title: getValue(complaint, ["complaintTitle", "title"], "Complaint escalation"),
+				department: getValue(complaint, ["departmentName", "department", "complaintDepartment"], "-"),
+				message: "Complaint has not been resolved within the expected timeframe. Please review and take immediate action."
+			};
+		}
+
+		function buildNotificationItems(complaints) {
+			return complaints.flatMap((complaint) => {
+				const items = [];
+				const escalation = getEscalationMeta(complaint);
+				const feedback = getFeedbackMeta(complaint);
+
+				if (feedback) items.push(feedback);
+				if (escalation) items.push(escalation);
+
+				return items;
+			}).sort((a, b) => b.timestamp - a.timestamp);
+		}
+
+		function escapeHTML(value) {
+			return String(value)
+				.replace(/&/g, "&amp;")
+				.replace(/</g, "&lt;")
+				.replace(/>/g, "&gt;")
+				.replace(/\"/g, "&quot;")
+				.replace(/'/g, "&#39;");
+		}
+
+		function getComplaintIdentifier(complaint) {
+			return getValue(complaint, ["trackID", "trackId", "complaintID", "complaintId", "id"], complaint.docId || "-");
+		}
+
+		function renderNotifications(items) {
+			notificationList.innerHTML = "";
+
+			if (!items.length) {
+				emptyState.hidden = false;
+				return;
+			}
+
+			emptyState.hidden = true;
+			notificationList.innerHTML = items.map((item) => {
+				const complaintId = escapeHTML(item.complaintId);
+				const title = escapeHTML(item.title);
+				const department = escapeHTML(item.department);
+				const badgeLabel = item.type === "feedback" ? "Feedback" : "Escalated";
+
+				return `
+					<article class="notification-card">
+						<div class="notification-top">
+							<div>
+								<p class="notification-title">${title}</p>
+								<p>${escapeHTML(item.message)}</p>
+							</div>
+							<span class="badge">${badgeLabel}</span>
+						</div>
+						<div class="meta">
+							<span>Complaint ID: ${complaintId}</span>
+							<span>Department: ${department}</span>
+						</div>
+					</article>
+				`;
+			}).join("");
+		}
+
+		async function loadNotifications() {
+			if (!stationID) {
+				loading.hidden = true;
+				emptyState.hidden = false;
+				emptyState.innerHTML = "<h2 style='margin: 0 0 8px;'>Station ID not found</h2><p>Please sign in again to view notifications.</p>";
+				return;
+			}
+
+			loading.hidden = false;
+
+			try {
+				const complaintsRef = collection(db, "complaints");
+				const complaintsQuery = query(complaintsRef, where("stationID", "==", stationID));
+				onSnapshot(complaintsQuery, (snapshot) => {
+					const complaints = snapshot.docs.map((item) => ({ docId: item.id, ...item.data() }));
+					const notifications = buildNotificationItems(complaints);
+
+					renderNotifications(notifications);
+					loading.hidden = true;
+				}, (error) => {
+					console.error("Error loading notifications:", error);
+					emptyState.hidden = false;
+					emptyState.innerHTML = "<h2 style='margin: 0 0 8px;'>Could not load notifications</h2><p>Check the Firestore connection and try again.</p>";
+					loading.hidden = true;
+				});
+			} catch (error) {
+				console.error("Error loading notifications:", error);
+				emptyState.hidden = false;
+				emptyState.innerHTML = "<h2 style='margin: 0 0 8px;'>Could not load notifications</h2><p>Check the Firestore connection and try again.</p>";
+			} finally {
+				loading.hidden = true;
+			}
+		}
+
+		loadNotifications();
+	</script>
+</body>
+</html>

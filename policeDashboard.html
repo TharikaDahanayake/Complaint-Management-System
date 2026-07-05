@@ -365,6 +365,7 @@
 				<li><a href="#policeProfile" class="nav-link">Profile</a></li>
 				<li><a href="#officerManagement" class="nav-link">Police Officer Management</a></li>
 				<li><a href="#departmentManagement" class="nav-link">Department Management</a></li>
+				<li><a href="#notifications" class="nav-link">Notifications</a></li>
 				<li class="menu-group" id="complaintMenuGroup">
 					<button type="button" class="menu-group-title" id="complaintMenuToggle" aria-expanded="false">Complaint Management</button>
 					<ul class="submenu">
@@ -467,6 +468,10 @@
 						homeContent.style.display = "none";
 						contentFrame.classList.add("show");
 						contentFrame.src = "departmentManagement.html";
+					} else if (href === "#notifications") {
+						homeContent.style.display = "none";
+						contentFrame.classList.add("show");
+						contentFrame.src = "notifications.html";
 					} else if (href === "#allComplaints") {
 						homeContent.style.display = "none";
 						contentFrame.classList.add("show");

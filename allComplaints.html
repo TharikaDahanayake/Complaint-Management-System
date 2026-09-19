@@ -364,6 +364,7 @@
                         <th>Police Officer Assigned</th>
                         <th>Status</th>
                         <th id="solutionHeader">Solution</th>
+                        <th id="feedbackHeader" style="display:none;">Citizen Feedback</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -414,6 +415,7 @@
 
         const complaintsBody = document.getElementById("complaintsBody");
         const solutionHeader = document.getElementById("solutionHeader");
+        const feedbackHeader = document.getElementById("feedbackHeader");
         const loading = document.getElementById("loading");
         const empty = document.getElementById("empty");
         const tableWrap = document.getElementById("tableWrap");
@@ -452,10 +454,8 @@
         }
 
         const viewMode = resolveViewMode();
-
-        if (viewMode === "resolved" && solutionHeader) {
-            solutionHeader.textContent = "Comment";
-        }
+        // TEMP DEBUG — remove once confirmed working
+        console.log("VIEW MODE:", viewMode);
 
         searchBtn.addEventListener("click", performTrackIDSearch);
         clearBtn.addEventListener("click", clearTrackIDSearch);
@@ -512,9 +512,7 @@
 
         function getDepartmentName(complaint) {
             const complaintDepartmentID = getValue(complaint, ["departmentID", "departmentId"], "");
-            console.log(`getDepartmentName: Looking for department ID: "${complaintDepartmentID}"`);
             if (!complaintDepartmentID) {
-                console.warn("Complaint has no departmentID!");
                 return "-";
             }
 
@@ -525,12 +523,9 @@
             });
 
             if (!found) {
-                console.warn(`Department not found for ID: "${complaintDepartmentID}" in departments cache (size: ${departmentsCache.length})`);
                 return "-";
             }
-            const deptName = getValue(found, ["departmentName", "name"], "-");
-            console.log(`getDepartmentName: Found department name: "${deptName}"`);
-            return deptName;
+            return getValue(found, ["departmentName", "name"], "-");
         }
 
         function normalizeDepartmentName(value) {
@@ -605,6 +600,37 @@
 
             const parsed = new Date(rawDate).getTime();
             return Number.isNaN(parsed) ? getComplaintTimestamp(complaint) : parsed;
+        }
+
+        function getFeedbackContainer(complaint) {
+            const feedback = complaint.feedback;
+            if (feedback && typeof feedback === "object" && !Array.isArray(feedback)) {
+                return feedback;
+            }
+
+            return complaint;
+        }
+
+        function getResolvedComplaintFeedback(complaint) {
+            const feedbackSource = getFeedbackContainer(complaint);
+            const feedbackText = getValue(feedbackSource, [
+                "feedback",
+                "feedbackText",
+                "feedbackMessage",
+                "userFeedback",
+                "userFeedbackText",
+                "customerFeedback",
+                "citizenFeedback",
+                "userComment",
+                "citizenComment",
+                "review",
+                "reviewComment",
+                "reviewText",
+                "feedbackNote",
+                "feedbackNotes"
+            ], "");
+
+            return String(feedbackText).trim();
         }
 
         function isComplaintOlderThan30Days(complaint) {
@@ -713,13 +739,10 @@
             });
 
             if (!citizen) {
-                console.warn(`Citizen not found for citizenID: ${citizenRef}. citizensCache size: ${citizensCache.length}`);
                 return "-";
             }
 
-            const contact = getValue(citizen, ["citizenContact"], "-");
-            console.log(`Found citizen ${citizenRef}: citizenContact=${contact}`);
-            return contact;
+            return getValue(citizen, ["citizenContact"], "-");
         }
 
         function getEvidenceUrl(complaint) {
@@ -749,7 +772,6 @@
             message.textContent = text;
             message.className = `message show ${type}`;
 
-            // Auto hide after 3 seconds
             setTimeout(() => {
                 message.classList.remove("show");
             }, 3000);
@@ -758,6 +780,7 @@
         function closeMessage() {
             message.classList.remove("show");
         }
+
         function buildOfficerOptions(selectedValue, complaintDepartment) {
             const options = ['<option value="">Not Assigned</option>'];
             const normalizedComplaintDept = normalizeDepartmentName(complaintDepartment);
@@ -766,12 +789,11 @@
                 const officerName = getValue(officer, ["officerName", "name"], "Officer");
                 const officerDepartment = getValue(officer, ["departmentName", "department"], "");
                 const normalizedOfficerDept = normalizeDepartmentName(officerDepartment);
-                
+
                 if (!officerID) return;
-                
-                // Only show officers from the same department as the complaint
+
                 if (normalizedComplaintDept && normalizedOfficerDept !== normalizedComplaintDept) return;
-                
+
                 const selected = officerID === selectedValue ? "selected" : "";
                 options.push(`<option value="${escapeHTML(officerID)}" data-officer-dept="${escapeHTML(officerDepartment)}" ${selected}>${escapeHTML(officerName)} (${escapeHTML(officerID)})</option>`);
             });
@@ -787,16 +809,12 @@
                 .join("");
         }
 
-
         function getOfficerDepartment(officerID) {
             const officer = officersCache.find((o) => getValue(o, ["officerID", "officerId"], "") === officerID);
             if (!officer) {
-                console.warn(`Officer not found for ID: ${officerID}`);
                 return null;
             }
-            const deptName = getValue(officer, ["departmentName", "department"], "");
-            console.log(`getOfficerDepartment: Officer ${officerID} has department: "${deptName}"`);
-            return deptName;
+            return getValue(officer, ["departmentName", "department"], "");
         }
 
         function getOfficerById(officerID) {
@@ -805,28 +823,19 @@
 
         function validateOfficerAssignment(complaint, selectedOfficerID) {
             if (!selectedOfficerID) {
-                console.log("No officer selected - validation passes");
-                return true; // Valid: no officer assigned
+                return true;
             }
-            
+
             const complaintDeptName = getComplaintDepartmentName(complaint);
             const officerDeptName = getOfficerDepartment(selectedOfficerID);
             const normalizedComplaintDept = normalizeDepartmentName(complaintDeptName);
             const normalizedOfficerDept = normalizeDepartmentName(officerDeptName);
-            
-            console.log(`validateOfficerAssignment:
-                - Complaint Department: "${complaintDeptName}"
-                - Officer Department: "${officerDeptName}"
-                - Match: ${normalizedComplaintDept === normalizedOfficerDept}`);
-            
+
             if (!normalizedComplaintDept || !normalizedOfficerDept) {
-                console.warn(`Validation FAILED - Missing department info. Complaint: "${complaintDeptName}", Officer: "${officerDeptName}"`);
-                return false; // Invalid: department info missing
+                return false;
             }
-            
-            const isMatch = normalizedComplaintDept === normalizedOfficerDept;
-            console.log(`Validation ${isMatch ? "PASSED" : "FAILED"}`);
-            return isMatch; // Valid only if departments match
+
+            return normalizedComplaintDept === normalizedOfficerDept;
         }
 
         function renderTable() {
@@ -853,10 +862,14 @@
                 const officerValue = getOfficerSelectValue(complaint);
                 const statusValue = getEffectiveStatus(complaint);
                 const solutionValue = getValue(complaint, ["comment", "comments", "solution"], "");
-                const commentValue = getValue(complaint, ["comment"], "");
+                const feedbackOnlyValue = getResolvedComplaintFeedback(complaint);
                 const normalizedSolutionValue = solutionValue === "-" ? "" : String(solutionValue);
-                const normalizedCommentValue = commentValue === "-" ? "" : String(commentValue);
                 const officerOptions = buildOfficerOptions(officerValue, departmentName);
+
+                // TEMP DEBUG — remove once confirmed working
+                if (viewMode === "resolved") {
+                    console.log("Complaint", trackID, "raw feedback field:", complaint.feedback, "| resolved value:", feedbackOnlyValue);
+                }
 
                 return `
                     <tr data-id="${complaint.docId}">
@@ -888,7 +901,8 @@
                             </select>
                         </td>
                         ${viewMode === "resolved"
-                            ? `<td class="cell-long"><p>${escapeHTML(normalizedCommentValue || "-")}</p></td>`
+                            ? `<td class="cell-long"><p>${escapeHTML(normalizedSolutionValue || "-")}</p></td>
+                               <td class="cell-long"><p>${escapeHTML(feedbackOnlyValue || "-")}</p></td>`
                             : viewMode === "all"
                                 ? ""
                                 : `<td><textarea class="solution-input" placeholder="Add solution...">${escapeHTML(normalizedSolutionValue)}</textarea></td>`}
@@ -910,6 +924,7 @@
                     solutionHeader.style.display = "";
                     solutionHeader.textContent = "Solution";
                 }
+                if (feedbackHeader) feedbackHeader.style.display = "none";
                 return;
             }
 
@@ -922,6 +937,7 @@
                     solutionHeader.style.display = "";
                     solutionHeader.textContent = "Solution";
                 }
+                if (feedbackHeader) feedbackHeader.style.display = "none";
                 return;
             }
 
@@ -932,8 +948,9 @@
                 document.querySelector(".page-head p").textContent = "Resolved complaints for the logged-in police station.";
                 if (solutionHeader) {
                     solutionHeader.style.display = "";
-                    solutionHeader.textContent = "Comment";
+                    solutionHeader.textContent = "Solution";
                 }
+                if (feedbackHeader) feedbackHeader.style.display = "";
                 return;
             }
 
@@ -942,6 +959,7 @@
                 solutionHeader.style.display = "none";
                 solutionHeader.textContent = "Solution";
             }
+            if (feedbackHeader) feedbackHeader.style.display = "none";
         }
 
         function openEvidenceModal(url) {
@@ -969,16 +987,11 @@
             evidencePreview.innerHTML = "";
         }
 
-
         async function loadDepartments() {
             const departmentsRef = collection(db, "departments");
             const departmentQuery = query(departmentsRef, where("stationID", "==", stationID));
             const snapshot = await getDocs(departmentQuery);
             departmentsCache = snapshot.docs.map((item) => ({ docId: item.id, ...item.data() }));
-            console.log("=== DEPARTMENTS CACHE ===");
-            departmentsCache.forEach((dept) => {
-                console.log(`Department: "${getValue(dept, ["departmentName", "name"], "?")}" (ID: ${getValue(dept, ["departmentID", "departmentId"], "?")})`);
-            });
         }
 
         async function loadOfficers() {
@@ -990,9 +1003,8 @@
                 const officerStation = getValue(officer, ["stationID", "stationId"], "");
                 return !officerStation || officerStation === stationID;
             });
-
-            console.log(`Loaded ${officersCache.length} officers from 'officers' collection`);
         }
+
         async function loadComplaints() {
             const complaintsRef = collection(db, "complaints");
             const complaintsQuery = query(complaintsRef, where("stationID", "==", stationID));
@@ -1003,7 +1015,6 @@
                 const storedStatus = getStatusValue(complaint);
                 const effectiveStatus = getEffectiveStatus(complaint);
 
-                // Do not touch resolved complaints when syncing escalations.
                 if (storedStatus === "Resolved") return false;
 
                 return effectiveStatus === "Escalated" && storedStatus !== "Escalated";
@@ -1022,16 +1033,9 @@
                     })
                 );
 
-                const successCount = syncResults.filter((result) => result.status === "fulfilled").length;
                 const failedResults = syncResults.filter((result) => result.status === "rejected");
-
                 if (failedResults.length > 0) {
-                    console.warn(
-                        `Escalation sync completed with partial failures. Updated: ${successCount}, Failed: ${failedResults.length}`,
-                        failedResults.map((result) => result.reason)
-                    );
-                } else {
-                    console.log(`Escalation sync completed. Updated: ${successCount}`);
+                    console.warn("Escalation sync completed with partial failures.", failedResults.map((result) => result.reason));
                 }
             }
         }
@@ -1042,8 +1046,6 @@
                     .map((complaint) => getValue(complaint, ["citizenID"], ""))
                     .filter((id) => id)
             ));
-
-            console.log(`Looking for ${citizenIDs.length} unique citizens:`, citizenIDs);
 
             if (citizenIDs.length === 0) {
                 citizensCache = [];
@@ -1057,17 +1059,12 @@
                     const citizensRef = collection(db, collectionName);
                     const snapshot = await getDocs(citizensRef);
                     const allCitizens = snapshot.docs.map((item) => ({ docId: item.id, ...item.data() }));
-                    console.log(`Loaded ${allCitizens.length} total citizens from '${collectionName}'`);
-                    
+
                     citizensCache = allCitizens.filter((citizen) => {
                         const citizenUid = getValue(citizen, ["citizenUid"], "");
                         return citizenIDs.includes(citizenUid);
                     });
-                    
-                    console.log(`Filtered to ${citizensCache.length} matching citizens`);
-                    citizensCache.forEach((c) => {
-                        console.log(`Cached citizen: uid=${getValue(c, ["citizenUid"], "?")} contact=${getValue(c, ["citizenContact"], "?")}`);
-                    });
+
                     return;
                 } catch (error) {
                     console.warn(`Failed loading ${collectionName} collection:`, error);
@@ -1078,157 +1075,131 @@
         }
 
         complaintsBody.addEventListener("click", async (event) => {
-    const target = event.target;
-    if (!(target instanceof HTMLElement)) return;
+            const target = event.target;
+            if (!(target instanceof HTMLElement)) return;
 
-    // Evidence click
-    const evidenceLink = target.closest(".evidence-link");
-    if (evidenceLink instanceof HTMLAnchorElement) {
-        event.preventDefault();
-        const evidenceUrl = evidenceLink.dataset.evidenceUrl || "";
-        if (evidenceUrl) openEvidenceModal(evidenceUrl);
-        return;
-    }
+            const evidenceLink = target.closest(".evidence-link");
+            if (evidenceLink instanceof HTMLAnchorElement) {
+                event.preventDefault();
+                const evidenceUrl = evidenceLink.dataset.evidenceUrl || "";
+                if (evidenceUrl) openEvidenceModal(evidenceUrl);
+                return;
+            }
 
-    // Save button click
-    const saveBtn = target.closest(".save-row-btn");
-    if (!(saveBtn instanceof HTMLButtonElement)) return;
+            const saveBtn = target.closest(".save-row-btn");
+            if (!(saveBtn instanceof HTMLButtonElement)) return;
 
-    const row = saveBtn.closest("tr");
-    if (!row) return;
+            const row = saveBtn.closest("tr");
+            if (!row) return;
 
-    const docId = row.dataset.id;
-    if (!docId) return;
+            const docId = row.dataset.id;
+            if (!docId) return;
 
-    const officerSelect = row.querySelector(".officer-select");
-    const statusSelect = row.querySelector(".status-select");
-    const solutionInput = row.querySelector(".solution-input");
+            const officerSelect = row.querySelector(".officer-select");
+            const statusSelect = row.querySelector(".status-select");
+            const solutionInput = row.querySelector(".solution-input");
 
-    if (!(officerSelect instanceof HTMLSelectElement) || !(statusSelect instanceof HTMLSelectElement)) {
-        return;
-    }
+            if (!(officerSelect instanceof HTMLSelectElement) || !(statusSelect instanceof HTMLSelectElement)) {
+                return;
+            }
 
-    const selectedOfficerID = officerSelect.value;
-    const selectedStatus = statusSelect.value;
-    const complaint = complaintsCache.find((item) => item.docId === docId);
-    const solutionText = solutionInput instanceof HTMLTextAreaElement
-        ? solutionInput.value.trim()
-        : String(getValue(complaint || {}, ["comment", "comments", "solution"], "") === "-" ? "" : getValue(complaint || {}, ["comment", "comments", "solution"], "")).trim();
+            const selectedOfficerID = officerSelect.value;
+            const selectedStatus = statusSelect.value;
+            const complaint = complaintsCache.find((item) => item.docId === docId);
+            const solutionText = solutionInput instanceof HTMLTextAreaElement
+                ? solutionInput.value.trim()
+                : String(getValue(complaint || {}, ["comment", "comments", "solution"], "") === "-" ? "" : getValue(complaint || {}, ["comment", "comments", "solution"], "")).trim();
 
-    console.log("=== SAVE BUTTON CLICKED ===");
-    console.log("Officer:", selectedOfficerID);
-    console.log("Complaint:", docId);
+            if (!complaint) {
+                showMessage("Complaint not found.", "error");
+                return;
+            }
 
-    if (!complaint) {
-        showMessage("Complaint not found.", "error");
-        return;
-    }
+            if (!selectedOfficerID || !selectedStatus) {
+                showMessage("Please select both officer and status before saving.", "error");
+                return;
+            }
 
-    if (!selectedOfficerID || !selectedStatus) {
-        showMessage("Please select both officer and status before saving.", "error");
-        return;
-    }
+            const currentStatus = getEffectiveStatus(complaint);
+            const nextStatus = selectedStatus;
 
-    const currentStatus = getEffectiveStatus(complaint);
-    const nextStatus = selectedStatus;
+            if (currentStatus === "Escalated" && nextStatus === "Pending") {
+                showMessage("Escalated complaints cannot be changed to Pending.", "error");
+                return;
+            }
 
-    if (currentStatus === "Escalated" && nextStatus === "Pending") {
-        showMessage("Escalated complaints cannot be changed to Pending.", "error");
-        return;
-    }
+            if (currentStatus === "Resolved" && nextStatus !== "Resolved") {
+                showMessage("This complaint is already resolved and cannot be changed.", "error");
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2200);
+                return;
+            }
 
-    if (currentStatus === "Resolved" && nextStatus !== "Resolved") {
-        showMessage("This complaint is already resolved and cannot be changed.", "error");
-        setTimeout(() => {
-            window.location.reload();
-        }, 2200);
-        return;
-        
-    }
+            if (isAssignedComplaint(complaint) && nextStatus === "Pending") {
+                showMessage("This complaint is already assigned and cannot be changed back to Pending.", "error");
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2200);
+                return;
+            }
 
-    if (isAssignedComplaint(complaint) && nextStatus === "Pending") {
-        showMessage("This complaint is already assigned and cannot be changed back to Pending.", "error");
-        setTimeout(() => {
-            window.location.reload();
-        }, 2200);
-        return;
-    }
+            if (viewMode === "all" && selectedOfficerID && nextStatus === "Pending") {
+                showMessage("Please change status from Pending when assigning an officer.", "error");
+                return;
+            }
 
-    if (viewMode === "all" && selectedOfficerID && nextStatus === "Pending") {
-        showMessage("Please change status from Pending when assigning an officer.", "error");
-        return;
-    }
+            if (selectedOfficerID) {
+                const complaintDeptId = getComplaintDepartmentId(complaint);
+                const officerObj = getOfficerById(selectedOfficerID);
+                const officerDeptId = officerObj ? officerObj.departmentID : "";
 
-    // ✅ CLEAN VALIDATION
-    if (selectedOfficerID) {
-        const complaintDeptId = getComplaintDepartmentId(complaint);
+                if (!complaintDeptId || !officerDeptId) {
+                    showMessage("Missing department information.", "error");
+                    return;
+                }
 
-        const officerObj = getOfficerById(selectedOfficerID);
-        const officerDeptId = officerObj ? officerObj.departmentID : "";
+                if (complaintDeptId !== officerDeptId) {
+                    showMessage("Selected officer does not belong to the correct department.", "error");
+                    return;
+                }
+            }
 
-        console.log("Complaint Dept:", complaintDeptId);
-        console.log("Officer Dept:", officerDeptId);
+            saveBtn.disabled = true;
+            saveBtn.textContent = "Saving...";
 
-        if (!complaintDeptId || !officerDeptId) {
-            showMessage("Missing department information.", "error");
-            return;
-        }
+            try {
+                await updateDoc(doc(db, "complaints", docId), {
+                    officerID: selectedOfficerID || "",
+                    status: nextStatus || "Pending",
+                    comment: solutionText,
+                    updatedAt: serverTimestamp()
+                });
 
-        if (complaintDeptId !== officerDeptId) {
-            showMessage("Selected officer does not belong to the correct department.", "error");
-            return;
-        }
-    }
+                complaint.officerID = selectedOfficerID || "";
+                complaint.status = nextStatus || "Pending";
+                complaint.comment = solutionText;
+                complaint.updatedAt = new Date();
 
-    // ✅ SAVE
-    console.log("Validation PASSED");
+                showMessage("Complaint updated successfully.", "success");
 
-    saveBtn.disabled = true;
-    saveBtn.textContent = "Saving...";
+                applyViewFilter();
+                sortVisibleComplaints();
+                renderTable();
 
-    try {
-        console.log("Updating complaint:", docId);
-        console.log("Update payload:", {
-            officerID: selectedOfficerID || "",
-            status: nextStatus || "Pending",
-            comment: solutionText,
-            updatedAt: "serverTimestamp()"
+                if (window.parent && window.parent !== window) {
+                    window.parent.postMessage({ type: "complaint-updated" }, "*");
+                }
+
+            } catch (error) {
+                console.error("Error updating complaint:", error);
+                showMessage("Failed to update complaint.", "error");
+
+            } finally {
+                saveBtn.disabled = false;
+                saveBtn.textContent = "Save";
+            }
         });
-
-        await updateDoc(doc(db, "complaints", docId), {
-            officerID: selectedOfficerID || "",
-            status: nextStatus || "Pending",
-            comment: solutionText,
-            updatedAt: serverTimestamp()
-        });
-
-        console.log("Update successful for complaint:", docId);
-
-        complaint.officerID = selectedOfficerID || "";
-        complaint.status = nextStatus || "Pending";
-        complaint.comment = solutionText;
-        complaint.updatedAt = new Date();
-
-        showMessage("Complaint updated successfully.", "success");
-
-        applyViewFilter();
-        sortVisibleComplaints();
-        renderTable();
-
-        if (window.parent && window.parent !== window) {
-            window.parent.postMessage({ type: "complaint-updated" }, "*");
-        }
-
-    } catch (error) {
-        console.error("Error updating complaint:", error);
-        console.error("Error code:", error.code);
-        showMessage("Failed to update complaint.", "error");
-
-    } finally {
-        saveBtn.disabled = false;
-        saveBtn.textContent = "Save";
-    }
-});
 
         closeEvidenceBtn.addEventListener("click", closeEvidenceModal);
         evidenceModal.addEventListener("click", (event) => {
@@ -1269,4 +1240,4 @@
         init();
     </script>
 </body>
-</html> 
+</html>

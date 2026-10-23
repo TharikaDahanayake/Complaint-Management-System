@@ -467,6 +467,8 @@
         });
 
         const stationID = localStorage.getItem("policeStationID");
+        const userRole = String(localStorage.getItem("policeUserRole") || "").toUpperCase();
+        const isOIC = userRole === "OIC";
         let complaintsCache = [];
         let visibleComplaints = [];
         let officersCache = [];
@@ -891,12 +893,12 @@
                         </td>
                         <td>${escapeHTML(departmentName)}</td>
                         <td>
-                            <select class="select officer-select" data-complaint-dept="${escapeHTML(departmentName)}" data-complaint-dept-id="${escapeHTML(getComplaintDepartmentId(complaint))}">
+                            <select class="select officer-select" data-complaint-dept="${escapeHTML(departmentName)}" data-complaint-dept-id="${escapeHTML(getComplaintDepartmentId(complaint))}" ${isOIC ? "disabled" : ""}>
                                 ${officerOptions}
                             </select>
                         </td>
                         <td>
-                            <select class="select status-select">
+                            <select class="select status-select" ${isOIC ? "disabled" : ""}>
                                 ${buildStatusOptions(statusValue)}
                             </select>
                         </td>
@@ -907,7 +909,7 @@
                                 ? ""
                                 : `<td><textarea class="solution-input" placeholder="Add solution...">${escapeHTML(normalizedSolutionValue)}</textarea></td>`}
                         <td>
-                            <button type="button" class="btn btn-save save-row-btn">Save</button>
+                            ${isOIC ? "<span>View only</span>" : '<button type="button" class="btn btn-save save-row-btn">Save</button>'}
                         </td>
                     </tr>
                 `;
@@ -1020,7 +1022,7 @@
                 return effectiveStatus === "Escalated" && storedStatus !== "Escalated";
             });
 
-            if (escalatedComplaintsToSync.length > 0) {
+            if (!isOIC && escalatedComplaintsToSync.length > 0) {
                 const syncResults = await Promise.allSettled(
                     escalatedComplaintsToSync.map(async (complaint) => {
                         await updateDoc(doc(db, "complaints", complaint.docId), {
@@ -1088,6 +1090,7 @@
 
             const saveBtn = target.closest(".save-row-btn");
             if (!(saveBtn instanceof HTMLButtonElement)) return;
+			if (isOIC) return;
 
             const row = saveBtn.closest("tr");
             if (!row) return;

@@ -103,8 +103,8 @@
 			
 
 			<div class="form-group">
-				<label for="stationID">Station ID</label>
-				<input type="text" id="stationID" name="stationID" required>
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" autocomplete="username" required>
 			</div>
 
 			<div class="form-group">
@@ -132,6 +132,7 @@
 		limit,
 		getDocs
 	} from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+	import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -148,9 +149,10 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 	const db = getFirestore(app);
+	const auth = getAuth(app);
 
 	const loginForm = document.getElementById("loginForm");
-	const stationIdInput = document.getElementById("stationID");
+	const usernameInput = document.getElementById("username");
 	const passwordInput = document.getElementById("password");
 	const loginMessage = document.getElementById("loginMessage");
 
@@ -162,8 +164,8 @@
 	loginForm.addEventListener("submit", async (event) => {
 		event.preventDefault();
 
-		const stationID = stationIdInput.value.trim();
-		const stationPassword = passwordInput.value;
+		const username = usernameInput.value.trim().toUpperCase();
+		const password = passwordInput.value;
 		const loginButton = loginForm.querySelector("button[type='submit']");
 
 		showMessage("", false);
@@ -171,41 +173,65 @@
 		loginButton.textContent = "Checking...";
 
 		try {
-			const policeStationsRef = collection(db, "police_stations");
-			const stationQuery = query(
-				policeStationsRef,
-				where("stationID", "==", stationID),
+			const usersRef = collection(db, "users");
+			const userQuery = query(
+				usersRef,
+				where("username", "==", username),
 				limit(1)
 			);
-			const snapshot = await getDocs(stationQuery);
+			const snapshot = await getDocs(userQuery);
 
 			if (snapshot.empty) {
-				showMessage("Invalid Station ID or Password.", false);
+				showMessage("Invalid username or password.", false);
 				return;
 			}
 
-			const stationRecord = snapshot.docs[0].data();
-			const storedPassword =
-				stationRecord.stationPassword ?? stationRecord.statioPassword ?? stationRecord.password;
-
-			if (storedPassword !== stationPassword) {
-				showMessage("Invalid Station ID or Password.", false);
+			if (snapshot.size > 1) {
+				showMessage("Duplicate username records found. Contact the system administrator.", false);
 				return;
 			}
+
+			const userRecord = snapshot.docs[0].data();
+			const role = String(userRecord.role || "").toUpperCase();
+			const stationID = String(userRecord.stationID || "").trim();
+			const authEmail = String(userRecord.authEmail || "").trim().toLowerCase();
+
+			if (userRecord.active !== true || !authEmail || !stationID || !["ADMIN", "OIC"].includes(role)) {
+				showMessage("This account is not configured for access.", false);
+				return;
+			}
+
+			await signInWithEmailAndPassword(auth, authEmail, password);
+
+			const policeStationsRef = collection(db, "police_stations");
+			const stationQuery = query(policeStationsRef, where("stationID", "==", stationID), limit(1));
+			const stationSnapshot = await getDocs(stationQuery);
+			const stationRecord = stationSnapshot.empty ? {} : stationSnapshot.docs[0].data();
 
 			localStorage.setItem("policeStationID", stationID);
+			localStorage.setItem("stationName", stationRecord.stationName ?? "");
 			localStorage.setItem("policeStationName", stationRecord.stationName ?? "");
+			localStorage.setItem("policeUserRole", role);
+			localStorage.setItem("policeUsername", username);
+			localStorage.setItem("policeAuthEmail", authEmail);
 
 			// Show success alert
 			alert("Login Successful! Welcome to the Police Dashboard.");
-			
-			showMessage("Successful login. Redirecting to dashboard...", true);
-			setTimeout(() => {
-				window.location.href = `policeDashboard.html?stationID=${encodeURIComponent(stationID)}`;
-			}, 800);
+			window.location.assign("policeDashboard.html");
 		} catch (error) {
 			console.error("Login error:", error);
-			showMessage("Login failed. Please try again.", false);
+			const authErrorMessages = {
+				"auth/invalid-credential": "Incorrect password or Firebase Authentication email.",
+				"auth/user-not-found": "This Firebase Authentication account does not exist.",
+				"auth/wrong-password": "Incorrect password.",
+				"auth/invalid-email": "The authEmail in the users record is invalid.",
+				"auth/network-request-failed": "Network error. Check your internet connection."
+			};
+			if (error.code === "permission-denied") {
+				showMessage("Firestore denied access to the users collection. Update the Firebase rules.", false);
+			} else {
+				showMessage(authErrorMessages[error.code] || `Login failed (${error.code || "unknown error"}). Check the username, password, and Firebase project.`, false);
+			}
 		} finally {
 			loginButton.disabled = false;
 			loginButton.textContent = "Login";

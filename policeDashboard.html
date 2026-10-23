@@ -363,8 +363,8 @@
 			<ul class="menu">
 				<li><a href="#home" class="nav-link active">Home</a></li>
 				<li><a href="#policeProfile" class="nav-link">Profile</a></li>
-				<li><a href="#officerManagement" class="nav-link">Police Officer Management</a></li>
-				<li><a href="#departmentManagement" class="nav-link">Department Management</a></li>
+				<li id="officerManagementNav"><a href="#officerManagement" class="nav-link">Police Officer Management</a></li>
+				<li id="departmentManagementNav"><a href="#departmentManagement" class="nav-link">Department Management</a></li>
 				<li><a href="#notifications" class="nav-link">Notifications</a></li>
 				<li class="menu-group" id="complaintMenuGroup">
 					<button type="button" class="menu-group-title" id="complaintMenuToggle" aria-expanded="false">Complaint Management</button>
@@ -419,6 +419,7 @@
 	<script type="module">
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
 		import { getFirestore, collection, query, where, limit, getDocs } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+		import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
 
 		const firebaseConfig = {
 			apiKey: "AIzaSyCr5xSS_xPQO38JHoZMufQl-HEltwCvqSk",
@@ -431,6 +432,7 @@
 
 		const app = initializeApp(firebaseConfig);
 		const db = getFirestore(app);
+		const auth = getAuth(app);
 
 		const welcomeHeading = document.getElementById("welcomeHeading");
 		const homeContent = document.getElementById("homeContent");
@@ -438,6 +440,18 @@
 		const logoutBtn = document.getElementById("logoutBtn");
 		const complaintMenuGroup = document.getElementById("complaintMenuGroup");
 		const complaintMenuToggle = document.getElementById("complaintMenuToggle");
+		const userRole = String(localStorage.getItem("policeUserRole") || "").toUpperCase();
+		const stationID = localStorage.getItem("policeStationID");
+
+		if (!stationID || !["ADMIN", "OIC"].includes(userRole)) {
+			window.location.replace("policeLogin.html");
+		}
+
+		if (userRole === "OIC") {
+			document.getElementById("officerManagementNav").hidden = true;
+			document.getElementById("departmentManagementNav").hidden = true;
+			welcomeHeading.textContent = "OIC Dashboard";
+		}
 
 		// Navigation handling
 		document.querySelectorAll(".nav-link").forEach(link => {
@@ -504,19 +518,20 @@
 			const confirmed = confirm("Are you sure you want to logout?");
 			
 			if (confirmed) {
-				// Clear all session data from localStorage
-				localStorage.removeItem("policeStationID");
-				localStorage.removeItem("stationName");
-				localStorage.removeItem("policeEmail");
-				
-				// Redirect to login page
-				window.location.href = "policeLogin.html";
+				signOut(auth).finally(() => {
+					localStorage.removeItem("policeStationID");
+					localStorage.removeItem("stationName");
+					localStorage.removeItem("policeStationName");
+					localStorage.removeItem("policeUserRole");
+					localStorage.removeItem("policeUsername");
+					localStorage.removeItem("policeAuthEmail");
+					window.location.href = "policeLogin.html";
+				});
 			}
 		});
 
 		async function loadStationInfo() {
 			try {
-				const stationID = localStorage.getItem("policeStationID");
 				if (!stationID) return;
 
 				const policeStationsRef = collection(db, "police_stations");
@@ -535,7 +550,6 @@
 
 		async function loadDashboardCounts() {
 			try {
-				const stationID = localStorage.getItem("policeStationID");
 				if (!stationID) {
 					document.getElementById("allComplaintsCount").textContent = "0";
 					document.getElementById("assignedComplaintsCount").textContent = "0";

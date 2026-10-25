@@ -3,75 +3,160 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 	<title>Police Login</title>
 	<link rel="stylesheet" href="css/style.css">
 	<style>
 		body {
+			margin: 0;
 			background:
-				radial-gradient(circle at 10% 10%, rgba(30, 58, 138, 0.18), transparent 34%),
-				radial-gradient(circle at 90% 80%, rgba(30, 58, 138, 0.12) 0, transparent 35%),
-				linear-gradient(120deg, #eef4ff, #f7faff);
+				linear-gradient(135deg, rgba(7, 29, 67, 0.96), rgba(30, 58, 138, 0.9));
+				
 			min-height: 100vh;
+			display: grid;
+			place-items: center;
+			padding: 28px;
+			box-sizing: border-box;
+		}
+
+		.login-shell {
+			width: min(100%, 980px);
+			min-height: 590px;
+			display: grid;
+			grid-template-columns: 0.95fr 1.05fr;
+			background: rgba(255, 255, 255, 0.98);
+			border: 1px solid rgba(255, 255, 255, 0.4);
+			border-radius: 24px;
+			overflow: hidden;
+			box-shadow: 0 24px 70px rgba(4, 20, 52, 0.35);
+		}
+
+		.login-intro {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 48px 42px;
+			text-align: center;
+			color: #ffffff;
+			background:
+				linear-gradient(155deg, rgba(8, 43, 93, 0.94), rgba(16, 79, 135, 0.94)),
+				url("assets/images/Logo.jpg") center / cover;
+		}
+
+		.login-intro::after {
+			content: "";
+			position: absolute;
+			width: 220px;
+			height: 220px;
+			right: -90px;
+			bottom: -90px;
+			border: 30px solid rgba(255, 255, 255, 0.08);
+			border-radius: 50%;
+		}
+
+		.brand-mark {
+			position: relative;
+			z-index: 1;
+			width: 160px;
+			height: 160px;
+			object-fit: cover;
+			border: 5px solid rgba(255, 255, 255, 0.9);
+			border-radius: 50%;
+			box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+			background: #ffffff;
+		}
+
+		.login-intro h1 {
+			position: relative;
+			z-index: 1;
+			margin: 26px 0 10px;
+			font-size: clamp(27px, 4vw, 38px);
+			letter-spacing: 1px;
+		}
+
+		.login-intro p {
+			position: relative;
+			z-index: 1;
+			max-width: 310px;
+			margin: 0;
+			color: rgba(255, 255, 255, 0.78);
+			line-height: 1.65;
+			font-size: 15px;
 		}
 
 		.login-card {
-			width: min(92%, 420px);
-			margin: 60px auto;
+			display: flex;
+			align-items: center;
+			padding: 56px clamp(30px, 6vw, 72px);
 			background: #ffffff;
-			padding: 24px;
-			border-radius: 10px;
-			box-shadow: 0 8px 24px rgba(30, 58, 138, 0.08);
 			text-align: left;
 		}
 
 		.login-card h2 {
-			margin: 0 0 18px;
+			margin: 0 0 8px;
 			color: #1E3A8A;
-			text-align: center;
+			font-size: 30px;
+			letter-spacing: -0.5px;
+		}
+
+		.login-card .login-subtitle {
+			margin: 0 0 32px;
+			color: #64748b;
+			font-size: 14px;
 		}
 
 		.form-group {
-			margin-bottom: 20px;
+			margin-bottom: 22px;
 		}
 
 		.form-group label {
 			display: block;
-			margin-bottom: 6px;
+			margin-bottom: 8px;
 			font-weight: 600;
-			font-size: 16px;
+			font-size: 13px;
+			color: #334155;
+			letter-spacing: 0.2px;
 		}
 
 		.form-group input {
 			width: 100%;
-			padding: 10px 12px;
-			border: 1px solid #c7d7f5;
-			border-radius: 6px;
+			padding: 13px 14px;
+			border: 1px solid #d5deed;
+			border-radius: 9px;
 			box-sizing: border-box;
+			color: #172554;
+			background: #f8fafc;
+			font-size: 15px;
+			transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 		}
 
 		.form-group input:focus {
 			outline: none;
 			border-color: #1E3A8A;
-			box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.14);
+			background: #ffffff;
+			box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.12);
 		}
 
 		.btn-login {
 			width: 100%;
-			padding: 11px;
+			padding: 13px;
 			border: none;
-			border-radius: 6px;
-			background: #1E3A8A;
+			border-radius: 9px;
+			background: linear-gradient(135deg, #1E3A8A, #2563b8);
 			color: #ffffff;
-			font-size: 16px;
+			font-size: 15px;
+			font-weight: 700;
+			letter-spacing: 0.3px;
 			cursor: pointer;
 			transition: all 0.2s ease;
 		}
 
 		.btn-login:hover {
-			background: #152d6b;
-			transform: translateY(-1px);
-			box-shadow: 0 4px 12px rgba(30, 58, 138, 0.28);
+			background: linear-gradient(135deg, #152d6b, #1E3A8A);
+			transform: translateY(-2px);
+			box-shadow: 0 8px 18px rgba(30, 58, 138, 0.25);
 		}
 
 		.btn-login:disabled {
@@ -79,45 +164,74 @@
 			cursor: not-allowed;
 		}
 
-        a {
-        	display: inline-block;
-        	padding: 10px 20px;
-        	background-color: #dbe7ff;
-        	color: #1E3A8A;
-        	text-decoration: none;
-        	border-radius: 6px;
-        	transition: all 0.2s ease;
-        }
+		@media (max-width: 760px) {
+			body {
+				padding: 16px;
+			}
 
-        a:hover {
-        	background-color: #c7d7f5;
-        }
+			.login-shell {
+				grid-template-columns: 1fr;
+				min-height: auto;
+			}
+
+			.login-intro {
+				padding: 36px 28px;
+			}
+
+			.login-intro::after {
+				display: none;
+			}
+
+			.brand-mark {
+				width: 112px;
+				height: 112px;
+			}
+
+			.login-intro h1 {
+				margin-top: 18px;
+				font-size: 28px;
+			}
+
+			.login-card {
+				padding: 38px 28px 42px;
+			}
+		}
 	</style>
 </head>
 <body>
-	<div class="login-card">
-       
-		<h2>Police Login</h2>
+	<div class="login-shell">
+		<section class="login-intro" aria-label="Police complaint management system">
+			<img class="brand-mark" src="assets/images/Logo.jpg" alt="Police emblem">
+			<h1>Police Portal</h1>
 
-		<form id="loginForm">
+		</section>
+
+		<section class="login-card">
+			<div>
+				<h2>Welcome back</h2>
+				<p class="login-subtitle">Sign in to continue to the police dashboard.</p>
+
+				<form id="loginForm">
 			
 
-			<div class="form-group">
-				<label for="username">Username</label>
-				<input type="text" id="username" name="username" autocomplete="username" required>
-			</div>
+					<div class="form-group">
+						<label for="username">Username</label>
+						<input type="text" id="username" name="username" autocomplete="username" required>
+					</div>
 
-			<div class="form-group">
-				<label for="password">Password</label>
-				<input type="password" id="password" name="password" required>
-			</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password" required>
+					</div>
 
-			<p id="loginMessage" style="margin: 0 0 14px; font-size: 14px;"></p>
+					<p id="loginMessage" style="margin: 0 0 14px; font-size: 14px;"></p>
 
-			<button type="submit" class="btn-login">Login</button>
+					<button type="submit" class="btn-login">Login</button>
             
 
-		</form>
+				</form>
+			</div>
+		</section>
 	</div>
 </body>
 
@@ -216,21 +330,21 @@
 			localStorage.setItem("policeAuthEmail", authEmail);
 
 			// Show success alert
-			alert("Login Successful! Welcome to the Police Dashboard.");
+			alert("Login Successful! Welcome to the Police Portal.");
 			window.location.assign("policeDashboard.html");
 		} catch (error) {
 			console.error("Login error:", error);
 			const authErrorMessages = {
-				"auth/invalid-credential": "Incorrect password or Firebase Authentication email.",
-				"auth/user-not-found": "This Firebase Authentication account does not exist.",
+				"auth/invalid-credential": "Incorrect username or password.",
+				"auth/user-not-found": "This account does not exist.",
 				"auth/wrong-password": "Incorrect password.",
-				"auth/invalid-email": "The authEmail in the users record is invalid.",
+				"auth/invalid-email": "The username is invalid.",
 				"auth/network-request-failed": "Network error. Check your internet connection."
 			};
 			if (error.code === "permission-denied") {
 				showMessage("Firestore denied access to the users collection. Update the Firebase rules.", false);
 			} else {
-				showMessage(authErrorMessages[error.code] || `Login failed (${error.code || "unknown error"}). Check the username, password, and Firebase project.`, false);
+				showMessage(authErrorMessages[error.code] || `Login failed (${error.code || "unknown error"}). Check the username and password.`, false);
 			}
 		} finally {
 			loginButton.disabled = false;

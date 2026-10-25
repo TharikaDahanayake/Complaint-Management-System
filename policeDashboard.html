@@ -94,6 +94,39 @@
 			color: var(--brand);
 		}
 
+		.chart-grid {
+			margin-top: 20px;
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 20px;
+		}
+
+		.chart-card {
+			background: var(--panel);
+			border: 1px solid var(--line);
+			border-radius: 10px;
+			padding: 18px;
+			min-width: 0;
+		}
+
+		.chart-card h2 {
+			margin: 0 0 16px;
+			font-size: 17px;
+			color: var(--brand);
+		}
+
+		.chart-container {
+			position: relative;
+			height: 300px;
+		}
+
+		.chart-message {
+			margin: 0;
+			color: var(--muted);
+			font-size: 14px;
+			text-align: center;
+		}
+
 		.left-panel {
 			border-right: 1px solid var(--line);
 			background: rgba(255, 255, 255, 0.94);
@@ -353,6 +386,10 @@
 			.status-grid {
 				grid-template-columns: 1fr;
 			}
+
+			.chart-grid {
+				grid-template-columns: 1fr;
+			}
 		}
 	</style>
 </head>
@@ -410,12 +447,28 @@
 						<strong id="totalDepartmentsCount">--</strong>
 					</article>
 				</div>
+
+				<div class="chart-grid">
+					<article class="chart-card">
+						<h2>Monthly Complaints Received and Resolved</h2>
+						<div class="chart-container">
+							<canvas id="monthlyComplaintsChart" aria-label="Line chart showing monthly complaints received and resolved"></canvas>
+						</div>
+					</article>
+					<article class="chart-card">
+						<h2>Complaints by Status</h2>
+						<div class="chart-container">
+							<canvas id="complaintsByStatusChart" aria-label="Bar chart showing complaints by status"></canvas>
+						</div>
+					</article>
+				</div>
 			</div>
 
 			<iframe id="contentFrame"></iframe>
 		</section>
 	</div>
 
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 	<script type="module">
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
 		import { getFirestore, collection, query, where, limit, getDocs } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
@@ -440,6 +493,8 @@
 		const logoutBtn = document.getElementById("logoutBtn");
 		const complaintMenuGroup = document.getElementById("complaintMenuGroup");
 		const complaintMenuToggle = document.getElementById("complaintMenuToggle");
+		let monthlyComplaintsChart;
+		let complaintsByStatusChart;
 		const userRole = String(localStorage.getItem("policeUserRole") || "").toUpperCase();
 		const stationID = localStorage.getItem("policeStationID");
 
@@ -596,6 +651,24 @@
 					return Number.isNaN(parsed) ? 0 : parsed;
 				};
 
+				const getComplaintTimestamp = (complaint) => {
+					const rawDate = getValue(complaint, ["date", "complaintDate", "createdAt"], null);
+					if (!rawDate) return 0;
+
+					if (rawDate && typeof rawDate.toDate === "function") {
+						return rawDate.toDate().getTime();
+					}
+
+					if (rawDate && typeof rawDate.seconds === "number") {
+						return rawDate.seconds * 1000;
+					}
+
+					if (typeof rawDate === "number") return rawDate;
+
+					const parsed = new Date(rawDate).getTime();
+					return Number.isNaN(parsed) ? 0 : parsed;
+				};
+
 				const getOfficerValue = (complaint) => getValue(complaint, ["assignedOfficerID", "assignedOfficerId", "officerID", "officerId"], "");
 
 				const getEffectiveStatus = (complaint) => {
@@ -644,6 +717,7 @@
 				document.getElementById("escalatedComplaintsCount").textContent = String(escalatedComplaintsCount);
 				document.getElementById("resolvedComplaintsCount").textContent = String(resolvedComplaintsCount);
 
+				renderComplaintCharts(complaints, getComplaintTimestamp, getUpdatedTimestamp, getEffectiveStatus);
 			} catch (error) {
 				console.error("Error loading dashboard counts:", error);
 				document.getElementById("allComplaintsCount").textContent = "Error";
@@ -652,7 +726,116 @@
 				document.getElementById("resolvedComplaintsCount").textContent = "Error";
 				document.getElementById("totalOfficersCount").textContent = "Error";
 				document.getElementById("totalDepartmentsCount").textContent = "Error";
+				showChartError();
 			}
+		}
+
+		function showChartError() {
+			const chartContainers = document.querySelectorAll(".chart-container");
+			chartContainers.forEach((container) => {
+				container.innerHTML = '<p class="chart-message">Unable to load chart data.</p>';
+			});
+		}
+
+		function renderComplaintCharts(complaints, getComplaintTimestamp, getUpdatedTimestamp, getEffectiveStatus) {
+			if (typeof Chart === "undefined") {
+				showChartError();
+				return;
+			}
+
+			const now = new Date();
+			const monthKeys = [];
+			const monthLabels = [];
+			for (let offset = 11; offset >= 0; offset -= 1) {
+				const month = new Date(now.getFullYear(), now.getMonth() - offset, 1);
+				monthKeys.push(`${month.getFullYear()}-${String(month.getMonth() + 1).padStart(2, "0")}`);
+				monthLabels.push(month.toLocaleDateString(undefined, { month: "short", year: "numeric" }));
+			}
+
+			const receivedByMonth = Object.fromEntries(monthKeys.map((key) => [key, 0]));
+			const resolvedByMonth = Object.fromEntries(monthKeys.map((key) => [key, 0]));
+			const statusLabels = ["Pending", "Ongoing", "Escalated", "Resolved"];
+			const statusCounts = Object.fromEntries(statusLabels.map((status) => [status, 0]));
+
+			const getMonthKey = (timestamp) => {
+				if (!timestamp) return "";
+				const date = new Date(timestamp);
+				return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+			};
+
+			complaints.forEach((complaint) => {
+				const receivedMonth = getMonthKey(getComplaintTimestamp(complaint));
+				if (receivedByMonth[receivedMonth] !== undefined) {
+					receivedByMonth[receivedMonth] += 1;
+				}
+
+				const status = getEffectiveStatus(complaint);
+				statusCounts[status] += 1;
+				if (status === "Resolved") {
+					const resolvedMonth = getMonthKey(getUpdatedTimestamp(complaint));
+					if (resolvedByMonth[resolvedMonth] !== undefined) {
+						resolvedByMonth[resolvedMonth] += 1;
+					}
+				}
+			});
+
+			if (monthlyComplaintsChart) monthlyComplaintsChart.destroy();
+			if (complaintsByStatusChart) complaintsByStatusChart.destroy();
+
+			monthlyComplaintsChart = new Chart(document.getElementById("monthlyComplaintsChart"), {
+				type: "line",
+				data: {
+					labels: monthLabels,
+					datasets: [
+						{
+							label: "Received",
+							data: monthKeys.map((key) => receivedByMonth[key]),
+							borderColor: "#1E3A8A",
+							backgroundColor: "rgba(30, 58, 138, 0.12)",
+							borderWidth: 2,
+							tension: 0.3,
+							fill: true
+						},
+						{
+							label: "Resolved",
+							data: monthKeys.map((key) => resolvedByMonth[key]),
+							borderColor: "#0f766e",
+							backgroundColor: "rgba(15, 118, 110, 0.1)",
+							borderWidth: 2,
+							tension: 0.3,
+							fill: true
+						}
+					]
+				},
+				options: {
+					responsive: true,
+					maintainAspectRatio: false,
+					scales: {
+						y: { beginAtZero: true, ticks: { precision: 0 } }
+					}
+				}
+			});
+
+			complaintsByStatusChart = new Chart(document.getElementById("complaintsByStatusChart"), {
+				type: "bar",
+				data: {
+					labels: statusLabels,
+					datasets: [{
+						label: "Complaints",
+						data: statusLabels.map((status) => statusCounts[status]),
+						backgroundColor: ["#f59e0b", "#2563eb", "#b91c1c", "#0f766e"],
+						borderRadius: 5
+					}]
+				},
+				options: {
+					responsive: true,
+					maintainAspectRatio: false,
+					plugins: { legend: { display: false } },
+					scales: {
+						y: { beginAtZero: true, ticks: { precision: 0 } }
+					}
+				}
+			});
 		}
 
 		window.addEventListener("message", (event) => {

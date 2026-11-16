@@ -1,0 +1,1001 @@
+month,stationID,stationName,complaintCategory,complaintCount,latitude,longitude,dataSource
+2025-10,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.856059,79.927969,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.842075,79.926415,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.852992,79.917786,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.841356,79.921731,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.8389,79.933324,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.832574,79.935652,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.855102,79.921691,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.839741,79.925679,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.841877,79.923607,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.846893,79.932104,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.850409,79.926097,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.840576,79.929764,synthetic
+2025-10,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.842882,79.944443,synthetic
+2025-11,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.838707,79.925802,synthetic
+2025-11,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.842037,79.918511,synthetic
+2025-11,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.833611,79.928971,synthetic
+2025-11,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.851321,79.929068,synthetic
+2025-11,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.843174,79.922199,synthetic
+2025-11,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.843189,79.931285,synthetic
+2025-11,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.850252,79.927156,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.848891,79.938383,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.845336,79.927949,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.851771,79.913713,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.836582,79.92846,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.843387,79.914913,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.842283,79.946469,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.84965,79.929318,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.839098,79.937374,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.838399,79.933597,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.839416,79.930214,synthetic
+2025-12,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.846211,79.91829,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.850443,79.910211,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.848244,79.936122,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.84673,79.929604,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.856869,79.930974,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.837511,79.929075,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.862543,79.927567,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.854723,79.922667,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.836,79.93727,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.853627,79.936452,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.851095,79.920193,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.846854,79.927439,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.837557,79.922779,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.846455,79.925087,synthetic
+2026-01,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.846752,79.924436,synthetic
+2026-02,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.848574,79.935139,synthetic
+2026-02,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.840596,79.929257,synthetic
+2026-02,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.843677,79.941523,synthetic
+2026-02,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.847947,79.921232,synthetic
+2026-02,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.843185,79.923875,synthetic
+2026-02,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.849476,79.930546,synthetic
+2026-02,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.85565,79.926506,synthetic
+2026-02,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.841241,79.91393,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.853065,79.930459,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.842399,79.933052,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.84049,79.920968,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.845631,79.94215,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.852689,79.926564,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.852226,79.927716,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.839314,79.927211,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.848898,79.937098,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.849862,79.93464,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.839361,79.930671,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.837444,79.93081,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.832931,79.935338,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.85146,79.925972,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.851323,79.940837,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.838678,79.934589,synthetic
+2026-03,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.835469,79.935849,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.839043,79.922792,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.846184,79.929091,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.843556,79.93097,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.855657,79.922824,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.84808,79.924969,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.845357,79.917546,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.850211,79.932756,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.847933,79.925883,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.839454,79.948352,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.849878,79.934277,synthetic
+2026-04,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.845291,79.934523,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.831681,79.937811,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.845088,79.933583,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.854447,79.916997,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.843391,79.927752,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.841729,79.932034,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.847502,79.919213,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.844266,79.931846,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.836166,79.924666,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.845696,79.927256,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.848275,79.933628,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.849944,79.928177,synthetic
+2026-05,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.84283,79.928015,synthetic
+2026-06,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.848893,79.92368,synthetic
+2026-06,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.8355,79.922586,synthetic
+2026-06,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.846688,79.915479,synthetic
+2026-06,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.840379,79.930117,synthetic
+2026-06,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.847795,79.934254,synthetic
+2026-06,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.843165,79.942682,synthetic
+2026-06,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.850557,79.933969,synthetic
+2026-06,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.838248,79.936246,synthetic
+2026-06,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.834963,79.9263,synthetic
+2026-06,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.846047,79.925579,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.848236,79.9427,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.843472,79.934493,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.846829,79.932078,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.845105,79.929778,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.847449,79.947219,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.833555,79.91793,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.848811,79.925255,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.846394,79.919128,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.838791,79.932834,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.849842,79.928499,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.846962,79.942023,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.844582,79.929228,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.843764,79.919341,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.850294,79.940033,synthetic
+2026-07,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.836296,79.925588,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.843389,79.916512,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.836228,79.928596,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.847248,79.9301,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.847914,79.937227,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.848512,79.932924,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.838925,79.936449,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.852197,79.933745,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.847067,79.931592,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.845696,79.926856,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.847542,79.93376,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.830022,79.931743,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.852777,79.929168,synthetic
+2026-08,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.848479,79.934898,synthetic
+2026-09,PS-CMB-001,Maharagama Police Station,Traffic issues,1,6.8494,79.921634,synthetic
+2026-09,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.834489,79.922271,synthetic
+2026-09,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.844206,79.924717,synthetic
+2026-09,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.848725,79.932235,synthetic
+2026-09,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.837871,79.931303,synthetic
+2026-09,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.840825,79.911904,synthetic
+2026-09,PS-CMB-001,Maharagama Police Station,Public Nuisance / Cleanliness,1,6.838509,79.931968,synthetic
+2026-09,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.850219,79.931481,synthetic
+2026-09,PS-CMB-001,Maharagama Police Station,Neighbor / Community Issues,1,6.857686,79.928674,synthetic
+2025-10,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.866407,79.907768,synthetic
+2025-10,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.87903,79.90236,synthetic
+2025-10,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.866073,79.906863,synthetic
+2025-10,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.865327,79.902667,synthetic
+2025-10,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.873158,79.908269,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.880478,79.893582,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.869524,79.888325,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.86649,79.901781,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.867967,79.90372,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.867524,79.89524,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.882753,79.896619,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.877493,79.892202,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.871877,79.909111,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.867324,79.90148,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.879955,79.915115,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.873275,79.895858,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.877571,79.917117,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.875188,79.884764,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.868737,79.904166,synthetic
+2025-11,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.875738,79.92413,synthetic
+2025-12,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.871377,79.894267,synthetic
+2025-12,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.878531,79.882878,synthetic
+2025-12,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.876916,79.90412,synthetic
+2025-12,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.87046,79.888391,synthetic
+2025-12,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.875002,79.899469,synthetic
+2025-12,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.86433,79.898931,synthetic
+2025-12,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.877175,79.917669,synthetic
+2025-12,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.862746,79.899017,synthetic
+2025-12,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.866946,79.899683,synthetic
+2026-01,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.872977,79.905665,synthetic
+2026-01,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.86901,79.902892,synthetic
+2026-01,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.880112,79.901248,synthetic
+2026-01,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.883315,79.897762,synthetic
+2026-01,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.874549,79.905866,synthetic
+2026-01,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.862563,79.89808,synthetic
+2026-01,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.872234,79.905608,synthetic
+2026-01,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.876698,79.892886,synthetic
+2026-01,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.874602,79.897957,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.882266,79.908057,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.883777,79.908706,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.873918,79.893206,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.88383,79.90775,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.875149,79.889739,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.857991,79.913202,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.88806,79.891086,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.870374,79.888782,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.874918,79.904185,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.879339,79.914091,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.868269,79.909207,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.874472,79.906165,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.879854,79.895252,synthetic
+2026-02,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.873999,79.902131,synthetic
+2026-03,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.866869,79.895499,synthetic
+2026-03,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.882291,79.898572,synthetic
+2026-03,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.867667,79.904782,synthetic
+2026-03,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.864014,79.910026,synthetic
+2026-03,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.861121,79.914455,synthetic
+2026-03,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.86748,79.908401,synthetic
+2026-03,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.873084,79.907107,synthetic
+2026-03,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.875164,79.905185,synthetic
+2026-03,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.873704,79.893258,synthetic
+2026-03,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.865741,79.886994,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.870344,79.905644,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.873623,79.904582,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.872286,79.913191,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.870767,79.888262,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.872628,79.908454,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.876934,79.910278,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.880083,79.897188,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.863359,79.905789,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.858553,79.898557,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.86587,79.917628,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.859861,79.904931,synthetic
+2026-04,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.870015,79.90815,synthetic
+2026-05,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.87038,79.904353,synthetic
+2026-05,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.8614,79.905054,synthetic
+2026-05,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.866678,79.899245,synthetic
+2026-05,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.866151,79.90766,synthetic
+2026-05,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.87646,79.901253,synthetic
+2026-05,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.878184,79.902676,synthetic
+2026-05,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.872182,79.90343,synthetic
+2026-05,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.877926,79.911431,synthetic
+2026-05,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.880749,79.906995,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.874041,79.907428,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.877623,79.904421,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.881034,79.897064,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.860488,79.898977,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.875359,79.910034,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.865574,79.898539,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.87181,79.900655,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.879156,79.893668,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.873376,79.903593,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.86843,79.9025,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.881594,79.900148,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.886224,79.918372,synthetic
+2026-06,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.875083,79.889297,synthetic
+2026-07,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.877798,79.918764,synthetic
+2026-07,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.877064,79.906063,synthetic
+2026-07,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.875144,79.906119,synthetic
+2026-07,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.880306,79.90945,synthetic
+2026-07,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.879253,79.888519,synthetic
+2026-07,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.887344,79.887954,synthetic
+2026-07,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.877081,79.899673,synthetic
+2026-07,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.885688,79.898409,synthetic
+2026-07,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.858997,79.908179,synthetic
+2026-07,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.878415,79.909617,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.872022,79.901762,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.858894,79.896889,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.875649,79.899265,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.868066,79.903113,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.867857,79.884433,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.879254,79.900499,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.867295,79.914345,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.874669,79.898055,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.870689,79.895511,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.871782,79.901422,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.885838,79.900186,synthetic
+2026-08,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.87369,79.893584,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.878947,79.900831,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.88167,79.902278,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.875798,79.906539,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.874748,79.899284,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.870947,79.908092,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Traffic issues,1,6.881101,79.896008,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.866503,79.894322,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.87606,79.887243,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.867232,79.892126,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Public Nuisance / Cleanliness,1,6.877486,79.898128,synthetic
+2026-09,PS-CMB-002,Mirihana Police Station,Neighbor / Community Issues,1,6.886908,79.904137,synthetic
+2025-10,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.803726,79.920077,synthetic
+2025-10,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.805435,79.922698,synthetic
+2025-10,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.79215,79.934661,synthetic
+2025-10,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.8176,79.918765,synthetic
+2025-10,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.807483,79.909442,synthetic
+2025-10,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.800246,79.924862,synthetic
+2025-10,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.79509,79.925722,synthetic
+2025-10,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.799794,79.932344,synthetic
+2025-10,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.803085,79.909294,synthetic
+2025-11,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.806477,79.911695,synthetic
+2025-11,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.806763,79.921382,synthetic
+2025-11,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.800467,79.920598,synthetic
+2025-11,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.809463,79.918323,synthetic
+2025-11,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.80407,79.925577,synthetic
+2025-11,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.81025,79.927667,synthetic
+2025-11,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.804415,79.927653,synthetic
+2025-12,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.808907,79.917849,synthetic
+2025-12,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.799712,79.914189,synthetic
+2025-12,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.806499,79.918743,synthetic
+2025-12,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.797559,79.916379,synthetic
+2025-12,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.813809,79.923075,synthetic
+2025-12,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.796581,79.92077,synthetic
+2025-12,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.805384,79.91033,synthetic
+2025-12,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.797661,79.940543,synthetic
+2025-12,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.803957,79.923445,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.803,79.934138,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.801417,79.923104,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.805022,79.924416,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.796022,79.926861,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.795141,79.918201,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.801567,79.92436,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.806485,79.925384,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.8161,79.933894,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.808273,79.925325,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.805576,79.927225,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.816361,79.927893,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.805717,79.909102,synthetic
+2026-01,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.801505,79.917236,synthetic
+2026-02,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.80373,79.917354,synthetic
+2026-02,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.803454,79.923309,synthetic
+2026-02,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.806045,79.920207,synthetic
+2026-02,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.803408,79.918359,synthetic
+2026-02,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.807799,79.918668,synthetic
+2026-02,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.799593,79.914128,synthetic
+2026-02,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.794193,79.916549,synthetic
+2026-02,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.801395,79.930378,synthetic
+2026-02,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.793222,79.931355,synthetic
+2026-03,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.80023,79.941471,synthetic
+2026-03,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.807031,79.916,synthetic
+2026-03,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.801005,79.911176,synthetic
+2026-03,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.792976,79.92699,synthetic
+2026-03,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.7953,79.920813,synthetic
+2026-03,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.803183,79.926914,synthetic
+2026-03,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.805608,79.929097,synthetic
+2026-03,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.815013,79.930232,synthetic
+2026-03,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.795405,79.933824,synthetic
+2026-04,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.799651,79.915346,synthetic
+2026-04,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.783515,79.93219,synthetic
+2026-04,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.797666,79.926411,synthetic
+2026-04,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.792277,79.924825,synthetic
+2026-04,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.802921,79.927733,synthetic
+2026-04,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.806737,79.91275,synthetic
+2026-04,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.813355,79.919782,synthetic
+2026-04,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.810743,79.933489,synthetic
+2026-05,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.813612,79.928624,synthetic
+2026-05,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.803746,79.9266,synthetic
+2026-05,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.797118,79.927416,synthetic
+2026-05,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.805333,79.921719,synthetic
+2026-05,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.79712,79.928626,synthetic
+2026-05,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.797773,79.923253,synthetic
+2026-05,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.807005,79.914903,synthetic
+2026-05,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.788271,79.93078,synthetic
+2026-05,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.796591,79.922693,synthetic
+2026-05,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.797388,79.916177,synthetic
+2026-06,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.803357,79.927007,synthetic
+2026-06,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.80615,79.926025,synthetic
+2026-06,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.792421,79.922796,synthetic
+2026-06,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.794501,79.926623,synthetic
+2026-06,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.805719,79.931304,synthetic
+2026-06,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.807977,79.911249,synthetic
+2026-06,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.7995,79.91271,synthetic
+2026-06,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.791161,79.93037,synthetic
+2026-07,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.80009,79.924493,synthetic
+2026-07,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.799621,79.915382,synthetic
+2026-07,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.806242,79.927444,synthetic
+2026-07,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.804074,79.920451,synthetic
+2026-07,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.796823,79.929732,synthetic
+2026-07,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.79871,79.91923,synthetic
+2026-07,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.812687,79.901216,synthetic
+2026-07,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.801332,79.91779,synthetic
+2026-07,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.802714,79.936237,synthetic
+2026-07,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.805032,79.912797,synthetic
+2026-08,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.797577,79.920553,synthetic
+2026-08,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.803217,79.934275,synthetic
+2026-08,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.802834,79.914318,synthetic
+2026-08,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.808108,79.921473,synthetic
+2026-08,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.811373,79.923236,synthetic
+2026-08,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.799634,79.92001,synthetic
+2026-08,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.800374,79.911096,synthetic
+2026-08,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.802481,79.923811,synthetic
+2026-08,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.809678,79.92815,synthetic
+2026-08,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.801426,79.904936,synthetic
+2026-09,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.798937,79.918895,synthetic
+2026-09,PS-CMB-003,Piliyandala Police Station,Public Nuisance / Cleanliness,1,6.798666,79.930767,synthetic
+2026-09,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.803325,79.919096,synthetic
+2026-09,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.807158,79.921523,synthetic
+2026-09,PS-CMB-003,Piliyandala Police Station,Neighbor / Community Issues,1,6.799479,79.925789,synthetic
+2026-09,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.799862,79.922758,synthetic
+2026-09,PS-CMB-003,Piliyandala Police Station,Traffic issues,1,6.817533,79.915558,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.85493,79.878367,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.851603,79.883985,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.851647,79.863906,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.845615,79.889657,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.843572,79.878683,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.845988,79.877571,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.848532,79.86277,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.841101,79.874359,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.846364,79.879449,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.869488,79.870339,synthetic
+2025-10,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.853532,79.862127,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.853276,79.855981,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.858898,79.872786,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.853216,79.879188,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.850236,79.876569,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.834979,79.871081,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.850929,79.858863,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.848587,79.870755,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.842897,79.870685,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.843569,79.863521,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.852999,79.878565,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.852091,79.88801,synthetic
+2025-11,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.85444,79.865788,synthetic
+2025-12,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.850162,79.868966,synthetic
+2025-12,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.853928,79.865159,synthetic
+2025-12,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.851711,79.87286,synthetic
+2025-12,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.844475,79.865446,synthetic
+2025-12,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.846014,79.873222,synthetic
+2025-12,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.848579,79.878377,synthetic
+2025-12,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.849846,79.870915,synthetic
+2025-12,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.853305,79.876105,synthetic
+2026-01,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.852103,79.881323,synthetic
+2026-01,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.846141,79.866926,synthetic
+2026-01,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.840884,79.870128,synthetic
+2026-01,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.852752,79.870587,synthetic
+2026-01,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.856036,79.87619,synthetic
+2026-01,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.853025,79.870887,synthetic
+2026-01,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.8505,79.875223,synthetic
+2026-02,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.853308,79.875515,synthetic
+2026-02,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.853785,79.868805,synthetic
+2026-02,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.856445,79.87867,synthetic
+2026-02,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.847921,79.893807,synthetic
+2026-02,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.836821,79.869,synthetic
+2026-02,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.860781,79.860842,synthetic
+2026-02,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.849299,79.869696,synthetic
+2026-02,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.853689,79.867394,synthetic
+2026-02,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.857323,79.877858,synthetic
+2026-02,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.847375,79.867633,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.845388,79.873448,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.84972,79.878524,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.85866,79.868787,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.839715,79.863607,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.852512,79.86436,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.852678,79.866532,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.852468,79.879303,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.853846,79.869943,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.852731,79.880801,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.851526,79.871996,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.85316,79.86695,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.850995,79.867793,synthetic
+2026-03,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.843719,79.877595,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.858738,79.865441,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.840227,79.878323,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.851362,79.857905,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.843015,79.858967,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.847066,79.86759,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.849992,79.863176,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.84292,79.883021,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.851685,79.861156,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.845933,79.87821,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.850687,79.883098,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.855986,79.87433,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.847075,79.871738,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.849978,79.872335,synthetic
+2026-04,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.856196,79.878274,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.844066,79.88152,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.855883,79.856839,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.842395,79.868459,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.855781,79.858037,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.842869,79.877437,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.855071,79.886003,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.856915,79.874667,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.839405,79.869156,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.852997,79.872796,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.861241,79.874519,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.851529,79.876624,synthetic
+2026-05,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.851106,79.868345,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.849012,79.884942,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.853493,79.862753,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.849038,79.865938,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.84992,79.868474,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.847346,79.876025,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.849583,79.86321,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.85441,79.875982,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.850547,79.868744,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.856434,79.870176,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.85814,79.88393,synthetic
+2026-06,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.859009,79.876616,synthetic
+2026-07,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.852638,79.877835,synthetic
+2026-07,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.84967,79.877587,synthetic
+2026-07,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.850965,79.872998,synthetic
+2026-07,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.856608,79.868211,synthetic
+2026-07,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.8426,79.873218,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.850447,79.871827,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.847019,79.883199,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.859854,79.877709,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.851612,79.856218,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.855482,79.876653,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.841703,79.887723,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.839639,79.871064,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.850827,79.887493,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.865711,79.875194,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.852033,79.88767,synthetic
+2026-08,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.853864,79.869038,synthetic
+2026-09,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.855209,79.864656,synthetic
+2026-09,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.848187,79.869783,synthetic
+2026-09,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.860255,79.877478,synthetic
+2026-09,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.843932,79.873076,synthetic
+2026-09,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.851865,79.869815,synthetic
+2026-09,PS-CMB-004,Dehiwala Police Station,Public Nuisance / Cleanliness,1,6.858204,79.856202,synthetic
+2026-09,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.838287,79.875035,synthetic
+2026-09,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.848789,79.868693,synthetic
+2026-09,PS-CMB-004,Dehiwala Police Station,Neighbor / Community Issues,1,6.855804,79.868472,synthetic
+2026-09,PS-CMB-004,Dehiwala Police Station,Traffic issues,1,6.849376,79.86672,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.957758,80.213231,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.950884,80.223532,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.946669,80.215301,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.949274,80.221526,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.960955,80.208408,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.943053,80.209413,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.947893,80.208789,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.936381,80.214636,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.947306,80.231942,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.94349,80.219602,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.944717,80.217709,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.951078,80.222615,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.945957,80.206445,synthetic
+2025-10,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.944196,80.217554,synthetic
+2025-11,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.943065,80.221356,synthetic
+2025-11,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.947077,80.233032,synthetic
+2025-11,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.945997,80.219279,synthetic
+2025-11,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.939866,80.207557,synthetic
+2025-11,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.941102,80.226854,synthetic
+2025-11,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.932109,80.216844,synthetic
+2025-11,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.952194,80.216618,synthetic
+2025-11,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.957634,80.221576,synthetic
+2025-11,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.942351,80.216434,synthetic
+2025-11,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.960816,80.214718,synthetic
+2025-12,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.956305,80.228415,synthetic
+2025-12,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.947913,80.217282,synthetic
+2025-12,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.948139,80.2176,synthetic
+2025-12,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.947351,80.228042,synthetic
+2025-12,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.961535,80.211516,synthetic
+2025-12,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.953597,80.220515,synthetic
+2025-12,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.948283,80.20495,synthetic
+2025-12,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.944219,80.200174,synthetic
+2026-01,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.956147,80.217393,synthetic
+2026-01,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.943978,80.205471,synthetic
+2026-01,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.949881,80.207359,synthetic
+2026-01,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.94942,80.21033,synthetic
+2026-01,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.943862,80.215578,synthetic
+2026-01,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.951398,80.207041,synthetic
+2026-01,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.939672,80.215819,synthetic
+2026-02,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.947149,80.214106,synthetic
+2026-02,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.950663,80.223807,synthetic
+2026-02,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.950869,80.222334,synthetic
+2026-02,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.939689,80.223018,synthetic
+2026-02,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.94792,80.219397,synthetic
+2026-02,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.939572,80.199882,synthetic
+2026-02,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.949904,80.216103,synthetic
+2026-02,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.95553,80.203907,synthetic
+2026-02,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.955215,80.198541,synthetic
+2026-02,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.948295,80.209784,synthetic
+2026-03,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.940488,80.209705,synthetic
+2026-03,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.958452,80.217226,synthetic
+2026-03,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.940986,80.234162,synthetic
+2026-03,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.954006,80.224131,synthetic
+2026-03,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.944518,80.214718,synthetic
+2026-03,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.944058,80.240412,synthetic
+2026-03,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.950163,80.226487,synthetic
+2026-03,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.938626,80.216081,synthetic
+2026-03,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.95013,80.210413,synthetic
+2026-03,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.957717,80.213238,synthetic
+2026-04,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.941091,80.208097,synthetic
+2026-04,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.935831,80.219311,synthetic
+2026-04,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.951262,80.209543,synthetic
+2026-04,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.949714,80.211353,synthetic
+2026-04,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.944363,80.217251,synthetic
+2026-04,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.944663,80.199525,synthetic
+2026-04,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.94903,80.222119,synthetic
+2026-04,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.940948,80.217925,synthetic
+2026-04,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.939795,80.233151,synthetic
+2026-04,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.947383,80.214763,synthetic
+2026-05,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.952974,80.222,synthetic
+2026-05,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.945591,80.210748,synthetic
+2026-05,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.949288,80.198856,synthetic
+2026-05,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.95256,80.229001,synthetic
+2026-05,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.95303,80.227432,synthetic
+2026-05,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.944147,80.204015,synthetic
+2026-05,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.940636,80.218795,synthetic
+2026-05,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.949096,80.215599,synthetic
+2026-05,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.951028,80.214182,synthetic
+2026-06,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.938232,80.22135,synthetic
+2026-06,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.95996,80.215254,synthetic
+2026-06,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.94661,80.221214,synthetic
+2026-06,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.957446,80.211654,synthetic
+2026-06,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.948474,80.208002,synthetic
+2026-06,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.941973,80.233701,synthetic
+2026-06,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.94813,80.210573,synthetic
+2026-06,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.94786,80.202452,synthetic
+2026-06,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.942577,80.214301,synthetic
+2026-07,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.944075,80.217716,synthetic
+2026-07,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.952588,80.21782,synthetic
+2026-07,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.939348,80.216407,synthetic
+2026-07,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.949554,80.222245,synthetic
+2026-07,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.952992,80.217939,synthetic
+2026-07,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.949716,80.225889,synthetic
+2026-07,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.943933,80.219394,synthetic
+2026-07,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.951044,80.216666,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.945421,80.206186,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.95098,80.223967,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.947129,80.188684,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.948618,80.224587,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.954002,80.218692,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.956907,80.208024,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.948816,80.219316,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.943265,80.220455,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.936917,80.204804,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.954925,80.214352,synthetic
+2026-08,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.948368,80.207848,synthetic
+2026-09,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.934473,80.218302,synthetic
+2026-09,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.958347,80.214394,synthetic
+2026-09,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.940302,80.211474,synthetic
+2026-09,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.946961,80.210827,synthetic
+2026-09,PS-CMB-005,Avissawella Police Station,Neighbor / Community Issues,1,6.949677,80.218074,synthetic
+2026-09,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.938837,80.203443,synthetic
+2026-09,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.942087,80.212379,synthetic
+2026-09,PS-CMB-005,Avissawella Police Station,Public Nuisance / Cleanliness,1,6.957265,80.209032,synthetic
+2026-09,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.950346,80.216371,synthetic
+2026-09,PS-CMB-005,Avissawella Police Station,Traffic issues,1,6.939886,80.211767,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.827292,79.991972,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.831214,80.008709,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.83593,79.9957,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.840947,79.99419,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.83335,80.009768,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.836658,80.014971,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.841146,80.010999,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.83734,80.012598,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.838364,80.005026,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.841807,80.016954,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.838327,79.989336,synthetic
+2025-10,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.839225,79.999498,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.828241,79.990992,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.834802,79.997812,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.834702,80.006453,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.828946,80.008119,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.83283,80.003416,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.837406,80.004617,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.840846,80.007005,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.839939,80.001337,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.842872,80.004625,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.843421,80.007525,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.82511,80.007248,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.838497,80.022269,synthetic
+2025-11,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.842403,80.0114,synthetic
+2025-12,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.835932,79.997063,synthetic
+2025-12,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.837407,80.010331,synthetic
+2025-12,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.838332,80.00392,synthetic
+2025-12,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.838968,79.998194,synthetic
+2025-12,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.836369,80.008916,synthetic
+2025-12,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.838995,79.995544,synthetic
+2025-12,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.843098,79.996099,synthetic
+2025-12,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.838042,79.998605,synthetic
+2025-12,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.838956,80.011033,synthetic
+2025-12,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.840532,80.001288,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.833901,80.001613,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.838994,79.999575,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.839716,79.988666,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.834024,80.01045,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.828405,79.990283,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.844239,80.016433,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.834439,80.014122,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.835371,79.999443,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.846066,80.00284,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.830195,80.004689,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.827717,80.004016,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.831881,80.009709,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.839575,80.005411,synthetic
+2026-01,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.843498,80.0064,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.836166,79.993256,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.833707,79.999759,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.84469,79.995407,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.826756,79.998916,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.831331,80.020001,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.822062,80.005333,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.83299,80.013121,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.836297,79.995214,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.839606,80.008734,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.836202,80.005029,synthetic
+2026-02,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.843728,80.009326,synthetic
+2026-03,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.841863,80.021411,synthetic
+2026-03,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.836337,79.998194,synthetic
+2026-03,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.838533,80.01219,synthetic
+2026-03,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.839583,80.005709,synthetic
+2026-03,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.824773,79.993762,synthetic
+2026-03,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.83887,80.020103,synthetic
+2026-03,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.837257,80.009407,synthetic
+2026-03,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.836872,80.010585,synthetic
+2026-04,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.825721,80.000737,synthetic
+2026-04,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.834232,80.013094,synthetic
+2026-04,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.834788,79.999491,synthetic
+2026-04,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.841817,80.009887,synthetic
+2026-04,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.837549,79.995562,synthetic
+2026-04,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.832906,80.005521,synthetic
+2026-04,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.844819,80.004199,synthetic
+2026-04,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.823044,80.013676,synthetic
+2026-04,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.843254,79.996546,synthetic
+2026-05,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.834178,80.010004,synthetic
+2026-05,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.832911,80.008526,synthetic
+2026-05,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.839443,80.012872,synthetic
+2026-05,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.838877,80.003687,synthetic
+2026-05,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.83253,80.000395,synthetic
+2026-05,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.826733,79.987941,synthetic
+2026-05,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.824152,79.998822,synthetic
+2026-05,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.85352,80.001588,synthetic
+2026-05,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.831099,79.987378,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.838419,80.001745,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.843818,80.003745,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.845272,79.997911,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.841573,80.00038,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.835267,79.992521,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.842542,80.005899,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.828008,80.013009,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.828286,79.998361,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.838827,79.999081,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.839467,80.011223,synthetic
+2026-06,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.836631,80.005882,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.826732,80.002813,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.839819,80.022948,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.830157,80.007825,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.832169,80.002104,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.829868,79.994368,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.833658,80.010847,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.836868,80.003299,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.820754,80.012185,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.83317,80.000092,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.824008,80.015137,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.836998,79.995245,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.822966,79.991585,synthetic
+2026-07,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.842712,80.004845,synthetic
+2026-08,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.851583,80.009694,synthetic
+2026-08,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.832102,80.004397,synthetic
+2026-08,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.844852,80.00598,synthetic
+2026-08,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.824886,79.999319,synthetic
+2026-08,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.837672,80.006018,synthetic
+2026-08,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.82595,80.003347,synthetic
+2026-08,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.828125,80.009465,synthetic
+2026-08,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.81694,80.00386,synthetic
+2026-08,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.83752,80.002119,synthetic
+2026-08,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.830637,79.98802,synthetic
+2026-09,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.839416,79.994476,synthetic
+2026-09,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.839028,80.00184,synthetic
+2026-09,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.838491,80.00588,synthetic
+2026-09,PS-CMB-006,Homagama Police Station,Public Nuisance / Cleanliness,1,6.827467,80.008443,synthetic
+2026-09,PS-CMB-006,Homagama Police Station,Neighbor / Community Issues,1,6.829344,80.001909,synthetic
+2026-09,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.83015,80.006985,synthetic
+2026-09,PS-CMB-006,Homagama Police Station,Traffic issues,1,6.839817,79.994136,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.863944,79.894224,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.867549,79.878296,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.870842,79.874616,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.851483,79.894566,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.866153,79.891649,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.87711,79.881296,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.854399,79.882221,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.864975,79.868656,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.860233,79.879415,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.879581,79.889351,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.865537,79.889441,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.864454,79.888684,synthetic
+2025-10,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.871668,79.884695,synthetic
+2025-11,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.877166,79.884308,synthetic
+2025-11,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.854053,79.879693,synthetic
+2025-11,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.866285,79.873862,synthetic
+2025-11,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.861485,79.883658,synthetic
+2025-11,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.876816,79.895184,synthetic
+2025-11,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.863953,79.861438,synthetic
+2025-12,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.864955,79.878924,synthetic
+2025-12,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.875206,79.895179,synthetic
+2025-12,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.871967,79.894364,synthetic
+2025-12,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.868276,79.874552,synthetic
+2025-12,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.87934,79.881223,synthetic
+2025-12,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.863531,79.876132,synthetic
+2025-12,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.869374,79.89214,synthetic
+2025-12,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.870811,79.883778,synthetic
+2025-12,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.868753,79.880966,synthetic
+2025-12,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.856816,79.899246,synthetic
+2026-01,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.870068,79.895151,synthetic
+2026-01,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.869683,79.881873,synthetic
+2026-01,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.863424,79.87453,synthetic
+2026-01,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.871782,79.883727,synthetic
+2026-01,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.863583,79.876779,synthetic
+2026-01,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.865286,79.888035,synthetic
+2026-01,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.87034,79.878416,synthetic
+2026-01,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.868408,79.886674,synthetic
+2026-01,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.878524,79.892903,synthetic
+2026-02,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.871361,79.879419,synthetic
+2026-02,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.870849,79.887853,synthetic
+2026-02,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.851742,79.870481,synthetic
+2026-02,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.87624,79.885895,synthetic
+2026-02,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.874907,79.886257,synthetic
+2026-02,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.868373,79.886313,synthetic
+2026-02,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.871491,79.878507,synthetic
+2026-02,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.861772,79.889393,synthetic
+2026-02,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.871677,79.873362,synthetic
+2026-03,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.876116,79.883801,synthetic
+2026-03,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.861294,79.885845,synthetic
+2026-03,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.853489,79.907142,synthetic
+2026-03,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.866871,79.883762,synthetic
+2026-03,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.865725,79.88717,synthetic
+2026-03,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.870794,79.881523,synthetic
+2026-03,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.870082,79.882348,synthetic
+2026-03,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.864288,79.882814,synthetic
+2026-03,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.853019,79.879807,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.876418,79.884898,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.857848,79.876737,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.855103,79.885127,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.867967,79.884702,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.86463,79.87874,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.864355,79.895093,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.881629,79.898468,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.856412,79.899627,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.870872,79.884503,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.85906,79.879583,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.860251,79.880519,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.870626,79.885778,synthetic
+2026-04,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.870543,79.88176,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.871517,79.888638,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.865695,79.888537,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.862331,79.880794,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.878724,79.888213,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.856521,79.874885,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.874004,79.888688,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.865069,79.889114,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.87502,79.889297,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.864236,79.885801,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.869198,79.876812,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.874051,79.887346,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.861839,79.868586,synthetic
+2026-05,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.861378,79.88245,synthetic
+2026-06,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.864251,79.88698,synthetic
+2026-06,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.870627,79.891465,synthetic
+2026-06,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.87354,79.88664,synthetic
+2026-06,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.861725,79.890192,synthetic
+2026-06,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.858634,79.87897,synthetic
+2026-06,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.866121,79.89135,synthetic
+2026-06,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.865183,79.884222,synthetic
+2026-06,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.871175,79.893155,synthetic
+2026-06,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.860057,79.88094,synthetic
+2026-06,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.870351,79.886288,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.862285,79.887051,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.86751,79.877916,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.877622,79.881844,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.879223,79.89432,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.852626,79.878353,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.865967,79.89735,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.87098,79.892653,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.866952,79.888654,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.867476,79.896638,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.865979,79.894956,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.876244,79.871927,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.869125,79.883367,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.861884,79.894539,synthetic
+2026-07,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.85981,79.899361,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.885582,79.894667,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.865342,79.88726,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.849601,79.882638,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.866932,79.895429,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.87744,79.899225,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.861871,79.882167,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.876303,79.88589,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.870162,79.893755,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.864028,79.884601,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.863967,79.894661,synthetic
+2026-08,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.857723,79.885825,synthetic
+2026-09,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.882628,79.881776,synthetic
+2026-09,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.867758,79.888375,synthetic
+2026-09,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.86037,79.890886,synthetic
+2026-09,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.854957,79.883549,synthetic
+2026-09,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.880523,79.879335,synthetic
+2026-09,PS-CMB-007,Kohuwala Police Station,Traffic issues,1,6.859465,79.884864,synthetic
+2026-09,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.852763,79.886558,synthetic
+2026-09,PS-CMB-007,Kohuwala Police Station,Neighbor / Community Issues,1,6.863172,79.886844,synthetic
+2026-09,PS-CMB-007,Kohuwala Police Station,Public Nuisance / Cleanliness,1,6.85208,79.878386,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.909256,79.888978,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.916106,79.899786,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.90645,79.903964,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.908869,79.895494,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.908636,79.885027,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.914927,79.884832,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.914873,79.900458,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.903107,79.89051,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.916053,79.887089,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.910558,79.899809,synthetic
+2025-10,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.91101,79.886816,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.896982,79.893957,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.917113,79.903477,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.915198,79.899477,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.911422,79.90834,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.907588,79.883064,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.908173,79.895414,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.912962,79.890211,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.916254,79.899093,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.906865,79.89264,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.90568,79.905803,synthetic
+2025-11,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.909566,79.886168,synthetic
+2025-12,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.912458,79.890513,synthetic
+2025-12,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.906281,79.904895,synthetic
+2025-12,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.908404,79.889065,synthetic
+2025-12,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.907063,79.893484,synthetic
+2025-12,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.906032,79.896111,synthetic
+2025-12,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.905606,79.901694,synthetic
+2025-12,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.918643,79.886332,synthetic
+2025-12,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.908883,79.910706,synthetic
+2025-12,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.91834,79.896251,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.904897,79.899534,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.921972,79.891198,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.906507,79.90507,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.902905,79.881994,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.909431,79.89738,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.917566,79.897751,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.911448,79.894393,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.921534,79.906351,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.905558,79.892754,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.91467,79.912985,synthetic
+2026-01,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.916861,79.882544,synthetic
+2026-02,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.911242,79.912748,synthetic
+2026-02,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.901662,79.895176,synthetic
+2026-02,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.917519,79.890812,synthetic
+2026-02,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.914616,79.885413,synthetic
+2026-02,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.91359,79.890298,synthetic
+2026-02,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.920837,79.902074,synthetic
+2026-02,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.902437,79.897842,synthetic
+2026-02,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.911773,79.895279,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.922082,79.884602,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.904243,79.896101,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.905977,79.902783,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.923606,79.877379,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.914923,79.889814,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.907751,79.891145,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.915158,79.893594,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.914331,79.908705,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.911278,79.90403,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.910468,79.886989,synthetic
+2026-03,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.913267,79.890855,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.909574,79.905832,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.914399,79.900839,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.906796,79.888908,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.902985,79.891055,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.910522,79.893974,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.899546,79.888977,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.903332,79.88911,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.90292,79.893119,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.911091,79.895534,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.90929,79.88935,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.901176,79.892998,synthetic
+2026-04,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.913903,79.901008,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.914663,79.892847,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.903856,79.895313,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.900587,79.882603,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.906198,79.871642,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.912845,79.879907,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.903637,79.899857,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.906527,79.895409,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.91909,79.888624,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.913232,79.897001,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.907439,79.907395,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.90542,79.883699,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.898849,79.899375,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.905958,79.905917,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.914254,79.887348,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.913943,79.890628,synthetic
+2026-05,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.922185,79.903011,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.911316,79.8952,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.906499,79.887207,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.922213,79.890688,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.901192,79.892156,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.911981,79.915187,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.910699,79.908759,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.904306,79.895438,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.909387,79.885446,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.90204,79.891871,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.913488,79.916121,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.908112,79.886498,synthetic
+2026-06,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.909374,79.895714,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.909304,79.889746,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.909234,79.907194,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.906663,79.896942,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.911586,79.907057,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.913007,79.891037,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.911753,79.903931,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.906816,79.891528,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.922227,79.897105,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.918265,79.895052,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.914511,79.889018,synthetic
+2026-07,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.912962,79.896851,synthetic
+2026-08,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.914738,79.914224,synthetic
+2026-08,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.910426,79.884393,synthetic
+2026-08,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.900167,79.903967,synthetic
+2026-08,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.914279,79.909631,synthetic
+2026-08,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.923434,79.899334,synthetic
+2026-08,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.901297,79.892722,synthetic
+2026-08,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.901551,79.898088,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.909352,79.895254,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.912108,79.885573,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.908809,79.904305,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.926287,79.889425,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.900556,79.905982,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Neighbor / Community Issues,1,6.914647,79.896013,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.915804,79.90035,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.909598,79.908563,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.90278,79.899248,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Public Nuisance / Cleanliness,1,6.901085,79.909406,synthetic
+2026-09,PS-CMB-008,Welikada Police Station,Traffic issues,1,6.909421,79.901556,synthetic

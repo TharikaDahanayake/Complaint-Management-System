@@ -1,0 +1,1001 @@
+complaintId,stationID,stationName,stationDistrict,stationDivision,complaintCategory,incidentDate,createdAt,latitude,longitude,status,dataSource,month
+SYN-20261025-0001,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,10/1/2025 22:13,10/4/2025 17:57,6.856059,79.927969,Resolved,synthetic,2025-10
+SYN-20261025-0002,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,10/2/2025 10:45,10/4/2025 16:57,6.842075,79.926415,Resolved,synthetic,2025-10
+SYN-20261025-0003,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,10/12/2025 22:49,10/15/2025 6:45,6.852992,79.917786,Resolved,synthetic,2025-10
+SYN-20261025-0004,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,10/14/2025 20:49,10/17/2025 2:23,6.841356,79.921731,Ongoing,synthetic,2025-10
+SYN-20261025-0005,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,10/16/2025 18:21,10/18/2025 5:40,6.8389,79.933324,Escalated,synthetic,2025-10
+SYN-20261025-0006,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,10/21/2025 6:39,10/22/2025 18:01,6.832574,79.935652,Resolved,synthetic,2025-10
+SYN-20261025-0007,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,10/24/2025 21:23,10/27/2025 6:54,6.855102,79.921691,Resolved,synthetic,2025-10
+SYN-20261025-0008,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,10/25/2025 7:37,10/26/2025 19:23,6.839741,79.925679,Resolved,synthetic,2025-10
+SYN-20261025-0009,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,10/26/2025 8:45,10/27/2025 18:04,6.841877,79.923607,Resolved,synthetic,2025-10
+SYN-20261025-0010,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,10/27/2025 12:27,10/28/2025 3:09,6.846893,79.932104,Resolved,synthetic,2025-10
+SYN-20261025-0011,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,10/29/2025 16:00,10/30/2025 12:09,6.850409,79.926097,Resolved,synthetic,2025-10
+SYN-20261025-0012,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,10/30/2025 8:26,11/1/2025 19:27,6.840576,79.929764,Ongoing,synthetic,2025-10
+SYN-20261025-0013,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,10/30/2025 16:16,10/31/2025 13:25,6.842882,79.944443,Ongoing,synthetic,2025-10
+SYN-20261025-0014,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,11/3/2025 6:26,11/5/2025 18:35,6.838707,79.925802,Resolved,synthetic,2025-11
+SYN-20261025-0015,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,11/8/2025 20:22,11/9/2025 2:39,6.842037,79.918511,Resolved,synthetic,2025-11
+SYN-20261025-0016,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,11/9/2025 11:29,11/11/2025 8:38,6.833611,79.928971,Pending,synthetic,2025-11
+SYN-20261025-0017,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,11/9/2025 14:30,11/12/2025 0:45,6.851321,79.929068,Ongoing,synthetic,2025-11
+SYN-20261025-0018,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,11/11/2025 6:27,11/12/2025 3:03,6.843174,79.922199,Pending,synthetic,2025-11
+SYN-20261025-0019,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,11/12/2025 15:07,11/14/2025 1:32,6.843189,79.931285,Resolved,synthetic,2025-11
+SYN-20261025-0020,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,11/25/2025 7:11,11/26/2025 20:44,6.850252,79.927156,Ongoing,synthetic,2025-11
+SYN-20261025-0021,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,12/1/2025 22:09,12/4/2025 0:18,6.848891,79.938383,Resolved,synthetic,2025-12
+SYN-20261025-0022,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,12/5/2025 9:09,12/7/2025 6:08,6.845336,79.927949,Resolved,synthetic,2025-12
+SYN-20261025-0023,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,12/9/2025 12:12,12/10/2025 23:56,6.851771,79.913713,Resolved,synthetic,2025-12
+SYN-20261025-0024,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,12/10/2025 7:54,12/11/2025 1:23,6.836582,79.92846,Resolved,synthetic,2025-12
+SYN-20261025-0025,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,12/10/2025 15:13,12/11/2025 9:29,6.843387,79.914913,Resolved,synthetic,2025-12
+SYN-20261025-0026,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,12/12/2025 17:14,12/13/2025 22:11,6.842283,79.946469,Resolved,synthetic,2025-12
+SYN-20261025-0027,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,12/13/2025 11:57,12/15/2025 6:52,6.84965,79.929318,Resolved,synthetic,2025-12
+SYN-20261025-0028,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,12/14/2025 16:17,12/15/2025 15:52,6.839098,79.937374,Resolved,synthetic,2025-12
+SYN-20261025-0029,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,12/21/2025 8:51,12/23/2025 1:04,6.838399,79.933597,Ongoing,synthetic,2025-12
+SYN-20261025-0030,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,12/25/2025 15:14,12/26/2025 9:02,6.839416,79.930214,Ongoing,synthetic,2025-12
+SYN-20261025-0031,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,12/26/2025 15:42,12/27/2025 3:00,6.846211,79.91829,Resolved,synthetic,2025-12
+SYN-20261025-0032,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/1/2026 20:58,1/2/2026 22:45,6.850443,79.910211,Resolved,synthetic,2026-01
+SYN-20261025-0033,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/5/2026 9:20,1/6/2026 8:36,6.848244,79.936122,Resolved,synthetic,2026-01
+SYN-20261025-0034,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/5/2026 18:01,1/8/2026 7:53,6.84673,79.929604,Resolved,synthetic,2026-01
+SYN-20261025-0035,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,1/6/2026 17:38,1/7/2026 2:13,6.856869,79.930974,Escalated,synthetic,2026-01
+SYN-20261025-0036,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,1/8/2026 13:48,1/9/2026 3:25,6.837511,79.929075,Resolved,synthetic,2026-01
+SYN-20261025-0037,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/10/2026 6:36,1/11/2026 23:23,6.862543,79.927567,Ongoing,synthetic,2026-01
+SYN-20261025-0038,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,1/12/2026 17:21,1/15/2026 3:11,6.854723,79.922667,Pending,synthetic,2026-01
+SYN-20261025-0039,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,1/14/2026 17:40,1/15/2026 19:30,6.836,79.93727,Resolved,synthetic,2026-01
+SYN-20261025-0040,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,1/17/2026 8:44,1/17/2026 9:18,6.853627,79.936452,Ongoing,synthetic,2026-01
+SYN-20261025-0041,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/17/2026 17:09,1/19/2026 11:00,6.851095,79.920193,Escalated,synthetic,2026-01
+SYN-20261025-0042,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/24/2026 22:13,1/26/2026 0:08,6.846854,79.927439,Pending,synthetic,2026-01
+SYN-20261025-0043,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,1/25/2026 19:48,1/28/2026 13:44,6.837557,79.922779,Escalated,synthetic,2026-01
+SYN-20261025-0044,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/29/2026 20:37,2/1/2026 6:42,6.846455,79.925087,Ongoing,synthetic,2026-01
+SYN-20261025-0045,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,1/31/2026 22:39,2/2/2026 11:35,6.846752,79.924436,Resolved,synthetic,2026-01
+SYN-20261025-0046,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,2/3/2026 7:45,2/4/2026 21:38,6.848574,79.935139,Escalated,synthetic,2026-02
+SYN-20261025-0047,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/5/2026 18:38,2/7/2026 18:46,6.840596,79.929257,Pending,synthetic,2026-02
+SYN-20261025-0048,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,2/13/2026 15:51,2/16/2026 6:31,6.843677,79.941523,Ongoing,synthetic,2026-02
+SYN-20261025-0049,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/13/2026 16:03,2/13/2026 21:46,6.847947,79.921232,Ongoing,synthetic,2026-02
+SYN-20261025-0050,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,2/18/2026 16:35,2/21/2026 1:34,6.843185,79.923875,Resolved,synthetic,2026-02
+SYN-20261025-0051,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,2/20/2026 10:07,2/22/2026 17:30,6.849476,79.930546,Pending,synthetic,2026-02
+SYN-20261025-0052,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,2/25/2026 21:14,2/28/2026 5:23,6.85565,79.926506,Pending,synthetic,2026-02
+SYN-20261025-0053,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/28/2026 9:36,3/2/2026 9:45,6.841241,79.91393,Resolved,synthetic,2026-02
+SYN-20261025-0054,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/1/2026 12:17,3/2/2026 15:30,6.853065,79.930459,Resolved,synthetic,2026-03
+SYN-20261025-0055,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,3/6/2026 20:50,3/9/2026 9:48,6.842399,79.933052,Ongoing,synthetic,2026-03
+SYN-20261025-0056,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,3/8/2026 19:42,3/9/2026 22:11,6.84049,79.920968,Resolved,synthetic,2026-03
+SYN-20261025-0057,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/11/2026 13:34,3/12/2026 4:56,6.845631,79.94215,Ongoing,synthetic,2026-03
+SYN-20261025-0058,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/13/2026 11:58,3/14/2026 6:55,6.852689,79.926564,Resolved,synthetic,2026-03
+SYN-20261025-0059,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/17/2026 19:50,3/20/2026 18:40,6.852226,79.927716,Resolved,synthetic,2026-03
+SYN-20261025-0060,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/18/2026 7:31,3/18/2026 16:34,6.839314,79.927211,Escalated,synthetic,2026-03
+SYN-20261025-0061,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,3/18/2026 10:35,3/19/2026 14:21,6.848898,79.937098,Pending,synthetic,2026-03
+SYN-20261025-0062,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/21/2026 19:34,3/22/2026 15:26,6.849862,79.93464,Ongoing,synthetic,2026-03
+SYN-20261025-0063,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,3/21/2026 20:30,3/24/2026 12:26,6.839361,79.930671,Resolved,synthetic,2026-03
+SYN-20261025-0064,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/22/2026 17:58,3/23/2026 14:40,6.837444,79.93081,Pending,synthetic,2026-03
+SYN-20261025-0065,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/26/2026 17:56,3/28/2026 14:56,6.832931,79.935338,Escalated,synthetic,2026-03
+SYN-20261025-0066,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/27/2026 17:37,3/27/2026 19:26,6.85146,79.925972,Pending,synthetic,2026-03
+SYN-20261025-0067,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/30/2026 11:41,3/30/2026 13:18,6.851323,79.940837,Ongoing,synthetic,2026-03
+SYN-20261025-0068,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/30/2026 11:45,3/31/2026 6:27,6.838678,79.934589,Pending,synthetic,2026-03
+SYN-20261025-0069,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,3/31/2026 18:51,4/2/2026 16:05,6.835469,79.935849,Escalated,synthetic,2026-03
+SYN-20261025-0070,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,4/1/2026 14:25,4/2/2026 22:45,6.839043,79.922792,Resolved,synthetic,2026-04
+SYN-20261025-0071,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,4/6/2026 19:58,4/7/2026 22:47,6.846184,79.929091,Resolved,synthetic,2026-04
+SYN-20261025-0072,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,4/7/2026 16:04,4/8/2026 22:56,6.843556,79.93097,Resolved,synthetic,2026-04
+SYN-20261025-0073,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/8/2026 14:09,4/9/2026 10:55,6.855657,79.922824,Ongoing,synthetic,2026-04
+SYN-20261025-0074,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/20/2026 6:17,4/20/2026 12:07,6.84808,79.924969,Pending,synthetic,2026-04
+SYN-20261025-0075,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/20/2026 9:57,4/23/2026 5:28,6.845357,79.917546,Escalated,synthetic,2026-04
+SYN-20261025-0076,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,4/22/2026 17:23,4/25/2026 15:39,6.850211,79.932756,Pending,synthetic,2026-04
+SYN-20261025-0077,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/23/2026 9:12,4/25/2026 18:14,6.847933,79.925883,Escalated,synthetic,2026-04
+SYN-20261025-0078,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,4/23/2026 16:02,4/24/2026 5:28,6.839454,79.948352,Escalated,synthetic,2026-04
+SYN-20261025-0079,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,4/29/2026 20:45,5/2/2026 8:51,6.849878,79.934277,Resolved,synthetic,2026-04
+SYN-20261025-0080,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/30/2026 20:25,5/3/2026 12:52,6.845291,79.934523,Ongoing,synthetic,2026-04
+SYN-20261025-0081,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/1/2026 15:07,5/3/2026 11:17,6.831681,79.937811,Resolved,synthetic,2026-05
+SYN-20261025-0082,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,5/1/2026 21:46,5/3/2026 20:56,6.845088,79.933583,Resolved,synthetic,2026-05
+SYN-20261025-0083,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,5/2/2026 8:35,5/2/2026 19:27,6.854447,79.916997,Escalated,synthetic,2026-05
+SYN-20261025-0084,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,5/4/2026 22:45,5/5/2026 14:09,6.843391,79.927752,Resolved,synthetic,2026-05
+SYN-20261025-0085,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/6/2026 12:41,5/6/2026 22:20,6.841729,79.932034,Resolved,synthetic,2026-05
+SYN-20261025-0086,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,5/7/2026 6:59,5/8/2026 17:12,6.847502,79.919213,Pending,synthetic,2026-05
+SYN-20261025-0087,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,5/7/2026 8:04,5/8/2026 20:06,6.844266,79.931846,Pending,synthetic,2026-05
+SYN-20261025-0088,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,5/7/2026 8:24,5/8/2026 11:43,6.836166,79.924666,Resolved,synthetic,2026-05
+SYN-20261025-0089,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/19/2026 15:05,5/22/2026 8:30,6.845696,79.927256,Resolved,synthetic,2026-05
+SYN-20261025-0090,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,5/26/2026 15:34,5/27/2026 14:14,6.848275,79.933628,Ongoing,synthetic,2026-05
+SYN-20261025-0091,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/30/2026 8:04,5/31/2026 21:43,6.849944,79.928177,Resolved,synthetic,2026-05
+SYN-20261025-0092,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,5/30/2026 16:22,5/31/2026 3:15,6.84283,79.928015,Ongoing,synthetic,2026-05
+SYN-20261025-0093,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,6/4/2026 7:24,6/7/2026 2:46,6.848893,79.92368,Resolved,synthetic,2026-06
+SYN-20261025-0094,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,6/5/2026 18:32,6/6/2026 4:07,6.8355,79.922586,Ongoing,synthetic,2026-06
+SYN-20261025-0095,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,6/7/2026 15:14,6/9/2026 10:03,6.846688,79.915479,Resolved,synthetic,2026-06
+SYN-20261025-0096,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,6/8/2026 7:47,6/8/2026 18:46,6.840379,79.930117,Resolved,synthetic,2026-06
+SYN-20261025-0097,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,6/11/2026 10:53,6/12/2026 11:52,6.847795,79.934254,Ongoing,synthetic,2026-06
+SYN-20261025-0098,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/12/2026 21:40,6/15/2026 13:32,6.843165,79.942682,Escalated,synthetic,2026-06
+SYN-20261025-0099,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/13/2026 11:15,6/16/2026 10:43,6.850557,79.933969,Resolved,synthetic,2026-06
+SYN-20261025-0100,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,6/24/2026 19:24,6/27/2026 3:23,6.838248,79.936246,Resolved,synthetic,2026-06
+SYN-20261025-0101,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,6/29/2026 12:07,7/2/2026 5:00,6.834963,79.9263,Pending,synthetic,2026-06
+SYN-20261025-0102,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,6/30/2026 14:01,7/2/2026 11:59,6.846047,79.925579,Resolved,synthetic,2026-06
+SYN-20261025-0103,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/4/2026 20:59,7/6/2026 2:14,6.848236,79.9427,Pending,synthetic,2026-07
+SYN-20261025-0104,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,7/9/2026 7:23,7/9/2026 21:24,6.843472,79.934493,Resolved,synthetic,2026-07
+SYN-20261025-0105,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/9/2026 13:45,7/10/2026 23:39,6.846829,79.932078,Resolved,synthetic,2026-07
+SYN-20261025-0106,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,7/11/2026 19:36,7/12/2026 13:33,6.845105,79.929778,Escalated,synthetic,2026-07
+SYN-20261025-0107,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/12/2026 14:54,7/14/2026 6:26,6.847449,79.947219,Ongoing,synthetic,2026-07
+SYN-20261025-0108,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/15/2026 15:42,7/16/2026 9:57,6.833555,79.91793,Pending,synthetic,2026-07
+SYN-20261025-0109,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,7/15/2026 16:30,7/18/2026 7:59,6.848811,79.925255,Resolved,synthetic,2026-07
+SYN-20261025-0110,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,7/18/2026 20:30,7/21/2026 2:22,6.846394,79.919128,Escalated,synthetic,2026-07
+SYN-20261025-0111,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/21/2026 18:18,7/22/2026 15:00,6.838791,79.932834,Resolved,synthetic,2026-07
+SYN-20261025-0112,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/22/2026 8:26,7/24/2026 6:02,6.849842,79.928499,Ongoing,synthetic,2026-07
+SYN-20261025-0113,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,7/22/2026 18:59,7/23/2026 21:46,6.846962,79.942023,Escalated,synthetic,2026-07
+SYN-20261025-0114,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,7/28/2026 16:09,7/31/2026 1:29,6.844582,79.929228,Resolved,synthetic,2026-07
+SYN-20261025-0115,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,7/28/2026 21:18,7/30/2026 18:58,6.843764,79.919341,Ongoing,synthetic,2026-07
+SYN-20261025-0116,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,7/30/2026 20:12,8/1/2026 8:15,6.850294,79.940033,Resolved,synthetic,2026-07
+SYN-20261025-0117,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/31/2026 10:14,8/3/2026 0:15,6.836296,79.925588,Ongoing,synthetic,2026-07
+SYN-20261025-0118,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,8/1/2026 16:16,8/2/2026 13:32,6.843389,79.916512,Escalated,synthetic,2026-08
+SYN-20261025-0119,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,8/7/2026 15:51,8/9/2026 5:50,6.836228,79.928596,Pending,synthetic,2026-08
+SYN-20261025-0120,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,8/11/2026 20:48,8/13/2026 17:01,6.847248,79.9301,Ongoing,synthetic,2026-08
+SYN-20261025-0121,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,8/15/2026 20:19,8/17/2026 3:29,6.847914,79.937227,Resolved,synthetic,2026-08
+SYN-20261025-0122,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,8/16/2026 8:19,8/16/2026 21:15,6.848512,79.932924,Pending,synthetic,2026-08
+SYN-20261025-0123,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,8/17/2026 16:02,8/17/2026 16:31,6.838925,79.936449,Resolved,synthetic,2026-08
+SYN-20261025-0124,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,8/18/2026 22:05,8/19/2026 0:50,6.852197,79.933745,Pending,synthetic,2026-08
+SYN-20261025-0125,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,8/20/2026 9:56,8/22/2026 3:49,6.847067,79.931592,Resolved,synthetic,2026-08
+SYN-20261025-0126,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,8/21/2026 17:15,8/24/2026 0:15,6.845696,79.926856,Resolved,synthetic,2026-08
+SYN-20261025-0127,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,8/25/2026 7:43,8/27/2026 2:39,6.847542,79.93376,Resolved,synthetic,2026-08
+SYN-20261025-0128,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,8/26/2026 17:15,8/27/2026 15:06,6.830022,79.931743,Ongoing,synthetic,2026-08
+SYN-20261025-0129,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,8/28/2026 11:51,8/29/2026 14:39,6.852777,79.929168,Resolved,synthetic,2026-08
+SYN-20261025-0130,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,8/30/2026 9:16,8/31/2026 4:22,6.848479,79.934898,Pending,synthetic,2026-08
+SYN-20261025-0131,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Traffic issues,9/4/2026 10:56,9/4/2026 18:39,6.8494,79.921634,Ongoing,synthetic,2026-09
+SYN-20261025-0132,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/5/2026 19:21,9/6/2026 22:55,6.834489,79.922271,Resolved,synthetic,2026-09
+SYN-20261025-0133,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/6/2026 9:57,9/6/2026 12:50,6.844206,79.924717,Resolved,synthetic,2026-09
+SYN-20261025-0134,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,9/9/2026 11:26,9/12/2026 7:05,6.848725,79.932235,Ongoing,synthetic,2026-09
+SYN-20261025-0135,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,9/13/2026 9:55,9/14/2026 1:06,6.837871,79.931303,Ongoing,synthetic,2026-09
+SYN-20261025-0136,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/20/2026 17:46,9/21/2026 11:27,6.840825,79.911904,Resolved,synthetic,2026-09
+SYN-20261025-0137,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/21/2026 17:14,9/22/2026 3:22,6.838509,79.931968,Resolved,synthetic,2026-09
+SYN-20261025-0138,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,9/24/2026 6:02,9/25/2026 6:58,6.850219,79.931481,Pending,synthetic,2026-09
+SYN-20261025-0139,PS-CMB-001,Maharagama Police Station,Colombo,Nugegoda,Neighbor / Community Issues,9/25/2026 11:59,9/25/2026 18:11,6.857686,79.928674,Resolved,synthetic,2026-09
+SYN-20261025-0140,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,10/12/2025 6:50,10/13/2025 6:48,6.866407,79.907768,Resolved,synthetic,2025-10
+SYN-20261025-0141,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,10/22/2025 20:35,10/25/2025 1:33,6.87903,79.90236,Resolved,synthetic,2025-10
+SYN-20261025-0142,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,10/26/2025 17:04,10/27/2025 6:24,6.866073,79.906863,Resolved,synthetic,2025-10
+SYN-20261025-0143,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,10/27/2025 14:13,10/30/2025 14:50,6.865327,79.902667,Resolved,synthetic,2025-10
+SYN-20261025-0144,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,10/30/2025 19:32,11/1/2025 17:25,6.873158,79.908269,Resolved,synthetic,2025-10
+SYN-20261025-0145,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,11/2/2025 16:49,11/4/2025 18:43,6.880478,79.893582,Escalated,synthetic,2025-11
+SYN-20261025-0146,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,11/6/2025 14:42,11/9/2025 3:14,6.869524,79.888325,Resolved,synthetic,2025-11
+SYN-20261025-0147,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,11/8/2025 11:24,11/10/2025 6:08,6.86649,79.901781,Ongoing,synthetic,2025-11
+SYN-20261025-0148,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,11/9/2025 16:33,11/10/2025 13:49,6.867967,79.90372,Ongoing,synthetic,2025-11
+SYN-20261025-0149,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,11/11/2025 18:31,11/12/2025 15:21,6.867524,79.89524,Resolved,synthetic,2025-11
+SYN-20261025-0150,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,11/11/2025 20:03,11/14/2025 9:39,6.882753,79.896619,Pending,synthetic,2025-11
+SYN-20261025-0151,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,11/13/2025 17:44,11/15/2025 8:15,6.877493,79.892202,Ongoing,synthetic,2025-11
+SYN-20261025-0152,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,11/19/2025 6:28,11/20/2025 15:32,6.871877,79.909111,Resolved,synthetic,2025-11
+SYN-20261025-0153,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,11/21/2025 8:25,11/24/2025 7:34,6.867324,79.90148,Escalated,synthetic,2025-11
+SYN-20261025-0154,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,11/21/2025 10:02,11/23/2025 10:16,6.879955,79.915115,Resolved,synthetic,2025-11
+SYN-20261025-0155,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,11/21/2025 19:40,11/24/2025 11:41,6.873275,79.895858,Resolved,synthetic,2025-11
+SYN-20261025-0156,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,11/22/2025 19:45,11/25/2025 14:19,6.877571,79.917117,Pending,synthetic,2025-11
+SYN-20261025-0157,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,11/26/2025 21:39,11/28/2025 3:39,6.875188,79.884764,Resolved,synthetic,2025-11
+SYN-20261025-0158,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,11/27/2025 7:01,11/28/2025 20:26,6.868737,79.904166,Resolved,synthetic,2025-11
+SYN-20261025-0159,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,11/29/2025 8:29,11/29/2025 19:44,6.875738,79.92413,Resolved,synthetic,2025-11
+SYN-20261025-0160,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,12/6/2025 12:14,12/8/2025 2:37,6.871377,79.894267,Escalated,synthetic,2025-12
+SYN-20261025-0161,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,12/10/2025 6:18,12/11/2025 9:59,6.878531,79.882878,Resolved,synthetic,2025-12
+SYN-20261025-0162,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,12/16/2025 13:25,12/18/2025 6:13,6.876916,79.90412,Resolved,synthetic,2025-12
+SYN-20261025-0163,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,12/17/2025 16:33,12/19/2025 13:17,6.87046,79.888391,Ongoing,synthetic,2025-12
+SYN-20261025-0164,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,12/20/2025 9:20,12/23/2025 7:11,6.875002,79.899469,Resolved,synthetic,2025-12
+SYN-20261025-0165,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,12/25/2025 22:07,12/27/2025 21:27,6.86433,79.898931,Ongoing,synthetic,2025-12
+SYN-20261025-0166,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,12/29/2025 7:56,12/30/2025 1:38,6.877175,79.917669,Ongoing,synthetic,2025-12
+SYN-20261025-0167,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,12/31/2025 8:20,1/2/2026 9:28,6.862746,79.899017,Resolved,synthetic,2025-12
+SYN-20261025-0168,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,12/31/2025 10:22,1/2/2026 21:08,6.866946,79.899683,Ongoing,synthetic,2025-12
+SYN-20261025-0169,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,1/6/2026 6:17,1/7/2026 15:53,6.872977,79.905665,Escalated,synthetic,2026-01
+SYN-20261025-0170,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,1/8/2026 17:32,1/11/2026 1:29,6.86901,79.902892,Resolved,synthetic,2026-01
+SYN-20261025-0171,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,1/15/2026 6:12,1/16/2026 19:37,6.880112,79.901248,Pending,synthetic,2026-01
+SYN-20261025-0172,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,1/17/2026 21:58,1/19/2026 2:31,6.883315,79.897762,Resolved,synthetic,2026-01
+SYN-20261025-0173,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/18/2026 20:26,1/20/2026 18:18,6.874549,79.905866,Resolved,synthetic,2026-01
+SYN-20261025-0174,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,1/24/2026 12:42,1/26/2026 7:37,6.862563,79.89808,Resolved,synthetic,2026-01
+SYN-20261025-0175,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/24/2026 15:25,1/25/2026 17:09,6.872234,79.905608,Escalated,synthetic,2026-01
+SYN-20261025-0176,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/25/2026 8:18,1/28/2026 2:57,6.876698,79.892886,Ongoing,synthetic,2026-01
+SYN-20261025-0177,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,1/30/2026 8:34,2/1/2026 20:16,6.874602,79.897957,Pending,synthetic,2026-01
+SYN-20261025-0178,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,2/4/2026 19:03,2/7/2026 5:50,6.882266,79.908057,Ongoing,synthetic,2026-02
+SYN-20261025-0179,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,2/9/2026 12:47,2/11/2026 2:45,6.883777,79.908706,Escalated,synthetic,2026-02
+SYN-20261025-0180,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,2/9/2026 13:29,2/12/2026 13:25,6.873918,79.893206,Pending,synthetic,2026-02
+SYN-20261025-0181,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,2/12/2026 16:10,2/14/2026 16:36,6.88383,79.90775,Ongoing,synthetic,2026-02
+SYN-20261025-0182,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,2/14/2026 12:02,2/16/2026 3:30,6.875149,79.889739,Resolved,synthetic,2026-02
+SYN-20261025-0183,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/17/2026 21:10,2/19/2026 20:58,6.857991,79.913202,Ongoing,synthetic,2026-02
+SYN-20261025-0184,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/19/2026 8:05,2/22/2026 4:51,6.88806,79.891086,Ongoing,synthetic,2026-02
+SYN-20261025-0185,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/21/2026 13:03,2/24/2026 4:09,6.870374,79.888782,Resolved,synthetic,2026-02
+SYN-20261025-0186,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/21/2026 14:56,2/23/2026 0:07,6.874918,79.904185,Resolved,synthetic,2026-02
+SYN-20261025-0187,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,2/23/2026 8:44,2/25/2026 2:48,6.879339,79.914091,Pending,synthetic,2026-02
+SYN-20261025-0188,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/23/2026 18:52,2/25/2026 3:08,6.868269,79.909207,Resolved,synthetic,2026-02
+SYN-20261025-0189,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,2/24/2026 11:44,2/27/2026 8:22,6.874472,79.906165,Resolved,synthetic,2026-02
+SYN-20261025-0190,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/28/2026 19:59,3/2/2026 18:36,6.879854,79.895252,Ongoing,synthetic,2026-02
+SYN-20261025-0191,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,2/28/2026 21:06,3/1/2026 6:30,6.873999,79.902131,Escalated,synthetic,2026-02
+SYN-20261025-0192,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/1/2026 7:04,3/3/2026 7:41,6.866869,79.895499,Resolved,synthetic,2026-03
+SYN-20261025-0193,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,3/7/2026 21:47,3/9/2026 3:12,6.882291,79.898572,Resolved,synthetic,2026-03
+SYN-20261025-0194,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/8/2026 18:41,3/9/2026 16:31,6.867667,79.904782,Ongoing,synthetic,2026-03
+SYN-20261025-0195,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,3/14/2026 20:40,3/17/2026 10:37,6.864014,79.910026,Escalated,synthetic,2026-03
+SYN-20261025-0196,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/15/2026 12:18,3/16/2026 15:40,6.861121,79.914455,Pending,synthetic,2026-03
+SYN-20261025-0197,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,3/15/2026 14:13,3/16/2026 17:17,6.86748,79.908401,Pending,synthetic,2026-03
+SYN-20261025-0198,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/16/2026 20:26,3/19/2026 17:15,6.873084,79.907107,Pending,synthetic,2026-03
+SYN-20261025-0199,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/17/2026 22:33,3/18/2026 20:21,6.875164,79.905185,Resolved,synthetic,2026-03
+SYN-20261025-0200,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,3/20/2026 16:58,3/22/2026 1:14,6.873704,79.893258,Pending,synthetic,2026-03
+SYN-20261025-0201,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/22/2026 6:01,3/23/2026 21:22,6.865741,79.886994,Ongoing,synthetic,2026-03
+SYN-20261025-0202,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,4/1/2026 11:15,4/1/2026 22:14,6.870344,79.905644,Pending,synthetic,2026-04
+SYN-20261025-0203,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/1/2026 13:58,4/4/2026 12:03,6.873623,79.904582,Resolved,synthetic,2026-04
+SYN-20261025-0204,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,4/4/2026 10:03,4/5/2026 1:22,6.872286,79.913191,Escalated,synthetic,2026-04
+SYN-20261025-0205,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,4/5/2026 17:04,4/6/2026 15:56,6.870767,79.888262,Ongoing,synthetic,2026-04
+SYN-20261025-0206,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,4/9/2026 18:53,4/11/2026 4:31,6.872628,79.908454,Ongoing,synthetic,2026-04
+SYN-20261025-0207,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,4/10/2026 16:48,4/12/2026 18:15,6.876934,79.910278,Resolved,synthetic,2026-04
+SYN-20261025-0208,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/11/2026 20:42,4/13/2026 14:00,6.880083,79.897188,Resolved,synthetic,2026-04
+SYN-20261025-0209,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/14/2026 17:55,4/16/2026 6:59,6.863359,79.905789,Ongoing,synthetic,2026-04
+SYN-20261025-0210,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/15/2026 18:18,4/16/2026 14:40,6.858553,79.898557,Resolved,synthetic,2026-04
+SYN-20261025-0211,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/21/2026 14:38,4/23/2026 19:30,6.86587,79.917628,Ongoing,synthetic,2026-04
+SYN-20261025-0212,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,4/23/2026 21:12,4/23/2026 23:12,6.859861,79.904931,Escalated,synthetic,2026-04
+SYN-20261025-0213,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/26/2026 6:39,4/28/2026 6:16,6.870015,79.90815,Resolved,synthetic,2026-04
+SYN-20261025-0214,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,5/6/2026 12:03,5/7/2026 4:41,6.87038,79.904353,Ongoing,synthetic,2026-05
+SYN-20261025-0215,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,5/9/2026 19:25,5/10/2026 10:13,6.8614,79.905054,Resolved,synthetic,2026-05
+SYN-20261025-0216,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,5/13/2026 14:43,5/16/2026 4:19,6.866678,79.899245,Pending,synthetic,2026-05
+SYN-20261025-0217,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/15/2026 7:54,5/16/2026 5:57,6.866151,79.90766,Ongoing,synthetic,2026-05
+SYN-20261025-0218,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,5/19/2026 9:29,5/19/2026 18:34,6.87646,79.901253,Resolved,synthetic,2026-05
+SYN-20261025-0219,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,5/21/2026 19:10,5/23/2026 7:54,6.878184,79.902676,Pending,synthetic,2026-05
+SYN-20261025-0220,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,5/26/2026 13:11,5/27/2026 6:57,6.872182,79.90343,Pending,synthetic,2026-05
+SYN-20261025-0221,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,5/30/2026 14:47,6/1/2026 17:48,6.877926,79.911431,Pending,synthetic,2026-05
+SYN-20261025-0222,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/31/2026 13:33,6/2/2026 3:32,6.880749,79.906995,Resolved,synthetic,2026-05
+SYN-20261025-0223,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/6/2026 6:57,6/6/2026 18:47,6.874041,79.907428,Pending,synthetic,2026-06
+SYN-20261025-0224,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,6/8/2026 9:28,6/11/2026 8:46,6.877623,79.904421,Resolved,synthetic,2026-06
+SYN-20261025-0225,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,6/9/2026 7:03,6/10/2026 13:20,6.881034,79.897064,Pending,synthetic,2026-06
+SYN-20261025-0226,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,6/9/2026 7:40,6/11/2026 20:14,6.860488,79.898977,Pending,synthetic,2026-06
+SYN-20261025-0227,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,6/10/2026 8:20,6/10/2026 19:02,6.875359,79.910034,Ongoing,synthetic,2026-06
+SYN-20261025-0228,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/11/2026 22:01,6/12/2026 4:22,6.865574,79.898539,Escalated,synthetic,2026-06
+SYN-20261025-0229,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,6/12/2026 17:19,6/13/2026 6:33,6.87181,79.900655,Resolved,synthetic,2026-06
+SYN-20261025-0230,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/14/2026 6:38,6/15/2026 12:44,6.879156,79.893668,Resolved,synthetic,2026-06
+SYN-20261025-0231,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/21/2026 9:06,6/22/2026 16:47,6.873376,79.903593,Pending,synthetic,2026-06
+SYN-20261025-0232,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,6/22/2026 20:12,6/23/2026 4:19,6.86843,79.9025,Resolved,synthetic,2026-06
+SYN-20261025-0233,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,6/25/2026 18:17,6/27/2026 17:55,6.881594,79.900148,Resolved,synthetic,2026-06
+SYN-20261025-0234,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/26/2026 15:43,6/27/2026 16:12,6.886224,79.918372,Ongoing,synthetic,2026-06
+SYN-20261025-0235,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,6/27/2026 12:40,6/29/2026 4:46,6.875083,79.889297,Pending,synthetic,2026-06
+SYN-20261025-0236,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,7/4/2026 14:36,7/6/2026 7:59,6.877798,79.918764,Pending,synthetic,2026-07
+SYN-20261025-0237,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/6/2026 15:41,7/8/2026 23:12,6.877064,79.906063,Resolved,synthetic,2026-07
+SYN-20261025-0238,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/7/2026 6:42,7/7/2026 8:14,6.875144,79.906119,Resolved,synthetic,2026-07
+SYN-20261025-0239,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/9/2026 21:10,7/10/2026 5:13,6.880306,79.90945,Resolved,synthetic,2026-07
+SYN-20261025-0240,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,7/9/2026 21:40,7/10/2026 11:01,6.879253,79.888519,Pending,synthetic,2026-07
+SYN-20261025-0241,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,7/10/2026 12:55,7/11/2026 17:18,6.887344,79.887954,Pending,synthetic,2026-07
+SYN-20261025-0242,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/11/2026 15:06,7/12/2026 8:09,6.877081,79.899673,Pending,synthetic,2026-07
+SYN-20261025-0243,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,7/12/2026 14:29,7/12/2026 19:27,6.885688,79.898409,Escalated,synthetic,2026-07
+SYN-20261025-0244,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/13/2026 7:53,7/14/2026 16:02,6.858997,79.908179,Ongoing,synthetic,2026-07
+SYN-20261025-0245,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,7/26/2026 11:14,7/27/2026 8:47,6.878415,79.909617,Pending,synthetic,2026-07
+SYN-20261025-0246,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,8/2/2026 7:36,8/5/2026 7:53,6.872022,79.901762,Resolved,synthetic,2026-08
+SYN-20261025-0247,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,8/4/2026 20:17,8/6/2026 20:19,6.858894,79.896889,Pending,synthetic,2026-08
+SYN-20261025-0248,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,8/7/2026 12:53,8/8/2026 23:24,6.875649,79.899265,Resolved,synthetic,2026-08
+SYN-20261025-0249,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,8/8/2026 7:29,8/9/2026 15:46,6.868066,79.903113,Resolved,synthetic,2026-08
+SYN-20261025-0250,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,8/8/2026 11:34,8/9/2026 10:07,6.867857,79.884433,Escalated,synthetic,2026-08
+SYN-20261025-0251,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,8/14/2026 13:37,8/17/2026 0:56,6.879254,79.900499,Ongoing,synthetic,2026-08
+SYN-20261025-0252,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,8/19/2026 20:51,8/20/2026 1:35,6.867295,79.914345,Resolved,synthetic,2026-08
+SYN-20261025-0253,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,8/22/2026 7:54,8/23/2026 5:55,6.874669,79.898055,Resolved,synthetic,2026-08
+SYN-20261025-0254,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,8/23/2026 7:12,8/23/2026 8:32,6.870689,79.895511,Pending,synthetic,2026-08
+SYN-20261025-0255,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,8/24/2026 10:23,8/25/2026 16:05,6.871782,79.901422,Resolved,synthetic,2026-08
+SYN-20261025-0256,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,8/26/2026 22:35,8/28/2026 6:05,6.885838,79.900186,Pending,synthetic,2026-08
+SYN-20261025-0257,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,8/28/2026 17:29,8/28/2026 20:17,6.87369,79.893584,Pending,synthetic,2026-08
+SYN-20261025-0258,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/1/2026 15:32,9/3/2026 20:43,6.878947,79.900831,Ongoing,synthetic,2026-09
+SYN-20261025-0259,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,9/4/2026 17:56,9/7/2026 18:51,6.88167,79.902278,Ongoing,synthetic,2026-09
+SYN-20261025-0260,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,9/5/2026 22:53,9/7/2026 7:55,6.875798,79.906539,Pending,synthetic,2026-09
+SYN-20261025-0261,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,9/6/2026 8:01,9/8/2026 10:26,6.874748,79.899284,Resolved,synthetic,2026-09
+SYN-20261025-0262,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,9/6/2026 17:06,9/7/2026 22:59,6.870947,79.908092,Resolved,synthetic,2026-09
+SYN-20261025-0263,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Traffic issues,9/18/2026 15:40,9/19/2026 17:05,6.881101,79.896008,Resolved,synthetic,2026-09
+SYN-20261025-0264,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/19/2026 16:36,9/21/2026 2:32,6.866503,79.894322,Resolved,synthetic,2026-09
+SYN-20261025-0265,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/21/2026 7:26,9/23/2026 13:18,6.87606,79.887243,Resolved,synthetic,2026-09
+SYN-20261025-0266,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,9/21/2026 9:49,9/22/2026 3:48,6.867232,79.892126,Pending,synthetic,2026-09
+SYN-20261025-0267,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/25/2026 6:04,9/27/2026 5:27,6.877486,79.898128,Pending,synthetic,2026-09
+SYN-20261025-0268,PS-CMB-002,Mirihana Police Station,Colombo,Nugegoda,Neighbor / Community Issues,9/29/2026 13:58,10/1/2026 6:10,6.886908,79.904137,Escalated,synthetic,2026-09
+SYN-20261025-0269,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,10/9/2025 13:05,10/11/2025 0:42,6.803726,79.920077,Resolved,synthetic,2025-10
+SYN-20261025-0270,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,10/10/2025 18:44,10/11/2025 7:49,6.805435,79.922698,Resolved,synthetic,2025-10
+SYN-20261025-0271,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,10/11/2025 14:22,10/12/2025 18:51,6.79215,79.934661,Pending,synthetic,2025-10
+SYN-20261025-0272,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,10/17/2025 6:15,10/17/2025 21:46,6.8176,79.918765,Pending,synthetic,2025-10
+SYN-20261025-0273,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,10/17/2025 16:56,10/18/2025 12:47,6.807483,79.909442,Resolved,synthetic,2025-10
+SYN-20261025-0274,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,10/26/2025 8:37,10/28/2025 9:57,6.800246,79.924862,Pending,synthetic,2025-10
+SYN-20261025-0275,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,10/26/2025 17:49,10/26/2025 19:45,6.79509,79.925722,Escalated,synthetic,2025-10
+SYN-20261025-0276,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,10/28/2025 10:05,10/30/2025 4:48,6.799794,79.932344,Escalated,synthetic,2025-10
+SYN-20261025-0277,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,10/28/2025 22:45,10/30/2025 22:16,6.803085,79.909294,Ongoing,synthetic,2025-10
+SYN-20261025-0278,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/2/2025 7:26,11/2/2025 12:58,6.806477,79.911695,Resolved,synthetic,2025-11
+SYN-20261025-0279,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,11/3/2025 8:56,11/4/2025 5:55,6.806763,79.921382,Resolved,synthetic,2025-11
+SYN-20261025-0280,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/4/2025 11:04,11/6/2025 18:17,6.800467,79.920598,Resolved,synthetic,2025-11
+SYN-20261025-0281,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/5/2025 18:05,11/7/2025 18:06,6.809463,79.918323,Ongoing,synthetic,2025-11
+SYN-20261025-0282,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,11/8/2025 22:23,11/9/2025 19:35,6.80407,79.925577,Resolved,synthetic,2025-11
+SYN-20261025-0283,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,11/11/2025 13:53,11/12/2025 3:22,6.81025,79.927667,Resolved,synthetic,2025-11
+SYN-20261025-0284,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,11/24/2025 15:06,11/24/2025 23:58,6.804415,79.927653,Resolved,synthetic,2025-11
+SYN-20261025-0285,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,12/1/2025 11:44,12/3/2025 19:24,6.808907,79.917849,Resolved,synthetic,2025-12
+SYN-20261025-0286,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,12/2/2025 17:58,12/5/2025 18:39,6.799712,79.914189,Escalated,synthetic,2025-12
+SYN-20261025-0287,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,12/4/2025 17:57,12/6/2025 11:21,6.806499,79.918743,Resolved,synthetic,2025-12
+SYN-20261025-0288,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,12/13/2025 21:57,12/16/2025 20:20,6.797559,79.916379,Escalated,synthetic,2025-12
+SYN-20261025-0289,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,12/15/2025 15:17,12/17/2025 3:26,6.813809,79.923075,Ongoing,synthetic,2025-12
+SYN-20261025-0290,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,12/17/2025 21:07,12/17/2025 23:37,6.796581,79.92077,Ongoing,synthetic,2025-12
+SYN-20261025-0291,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,12/20/2025 13:00,12/20/2025 16:32,6.805384,79.91033,Resolved,synthetic,2025-12
+SYN-20261025-0292,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,12/23/2025 21:32,12/26/2025 12:23,6.797661,79.940543,Ongoing,synthetic,2025-12
+SYN-20261025-0293,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,12/28/2025 6:35,12/28/2025 16:23,6.803957,79.923445,Resolved,synthetic,2025-12
+SYN-20261025-0294,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,1/4/2026 11:46,1/4/2026 23:07,6.803,79.934138,Resolved,synthetic,2026-01
+SYN-20261025-0295,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,1/4/2026 18:25,1/5/2026 13:55,6.801417,79.923104,Escalated,synthetic,2026-01
+SYN-20261025-0296,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,1/5/2026 11:41,1/6/2026 19:22,6.805022,79.924416,Resolved,synthetic,2026-01
+SYN-20261025-0297,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,1/5/2026 16:11,1/6/2026 1:41,6.796022,79.926861,Resolved,synthetic,2026-01
+SYN-20261025-0298,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,1/11/2026 18:03,1/14/2026 7:41,6.795141,79.918201,Resolved,synthetic,2026-01
+SYN-20261025-0299,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,1/13/2026 7:18,1/15/2026 22:03,6.801567,79.92436,Resolved,synthetic,2026-01
+SYN-20261025-0300,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,1/21/2026 22:29,1/23/2026 1:15,6.806485,79.925384,Resolved,synthetic,2026-01
+SYN-20261025-0301,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,1/25/2026 11:23,1/28/2026 0:38,6.8161,79.933894,Ongoing,synthetic,2026-01
+SYN-20261025-0302,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,1/25/2026 18:58,1/27/2026 23:25,6.808273,79.925325,Resolved,synthetic,2026-01
+SYN-20261025-0303,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,1/26/2026 19:42,1/29/2026 10:51,6.805576,79.927225,Resolved,synthetic,2026-01
+SYN-20261025-0304,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,1/28/2026 13:35,1/30/2026 2:31,6.816361,79.927893,Resolved,synthetic,2026-01
+SYN-20261025-0305,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,1/30/2026 8:21,2/1/2026 21:49,6.805717,79.909102,Resolved,synthetic,2026-01
+SYN-20261025-0306,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,1/30/2026 20:23,2/1/2026 21:45,6.801505,79.917236,Resolved,synthetic,2026-01
+SYN-20261025-0307,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,2/1/2026 17:05,2/4/2026 9:41,6.80373,79.917354,Resolved,synthetic,2026-02
+SYN-20261025-0308,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,2/1/2026 22:06,2/2/2026 5:43,6.803454,79.923309,Resolved,synthetic,2026-02
+SYN-20261025-0309,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,2/10/2026 7:54,2/12/2026 11:50,6.806045,79.920207,Ongoing,synthetic,2026-02
+SYN-20261025-0310,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,2/15/2026 18:59,2/17/2026 19:57,6.803408,79.918359,Resolved,synthetic,2026-02
+SYN-20261025-0311,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,2/16/2026 12:30,2/17/2026 6:13,6.807799,79.918668,Resolved,synthetic,2026-02
+SYN-20261025-0312,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,2/19/2026 8:57,2/20/2026 5:18,6.799593,79.914128,Resolved,synthetic,2026-02
+SYN-20261025-0313,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,2/21/2026 13:30,2/23/2026 18:25,6.794193,79.916549,Resolved,synthetic,2026-02
+SYN-20261025-0314,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,2/23/2026 22:50,2/26/2026 20:06,6.801395,79.930378,Pending,synthetic,2026-02
+SYN-20261025-0315,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,2/28/2026 20:56,3/3/2026 14:38,6.793222,79.931355,Resolved,synthetic,2026-02
+SYN-20261025-0316,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,3/9/2026 22:08,3/12/2026 12:26,6.80023,79.941471,Resolved,synthetic,2026-03
+SYN-20261025-0317,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,3/10/2026 21:54,3/11/2026 19:18,6.807031,79.916,Resolved,synthetic,2026-03
+SYN-20261025-0318,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,3/11/2026 13:52,3/12/2026 0:32,6.801005,79.911176,Resolved,synthetic,2026-03
+SYN-20261025-0319,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,3/17/2026 12:32,3/19/2026 4:16,6.792976,79.92699,Ongoing,synthetic,2026-03
+SYN-20261025-0320,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,3/18/2026 11:37,3/19/2026 12:49,6.7953,79.920813,Ongoing,synthetic,2026-03
+SYN-20261025-0321,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,3/24/2026 9:03,3/25/2026 16:36,6.803183,79.926914,Resolved,synthetic,2026-03
+SYN-20261025-0322,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,3/25/2026 19:04,3/27/2026 15:07,6.805608,79.929097,Resolved,synthetic,2026-03
+SYN-20261025-0323,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,3/27/2026 10:10,3/27/2026 18:44,6.815013,79.930232,Resolved,synthetic,2026-03
+SYN-20261025-0324,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,3/27/2026 17:24,3/30/2026 4:16,6.795405,79.933824,Resolved,synthetic,2026-03
+SYN-20261025-0325,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,4/2/2026 6:55,4/3/2026 23:23,6.799651,79.915346,Ongoing,synthetic,2026-04
+SYN-20261025-0326,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/3/2026 12:35,4/5/2026 0:49,6.783515,79.93219,Pending,synthetic,2026-04
+SYN-20261025-0327,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,4/5/2026 7:47,4/7/2026 3:10,6.797666,79.926411,Ongoing,synthetic,2026-04
+SYN-20261025-0328,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,4/6/2026 9:42,4/6/2026 21:19,6.792277,79.924825,Resolved,synthetic,2026-04
+SYN-20261025-0329,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,4/11/2026 7:57,4/13/2026 1:22,6.802921,79.927733,Resolved,synthetic,2026-04
+SYN-20261025-0330,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,4/19/2026 21:00,4/20/2026 3:06,6.806737,79.91275,Pending,synthetic,2026-04
+SYN-20261025-0331,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,4/27/2026 18:00,4/29/2026 4:10,6.813355,79.919782,Ongoing,synthetic,2026-04
+SYN-20261025-0332,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/29/2026 16:53,4/30/2026 23:33,6.810743,79.933489,Pending,synthetic,2026-04
+SYN-20261025-0333,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,5/1/2026 12:45,5/1/2026 21:16,6.813612,79.928624,Pending,synthetic,2026-05
+SYN-20261025-0334,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,5/3/2026 19:39,5/4/2026 6:11,6.803746,79.9266,Escalated,synthetic,2026-05
+SYN-20261025-0335,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,5/8/2026 11:41,5/8/2026 14:07,6.797118,79.927416,Resolved,synthetic,2026-05
+SYN-20261025-0336,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,5/9/2026 7:11,5/10/2026 10:46,6.805333,79.921719,Pending,synthetic,2026-05
+SYN-20261025-0337,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,5/13/2026 6:11,5/15/2026 19:49,6.79712,79.928626,Escalated,synthetic,2026-05
+SYN-20261025-0338,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,5/15/2026 14:15,5/18/2026 13:27,6.797773,79.923253,Pending,synthetic,2026-05
+SYN-20261025-0339,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,5/16/2026 12:04,5/19/2026 8:53,6.807005,79.914903,Escalated,synthetic,2026-05
+SYN-20261025-0340,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,5/20/2026 7:51,5/21/2026 0:51,6.788271,79.93078,Pending,synthetic,2026-05
+SYN-20261025-0341,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,5/24/2026 8:46,5/24/2026 16:53,6.796591,79.922693,Resolved,synthetic,2026-05
+SYN-20261025-0342,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,5/28/2026 7:50,5/28/2026 18:00,6.797388,79.916177,Escalated,synthetic,2026-05
+SYN-20261025-0343,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,6/6/2026 9:57,6/6/2026 15:07,6.803357,79.927007,Resolved,synthetic,2026-06
+SYN-20261025-0344,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/7/2026 21:20,6/9/2026 4:15,6.80615,79.926025,Ongoing,synthetic,2026-06
+SYN-20261025-0345,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,6/14/2026 15:36,6/17/2026 11:53,6.792421,79.922796,Resolved,synthetic,2026-06
+SYN-20261025-0346,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,6/15/2026 15:09,6/17/2026 23:57,6.794501,79.926623,Resolved,synthetic,2026-06
+SYN-20261025-0347,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/16/2026 9:54,6/17/2026 0:57,6.805719,79.931304,Ongoing,synthetic,2026-06
+SYN-20261025-0348,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/20/2026 6:30,6/20/2026 14:51,6.807977,79.911249,Ongoing,synthetic,2026-06
+SYN-20261025-0349,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/20/2026 7:10,6/21/2026 19:38,6.7995,79.91271,Pending,synthetic,2026-06
+SYN-20261025-0350,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,6/27/2026 14:48,6/30/2026 15:17,6.791161,79.93037,Resolved,synthetic,2026-06
+SYN-20261025-0351,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,7/10/2026 14:43,7/12/2026 13:48,6.80009,79.924493,Resolved,synthetic,2026-07
+SYN-20261025-0352,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,7/12/2026 13:29,7/12/2026 20:42,6.799621,79.915382,Resolved,synthetic,2026-07
+SYN-20261025-0353,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,7/13/2026 8:59,7/14/2026 4:06,6.806242,79.927444,Ongoing,synthetic,2026-07
+SYN-20261025-0354,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,7/13/2026 18:33,7/16/2026 14:52,6.804074,79.920451,Pending,synthetic,2026-07
+SYN-20261025-0355,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,7/13/2026 18:58,7/16/2026 19:13,6.796823,79.929732,Pending,synthetic,2026-07
+SYN-20261025-0356,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,7/15/2026 17:13,7/16/2026 22:30,6.79871,79.91923,Pending,synthetic,2026-07
+SYN-20261025-0357,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,7/16/2026 18:37,7/17/2026 16:19,6.812687,79.901216,Resolved,synthetic,2026-07
+SYN-20261025-0358,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,7/16/2026 21:41,7/18/2026 16:51,6.801332,79.91779,Resolved,synthetic,2026-07
+SYN-20261025-0359,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,7/23/2026 13:22,7/24/2026 15:58,6.802714,79.936237,Resolved,synthetic,2026-07
+SYN-20261025-0360,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,7/29/2026 19:30,7/31/2026 12:21,6.805032,79.912797,Pending,synthetic,2026-07
+SYN-20261025-0361,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,8/1/2026 9:43,8/4/2026 6:00,6.797577,79.920553,Resolved,synthetic,2026-08
+SYN-20261025-0362,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,8/1/2026 12:41,8/3/2026 7:29,6.803217,79.934275,Escalated,synthetic,2026-08
+SYN-20261025-0363,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/12/2026 8:35,8/14/2026 1:17,6.802834,79.914318,Resolved,synthetic,2026-08
+SYN-20261025-0364,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,8/16/2026 6:57,8/19/2026 6:29,6.808108,79.921473,Resolved,synthetic,2026-08
+SYN-20261025-0365,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,8/17/2026 14:36,8/20/2026 4:47,6.811373,79.923236,Resolved,synthetic,2026-08
+SYN-20261025-0366,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,8/22/2026 7:42,8/24/2026 21:41,6.799634,79.92001,Pending,synthetic,2026-08
+SYN-20261025-0367,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/25/2026 14:12,8/27/2026 10:37,6.800374,79.911096,Ongoing,synthetic,2026-08
+SYN-20261025-0368,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/26/2026 12:21,8/29/2026 11:45,6.802481,79.923811,Resolved,synthetic,2026-08
+SYN-20261025-0369,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/28/2026 8:04,8/30/2026 2:22,6.809678,79.92815,Resolved,synthetic,2026-08
+SYN-20261025-0370,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/28/2026 22:00,8/29/2026 16:24,6.801426,79.904936,Resolved,synthetic,2026-08
+SYN-20261025-0371,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,9/1/2026 10:17,9/3/2026 15:51,6.798937,79.918895,Pending,synthetic,2026-09
+SYN-20261025-0372,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,9/1/2026 19:13,9/3/2026 21:32,6.798666,79.930767,Resolved,synthetic,2026-09
+SYN-20261025-0373,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,9/2/2026 7:57,9/3/2026 14:00,6.803325,79.919096,Resolved,synthetic,2026-09
+SYN-20261025-0374,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/7/2026 9:11,9/10/2026 4:21,6.807158,79.921523,Resolved,synthetic,2026-09
+SYN-20261025-0375,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/11/2026 6:29,9/12/2026 3:42,6.799479,79.925789,Resolved,synthetic,2026-09
+SYN-20261025-0376,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,9/11/2026 14:36,9/12/2026 1:05,6.799862,79.922758,Resolved,synthetic,2026-09
+SYN-20261025-0377,PS-CMB-003,Piliyandala Police Station,Colombo,Mount Lavinia,Traffic issues,9/21/2026 17:33,9/23/2026 0:22,6.817533,79.915558,Resolved,synthetic,2026-09
+SYN-20261025-0378,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,10/5/2025 13:46,10/6/2025 0:32,6.85493,79.878367,Resolved,synthetic,2025-10
+SYN-20261025-0379,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,10/5/2025 14:13,10/6/2025 4:17,6.851603,79.883985,Resolved,synthetic,2025-10
+SYN-20261025-0380,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,10/6/2025 16:33,10/7/2025 9:30,6.851647,79.863906,Ongoing,synthetic,2025-10
+SYN-20261025-0381,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,10/12/2025 11:46,10/15/2025 6:08,6.845615,79.889657,Resolved,synthetic,2025-10
+SYN-20261025-0382,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,10/12/2025 18:25,10/14/2025 8:24,6.843572,79.878683,Resolved,synthetic,2025-10
+SYN-20261025-0383,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,10/13/2025 9:17,10/15/2025 13:21,6.845988,79.877571,Pending,synthetic,2025-10
+SYN-20261025-0384,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,10/13/2025 12:43,10/14/2025 6:41,6.848532,79.86277,Pending,synthetic,2025-10
+SYN-20261025-0385,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,10/14/2025 10:36,10/15/2025 5:31,6.841101,79.874359,Ongoing,synthetic,2025-10
+SYN-20261025-0386,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,10/17/2025 10:54,10/18/2025 21:20,6.846364,79.879449,Ongoing,synthetic,2025-10
+SYN-20261025-0387,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,10/17/2025 21:10,10/20/2025 21:18,6.869488,79.870339,Resolved,synthetic,2025-10
+SYN-20261025-0388,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,10/25/2025 6:13,10/27/2025 23:28,6.853532,79.862127,Pending,synthetic,2025-10
+SYN-20261025-0389,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/2/2025 11:36,11/5/2025 4:47,6.853276,79.855981,Ongoing,synthetic,2025-11
+SYN-20261025-0390,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/2/2025 11:58,11/2/2025 18:19,6.858898,79.872786,Pending,synthetic,2025-11
+SYN-20261025-0391,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/3/2025 14:16,11/4/2025 3:45,6.853216,79.879188,Resolved,synthetic,2025-11
+SYN-20261025-0392,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,11/6/2025 9:56,11/8/2025 19:26,6.850236,79.876569,Pending,synthetic,2025-11
+SYN-20261025-0393,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,11/9/2025 8:14,11/11/2025 1:49,6.834979,79.871081,Resolved,synthetic,2025-11
+SYN-20261025-0394,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,11/18/2025 16:39,11/20/2025 6:19,6.850929,79.858863,Pending,synthetic,2025-11
+SYN-20261025-0395,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,11/20/2025 14:43,11/20/2025 23:45,6.848587,79.870755,Resolved,synthetic,2025-11
+SYN-20261025-0396,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,11/20/2025 17:13,11/21/2025 12:02,6.842897,79.870685,Escalated,synthetic,2025-11
+SYN-20261025-0397,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,11/24/2025 14:47,11/27/2025 13:16,6.843569,79.863521,Pending,synthetic,2025-11
+SYN-20261025-0398,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,11/25/2025 10:52,11/27/2025 17:01,6.852999,79.878565,Ongoing,synthetic,2025-11
+SYN-20261025-0399,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/25/2025 12:47,11/26/2025 4:28,6.852091,79.88801,Ongoing,synthetic,2025-11
+SYN-20261025-0400,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/27/2025 12:03,11/30/2025 7:58,6.85444,79.865788,Pending,synthetic,2025-11
+SYN-20261025-0401,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,12/4/2025 13:15,12/5/2025 7:03,6.850162,79.868966,Resolved,synthetic,2025-12
+SYN-20261025-0402,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,12/9/2025 22:19,12/12/2025 3:56,6.853928,79.865159,Resolved,synthetic,2025-12
+SYN-20261025-0403,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,12/10/2025 12:38,12/11/2025 11:21,6.851711,79.87286,Resolved,synthetic,2025-12
+SYN-20261025-0404,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,12/11/2025 8:31,12/11/2025 15:14,6.844475,79.865446,Pending,synthetic,2025-12
+SYN-20261025-0405,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,12/18/2025 13:19,12/20/2025 19:54,6.846014,79.873222,Pending,synthetic,2025-12
+SYN-20261025-0406,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,12/20/2025 15:18,12/21/2025 20:37,6.848579,79.878377,Ongoing,synthetic,2025-12
+SYN-20261025-0407,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,12/24/2025 6:23,12/24/2025 9:44,6.849846,79.870915,Escalated,synthetic,2025-12
+SYN-20261025-0408,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,12/26/2025 22:26,12/29/2025 12:55,6.853305,79.876105,Pending,synthetic,2025-12
+SYN-20261025-0409,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,1/1/2026 8:56,1/2/2026 3:27,6.852103,79.881323,Escalated,synthetic,2026-01
+SYN-20261025-0410,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,1/2/2026 13:38,1/4/2026 10:48,6.846141,79.866926,Resolved,synthetic,2026-01
+SYN-20261025-0411,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,1/6/2026 22:35,1/7/2026 5:46,6.840884,79.870128,Ongoing,synthetic,2026-01
+SYN-20261025-0412,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,1/14/2026 10:07,1/16/2026 23:19,6.852752,79.870587,Pending,synthetic,2026-01
+SYN-20261025-0413,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,1/28/2026 10:36,1/30/2026 10:34,6.856036,79.87619,Resolved,synthetic,2026-01
+SYN-20261025-0414,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,1/29/2026 12:44,1/30/2026 15:58,6.853025,79.870887,Resolved,synthetic,2026-01
+SYN-20261025-0415,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,1/29/2026 12:51,1/31/2026 23:50,6.8505,79.875223,Pending,synthetic,2026-01
+SYN-20261025-0416,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,2/1/2026 18:31,2/4/2026 5:01,6.853308,79.875515,Ongoing,synthetic,2026-02
+SYN-20261025-0417,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,2/4/2026 11:30,2/6/2026 7:03,6.853785,79.868805,Resolved,synthetic,2026-02
+SYN-20261025-0418,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,2/8/2026 17:31,2/9/2026 23:27,6.856445,79.87867,Resolved,synthetic,2026-02
+SYN-20261025-0419,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,2/9/2026 11:42,2/11/2026 19:47,6.847921,79.893807,Resolved,synthetic,2026-02
+SYN-20261025-0420,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,2/15/2026 18:09,2/16/2026 4:20,6.836821,79.869,Pending,synthetic,2026-02
+SYN-20261025-0421,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,2/17/2026 14:33,2/18/2026 3:46,6.860781,79.860842,Resolved,synthetic,2026-02
+SYN-20261025-0422,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,2/22/2026 15:41,2/23/2026 23:53,6.849299,79.869696,Resolved,synthetic,2026-02
+SYN-20261025-0423,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,2/24/2026 20:59,2/26/2026 1:41,6.853689,79.867394,Resolved,synthetic,2026-02
+SYN-20261025-0424,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,2/25/2026 6:42,2/27/2026 9:17,6.857323,79.877858,Pending,synthetic,2026-02
+SYN-20261025-0425,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,2/28/2026 22:14,3/2/2026 6:32,6.847375,79.867633,Ongoing,synthetic,2026-02
+SYN-20261025-0426,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,3/1/2026 19:48,3/3/2026 2:44,6.845388,79.873448,Pending,synthetic,2026-03
+SYN-20261025-0427,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,3/2/2026 18:21,3/2/2026 22:32,6.84972,79.878524,Resolved,synthetic,2026-03
+SYN-20261025-0428,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,3/3/2026 15:26,3/4/2026 10:38,6.85866,79.868787,Resolved,synthetic,2026-03
+SYN-20261025-0429,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,3/16/2026 19:56,3/18/2026 0:34,6.839715,79.863607,Resolved,synthetic,2026-03
+SYN-20261025-0430,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,3/17/2026 16:04,3/19/2026 14:10,6.852512,79.86436,Ongoing,synthetic,2026-03
+SYN-20261025-0431,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/23/2026 17:54,3/24/2026 3:56,6.852678,79.866532,Resolved,synthetic,2026-03
+SYN-20261025-0432,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/25/2026 16:39,3/28/2026 10:22,6.852468,79.879303,Resolved,synthetic,2026-03
+SYN-20261025-0433,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/25/2026 20:17,3/26/2026 18:31,6.853846,79.869943,Resolved,synthetic,2026-03
+SYN-20261025-0434,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/27/2026 13:04,3/29/2026 17:09,6.852731,79.880801,Resolved,synthetic,2026-03
+SYN-20261025-0435,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/28/2026 12:11,3/29/2026 20:45,6.851526,79.871996,Resolved,synthetic,2026-03
+SYN-20261025-0436,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,3/28/2026 17:24,3/29/2026 10:38,6.85316,79.86695,Pending,synthetic,2026-03
+SYN-20261025-0437,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/29/2026 8:54,3/31/2026 3:08,6.850995,79.867793,Escalated,synthetic,2026-03
+SYN-20261025-0438,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/30/2026 13:08,3/31/2026 17:23,6.843719,79.877595,Ongoing,synthetic,2026-03
+SYN-20261025-0439,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/2/2026 17:56,4/5/2026 12:28,6.858738,79.865441,Pending,synthetic,2026-04
+SYN-20261025-0440,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/9/2026 9:10,4/9/2026 10:57,6.840227,79.878323,Resolved,synthetic,2026-04
+SYN-20261025-0441,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/10/2026 11:23,4/12/2026 16:44,6.851362,79.857905,Pending,synthetic,2026-04
+SYN-20261025-0442,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,4/12/2026 18:07,4/12/2026 21:50,6.843015,79.858967,Resolved,synthetic,2026-04
+SYN-20261025-0443,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/13/2026 11:44,4/13/2026 16:08,6.847066,79.86759,Ongoing,synthetic,2026-04
+SYN-20261025-0444,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/14/2026 19:05,4/15/2026 15:37,6.849992,79.863176,Ongoing,synthetic,2026-04
+SYN-20261025-0445,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/14/2026 20:05,4/15/2026 1:15,6.84292,79.883021,Pending,synthetic,2026-04
+SYN-20261025-0446,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/15/2026 12:07,4/16/2026 17:47,6.851685,79.861156,Escalated,synthetic,2026-04
+SYN-20261025-0447,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/15/2026 16:29,4/16/2026 12:59,6.845933,79.87821,Resolved,synthetic,2026-04
+SYN-20261025-0448,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/19/2026 19:58,4/20/2026 20:58,6.850687,79.883098,Pending,synthetic,2026-04
+SYN-20261025-0449,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,4/22/2026 10:08,4/23/2026 4:00,6.855986,79.87433,Pending,synthetic,2026-04
+SYN-20261025-0450,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/23/2026 18:46,4/24/2026 23:49,6.847075,79.871738,Pending,synthetic,2026-04
+SYN-20261025-0451,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/27/2026 22:25,4/30/2026 17:49,6.849978,79.872335,Resolved,synthetic,2026-04
+SYN-20261025-0452,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/30/2026 9:35,5/2/2026 9:21,6.856196,79.878274,Resolved,synthetic,2026-04
+SYN-20261025-0453,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/2/2026 13:21,5/4/2026 13:58,6.844066,79.88152,Resolved,synthetic,2026-05
+SYN-20261025-0454,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/5/2026 21:15,5/7/2026 16:18,6.855883,79.856839,Resolved,synthetic,2026-05
+SYN-20261025-0455,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,5/5/2026 22:45,5/8/2026 20:05,6.842395,79.868459,Resolved,synthetic,2026-05
+SYN-20261025-0456,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,5/12/2026 12:38,5/15/2026 2:41,6.855781,79.858037,Ongoing,synthetic,2026-05
+SYN-20261025-0457,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/14/2026 10:38,5/15/2026 9:08,6.842869,79.877437,Escalated,synthetic,2026-05
+SYN-20261025-0458,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/16/2026 16:29,5/19/2026 11:01,6.855071,79.886003,Resolved,synthetic,2026-05
+SYN-20261025-0459,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/17/2026 16:21,5/18/2026 14:09,6.856915,79.874667,Pending,synthetic,2026-05
+SYN-20261025-0460,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,5/17/2026 16:37,5/18/2026 5:09,6.839405,79.869156,Resolved,synthetic,2026-05
+SYN-20261025-0461,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,5/19/2026 9:07,5/20/2026 8:41,6.852997,79.872796,Pending,synthetic,2026-05
+SYN-20261025-0462,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/19/2026 15:04,5/20/2026 7:45,6.861241,79.874519,Pending,synthetic,2026-05
+SYN-20261025-0463,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,5/22/2026 7:12,5/25/2026 7:24,6.851529,79.876624,Resolved,synthetic,2026-05
+SYN-20261025-0464,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,5/28/2026 7:22,5/31/2026 1:35,6.851106,79.868345,Resolved,synthetic,2026-05
+SYN-20261025-0465,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/1/2026 7:21,6/1/2026 22:39,6.849012,79.884942,Resolved,synthetic,2026-06
+SYN-20261025-0466,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,6/2/2026 14:25,6/5/2026 13:56,6.853493,79.862753,Ongoing,synthetic,2026-06
+SYN-20261025-0467,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/2/2026 20:09,6/4/2026 2:01,6.849038,79.865938,Resolved,synthetic,2026-06
+SYN-20261025-0468,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,6/10/2026 8:10,6/10/2026 21:43,6.84992,79.868474,Resolved,synthetic,2026-06
+SYN-20261025-0469,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,6/16/2026 12:49,6/17/2026 15:27,6.847346,79.876025,Pending,synthetic,2026-06
+SYN-20261025-0470,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,6/16/2026 21:48,6/17/2026 17:31,6.849583,79.86321,Ongoing,synthetic,2026-06
+SYN-20261025-0471,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,6/17/2026 7:54,6/17/2026 11:19,6.85441,79.875982,Escalated,synthetic,2026-06
+SYN-20261025-0472,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,6/21/2026 12:58,6/23/2026 11:16,6.850547,79.868744,Pending,synthetic,2026-06
+SYN-20261025-0473,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/22/2026 18:34,6/24/2026 14:43,6.856434,79.870176,Resolved,synthetic,2026-06
+SYN-20261025-0474,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,6/26/2026 6:46,6/28/2026 23:11,6.85814,79.88393,Resolved,synthetic,2026-06
+SYN-20261025-0475,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/26/2026 15:45,6/28/2026 20:16,6.859009,79.876616,Resolved,synthetic,2026-06
+SYN-20261025-0476,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,7/2/2026 6:32,7/4/2026 5:18,6.852638,79.877835,Pending,synthetic,2026-07
+SYN-20261025-0477,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,7/10/2026 19:16,7/10/2026 23:15,6.84967,79.877587,Resolved,synthetic,2026-07
+SYN-20261025-0478,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,7/21/2026 8:25,7/21/2026 18:44,6.850965,79.872998,Ongoing,synthetic,2026-07
+SYN-20261025-0479,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,7/28/2026 20:25,7/29/2026 8:48,6.856608,79.868211,Resolved,synthetic,2026-07
+SYN-20261025-0480,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,7/29/2026 17:54,7/31/2026 7:33,6.8426,79.873218,Resolved,synthetic,2026-07
+SYN-20261025-0481,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/3/2026 15:04,8/4/2026 10:23,6.850447,79.871827,Pending,synthetic,2026-08
+SYN-20261025-0482,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/6/2026 11:44,8/7/2026 6:49,6.847019,79.883199,Resolved,synthetic,2026-08
+SYN-20261025-0483,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,8/8/2026 19:21,8/11/2026 11:21,6.859854,79.877709,Resolved,synthetic,2026-08
+SYN-20261025-0484,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,8/9/2026 13:09,8/11/2026 18:26,6.851612,79.856218,Ongoing,synthetic,2026-08
+SYN-20261025-0485,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/13/2026 6:32,8/14/2026 18:10,6.855482,79.876653,Resolved,synthetic,2026-08
+SYN-20261025-0486,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,8/14/2026 18:39,8/17/2026 10:22,6.841703,79.887723,Resolved,synthetic,2026-08
+SYN-20261025-0487,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/17/2026 15:39,8/20/2026 14:23,6.839639,79.871064,Resolved,synthetic,2026-08
+SYN-20261025-0488,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,8/17/2026 22:43,8/18/2026 17:06,6.850827,79.887493,Escalated,synthetic,2026-08
+SYN-20261025-0489,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,8/23/2026 22:36,8/24/2026 18:53,6.865711,79.875194,Resolved,synthetic,2026-08
+SYN-20261025-0490,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,8/26/2026 6:24,8/26/2026 14:06,6.852033,79.88767,Resolved,synthetic,2026-08
+SYN-20261025-0491,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,8/28/2026 9:06,8/29/2026 2:22,6.853864,79.869038,Escalated,synthetic,2026-08
+SYN-20261025-0492,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,9/1/2026 17:15,9/1/2026 23:47,6.855209,79.864656,Resolved,synthetic,2026-09
+SYN-20261025-0493,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/2/2026 12:46,9/3/2026 15:31,6.848187,79.869783,Resolved,synthetic,2026-09
+SYN-20261025-0494,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,9/5/2026 20:29,9/8/2026 0:52,6.860255,79.877478,Ongoing,synthetic,2026-09
+SYN-20261025-0495,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,9/7/2026 10:43,9/10/2026 0:54,6.843932,79.873076,Resolved,synthetic,2026-09
+SYN-20261025-0496,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/19/2026 21:29,9/20/2026 5:39,6.851865,79.869815,Ongoing,synthetic,2026-09
+SYN-20261025-0497,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,9/19/2026 22:03,9/21/2026 20:19,6.858204,79.856202,Ongoing,synthetic,2026-09
+SYN-20261025-0498,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/20/2026 18:07,9/22/2026 17:41,6.838287,79.875035,Escalated,synthetic,2026-09
+SYN-20261025-0499,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,9/27/2026 11:19,9/28/2026 19:36,6.848789,79.868693,Escalated,synthetic,2026-09
+SYN-20261025-0500,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/28/2026 16:03,9/29/2026 14:59,6.855804,79.868472,Resolved,synthetic,2026-09
+SYN-20261025-0501,PS-CMB-004,Dehiwala Police Station,Colombo,Mount Lavinia,Traffic issues,9/30/2026 21:07,10/1/2026 5:56,6.849376,79.86672,Escalated,synthetic,2026-09
+SYN-20261025-0502,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,10/2/2025 14:45,10/5/2025 11:39,6.957758,80.213231,Ongoing,synthetic,2025-10
+SYN-20261025-0503,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,10/3/2025 16:49,10/4/2025 21:03,6.950884,80.223532,Ongoing,synthetic,2025-10
+SYN-20261025-0504,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,10/6/2025 9:10,10/9/2025 4:41,6.946669,80.215301,Resolved,synthetic,2025-10
+SYN-20261025-0505,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,10/6/2025 12:58,10/6/2025 20:14,6.949274,80.221526,Resolved,synthetic,2025-10
+SYN-20261025-0506,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,10/7/2025 22:54,10/10/2025 17:20,6.960955,80.208408,Resolved,synthetic,2025-10
+SYN-20261025-0507,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,10/11/2025 12:54,10/12/2025 18:09,6.943053,80.209413,Resolved,synthetic,2025-10
+SYN-20261025-0508,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,10/14/2025 21:18,10/14/2025 22:31,6.947893,80.208789,Resolved,synthetic,2025-10
+SYN-20261025-0509,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,10/15/2025 7:02,10/15/2025 18:01,6.936381,80.214636,Ongoing,synthetic,2025-10
+SYN-20261025-0510,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,10/15/2025 13:13,10/17/2025 12:53,6.947306,80.231942,Resolved,synthetic,2025-10
+SYN-20261025-0511,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,10/19/2025 19:39,10/22/2025 2:44,6.94349,80.219602,Ongoing,synthetic,2025-10
+SYN-20261025-0512,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,10/21/2025 9:43,10/23/2025 18:06,6.944717,80.217709,Resolved,synthetic,2025-10
+SYN-20261025-0513,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,10/23/2025 9:34,10/25/2025 8:38,6.951078,80.222615,Pending,synthetic,2025-10
+SYN-20261025-0514,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,10/26/2025 15:16,10/28/2025 19:46,6.945957,80.206445,Resolved,synthetic,2025-10
+SYN-20261025-0515,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,10/30/2025 14:21,11/2/2025 5:57,6.944196,80.217554,Ongoing,synthetic,2025-10
+SYN-20261025-0516,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,11/11/2025 10:30,11/11/2025 22:43,6.943065,80.221356,Resolved,synthetic,2025-11
+SYN-20261025-0517,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,11/14/2025 17:36,11/17/2025 18:01,6.947077,80.233032,Resolved,synthetic,2025-11
+SYN-20261025-0518,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,11/16/2025 20:09,11/19/2025 11:24,6.945997,80.219279,Pending,synthetic,2025-11
+SYN-20261025-0519,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,11/17/2025 13:53,11/20/2025 12:41,6.939866,80.207557,Resolved,synthetic,2025-11
+SYN-20261025-0520,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,11/22/2025 17:54,11/24/2025 20:20,6.941102,80.226854,Resolved,synthetic,2025-11
+SYN-20261025-0521,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,11/23/2025 13:45,11/23/2025 17:22,6.932109,80.216844,Resolved,synthetic,2025-11
+SYN-20261025-0522,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,11/23/2025 19:46,11/25/2025 17:33,6.952194,80.216618,Pending,synthetic,2025-11
+SYN-20261025-0523,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,11/26/2025 21:48,11/29/2025 2:23,6.957634,80.221576,Resolved,synthetic,2025-11
+SYN-20261025-0524,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,11/28/2025 15:08,11/30/2025 23:40,6.942351,80.216434,Resolved,synthetic,2025-11
+SYN-20261025-0525,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,11/30/2025 21:30,12/1/2025 21:11,6.960816,80.214718,Resolved,synthetic,2025-11
+SYN-20261025-0526,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,12/3/2025 9:29,12/3/2025 12:14,6.956305,80.228415,Pending,synthetic,2025-12
+SYN-20261025-0527,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,12/6/2025 14:06,12/8/2025 0:17,6.947913,80.217282,Escalated,synthetic,2025-12
+SYN-20261025-0528,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,12/6/2025 22:00,12/7/2025 10:20,6.948139,80.2176,Ongoing,synthetic,2025-12
+SYN-20261025-0529,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,12/9/2025 21:40,12/10/2025 3:52,6.947351,80.228042,Resolved,synthetic,2025-12
+SYN-20261025-0530,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,12/11/2025 20:31,12/14/2025 14:15,6.961535,80.211516,Resolved,synthetic,2025-12
+SYN-20261025-0531,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,12/24/2025 8:37,12/27/2025 0:19,6.953597,80.220515,Resolved,synthetic,2025-12
+SYN-20261025-0532,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,12/25/2025 15:26,12/27/2025 20:25,6.948283,80.20495,Resolved,synthetic,2025-12
+SYN-20261025-0533,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,12/26/2025 9:45,12/28/2025 10:57,6.944219,80.200174,Resolved,synthetic,2025-12
+SYN-20261025-0534,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,1/2/2026 9:14,1/4/2026 23:38,6.956147,80.217393,Escalated,synthetic,2026-01
+SYN-20261025-0535,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,1/2/2026 17:54,1/4/2026 21:01,6.943978,80.205471,Pending,synthetic,2026-01
+SYN-20261025-0536,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,1/5/2026 21:31,1/7/2026 16:02,6.949881,80.207359,Resolved,synthetic,2026-01
+SYN-20261025-0537,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,1/7/2026 13:20,1/9/2026 7:18,6.94942,80.21033,Pending,synthetic,2026-01
+SYN-20261025-0538,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,1/18/2026 7:31,1/19/2026 4:04,6.943862,80.215578,Resolved,synthetic,2026-01
+SYN-20261025-0539,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,1/23/2026 15:49,1/24/2026 12:57,6.951398,80.207041,Resolved,synthetic,2026-01
+SYN-20261025-0540,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,1/25/2026 18:05,1/25/2026 22:20,6.939672,80.215819,Resolved,synthetic,2026-01
+SYN-20261025-0541,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,2/1/2026 17:42,2/3/2026 6:28,6.947149,80.214106,Ongoing,synthetic,2026-02
+SYN-20261025-0542,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,2/3/2026 6:41,2/4/2026 3:21,6.950663,80.223807,Resolved,synthetic,2026-02
+SYN-20261025-0543,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,2/4/2026 19:28,2/5/2026 9:40,6.950869,80.222334,Resolved,synthetic,2026-02
+SYN-20261025-0544,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,2/5/2026 8:46,2/5/2026 10:10,6.939689,80.223018,Resolved,synthetic,2026-02
+SYN-20261025-0545,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,2/8/2026 19:51,2/11/2026 0:36,6.94792,80.219397,Escalated,synthetic,2026-02
+SYN-20261025-0546,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,2/9/2026 18:27,2/10/2026 18:55,6.939572,80.199882,Resolved,synthetic,2026-02
+SYN-20261025-0547,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,2/11/2026 19:48,2/12/2026 0:40,6.949904,80.216103,Pending,synthetic,2026-02
+SYN-20261025-0548,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,2/14/2026 12:59,2/15/2026 23:04,6.95553,80.203907,Pending,synthetic,2026-02
+SYN-20261025-0549,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,2/22/2026 22:49,2/25/2026 6:13,6.955215,80.198541,Resolved,synthetic,2026-02
+SYN-20261025-0550,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,2/26/2026 18:09,2/27/2026 3:23,6.948295,80.209784,Resolved,synthetic,2026-02
+SYN-20261025-0551,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,3/3/2026 20:00,3/5/2026 2:41,6.940488,80.209705,Resolved,synthetic,2026-03
+SYN-20261025-0552,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,3/4/2026 6:24,3/7/2026 6:04,6.958452,80.217226,Resolved,synthetic,2026-03
+SYN-20261025-0553,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,3/6/2026 21:27,3/7/2026 12:25,6.940986,80.234162,Ongoing,synthetic,2026-03
+SYN-20261025-0554,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,3/7/2026 20:08,3/10/2026 15:32,6.954006,80.224131,Pending,synthetic,2026-03
+SYN-20261025-0555,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,3/7/2026 21:20,3/9/2026 10:08,6.944518,80.214718,Pending,synthetic,2026-03
+SYN-20261025-0556,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,3/15/2026 8:27,3/15/2026 21:41,6.944058,80.240412,Pending,synthetic,2026-03
+SYN-20261025-0557,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,3/17/2026 11:00,3/19/2026 5:18,6.950163,80.226487,Ongoing,synthetic,2026-03
+SYN-20261025-0558,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,3/17/2026 19:13,3/18/2026 6:40,6.938626,80.216081,Resolved,synthetic,2026-03
+SYN-20261025-0559,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,3/18/2026 7:15,3/20/2026 10:48,6.95013,80.210413,Pending,synthetic,2026-03
+SYN-20261025-0560,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,3/20/2026 16:30,3/22/2026 3:54,6.957717,80.213238,Resolved,synthetic,2026-03
+SYN-20261025-0561,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,4/4/2026 12:04,4/6/2026 1:10,6.941091,80.208097,Resolved,synthetic,2026-04
+SYN-20261025-0562,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,4/10/2026 21:29,4/13/2026 14:01,6.935831,80.219311,Resolved,synthetic,2026-04
+SYN-20261025-0563,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,4/11/2026 22:11,4/14/2026 18:19,6.951262,80.209543,Ongoing,synthetic,2026-04
+SYN-20261025-0564,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,4/14/2026 13:01,4/15/2026 2:07,6.949714,80.211353,Resolved,synthetic,2026-04
+SYN-20261025-0565,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,4/15/2026 20:26,4/17/2026 9:13,6.944363,80.217251,Resolved,synthetic,2026-04
+SYN-20261025-0566,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,4/21/2026 15:49,4/22/2026 11:37,6.944663,80.199525,Pending,synthetic,2026-04
+SYN-20261025-0567,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,4/28/2026 20:54,5/1/2026 1:42,6.94903,80.222119,Escalated,synthetic,2026-04
+SYN-20261025-0568,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,4/30/2026 13:32,5/1/2026 2:44,6.940948,80.217925,Pending,synthetic,2026-04
+SYN-20261025-0569,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,4/30/2026 15:18,5/3/2026 0:22,6.939795,80.233151,Resolved,synthetic,2026-04
+SYN-20261025-0570,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,4/30/2026 16:42,5/2/2026 19:33,6.947383,80.214763,Pending,synthetic,2026-04
+SYN-20261025-0571,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,5/7/2026 14:36,5/7/2026 19:55,6.952974,80.222,Pending,synthetic,2026-05
+SYN-20261025-0572,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,5/11/2026 10:30,5/11/2026 21:20,6.945591,80.210748,Resolved,synthetic,2026-05
+SYN-20261025-0573,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,5/14/2026 21:09,5/16/2026 4:29,6.949288,80.198856,Resolved,synthetic,2026-05
+SYN-20261025-0574,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,5/16/2026 17:38,5/17/2026 15:53,6.95256,80.229001,Ongoing,synthetic,2026-05
+SYN-20261025-0575,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,5/17/2026 15:54,5/20/2026 3:51,6.95303,80.227432,Resolved,synthetic,2026-05
+SYN-20261025-0576,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,5/20/2026 17:26,5/20/2026 18:56,6.944147,80.204015,Pending,synthetic,2026-05
+SYN-20261025-0577,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,5/23/2026 9:17,5/25/2026 21:31,6.940636,80.218795,Escalated,synthetic,2026-05
+SYN-20261025-0578,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,5/31/2026 15:09,6/2/2026 21:07,6.949096,80.215599,Resolved,synthetic,2026-05
+SYN-20261025-0579,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,5/31/2026 18:54,6/2/2026 12:41,6.951028,80.214182,Resolved,synthetic,2026-05
+SYN-20261025-0580,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,6/7/2026 13:06,6/10/2026 9:08,6.938232,80.22135,Pending,synthetic,2026-06
+SYN-20261025-0581,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,6/8/2026 10:05,6/10/2026 6:45,6.95996,80.215254,Resolved,synthetic,2026-06
+SYN-20261025-0582,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,6/9/2026 17:59,6/11/2026 1:00,6.94661,80.221214,Resolved,synthetic,2026-06
+SYN-20261025-0583,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,6/14/2026 21:55,6/15/2026 20:27,6.957446,80.211654,Resolved,synthetic,2026-06
+SYN-20261025-0584,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,6/22/2026 16:33,6/23/2026 21:30,6.948474,80.208002,Pending,synthetic,2026-06
+SYN-20261025-0585,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,6/24/2026 19:00,6/27/2026 14:25,6.941973,80.233701,Ongoing,synthetic,2026-06
+SYN-20261025-0586,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,6/25/2026 8:11,6/28/2026 5:04,6.94813,80.210573,Resolved,synthetic,2026-06
+SYN-20261025-0587,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,6/27/2026 13:28,6/30/2026 3:37,6.94786,80.202452,Pending,synthetic,2026-06
+SYN-20261025-0588,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,6/27/2026 15:32,6/28/2026 5:00,6.942577,80.214301,Resolved,synthetic,2026-06
+SYN-20261025-0589,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,7/2/2026 6:42,7/5/2026 5:40,6.944075,80.217716,Pending,synthetic,2026-07
+SYN-20261025-0590,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,7/7/2026 20:56,7/10/2026 20:15,6.952588,80.21782,Resolved,synthetic,2026-07
+SYN-20261025-0591,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,7/8/2026 19:51,7/11/2026 17:30,6.939348,80.216407,Escalated,synthetic,2026-07
+SYN-20261025-0592,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,7/14/2026 14:43,7/16/2026 20:34,6.949554,80.222245,Resolved,synthetic,2026-07
+SYN-20261025-0593,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,7/20/2026 21:45,7/23/2026 22:33,6.952992,80.217939,Pending,synthetic,2026-07
+SYN-20261025-0594,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,7/21/2026 20:22,7/24/2026 13:22,6.949716,80.225889,Resolved,synthetic,2026-07
+SYN-20261025-0595,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,7/24/2026 15:57,7/24/2026 17:10,6.943933,80.219394,Resolved,synthetic,2026-07
+SYN-20261025-0596,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,7/25/2026 9:42,7/27/2026 5:00,6.951044,80.216666,Resolved,synthetic,2026-07
+SYN-20261025-0597,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,8/1/2026 13:35,8/2/2026 19:57,6.945421,80.206186,Pending,synthetic,2026-08
+SYN-20261025-0598,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,8/3/2026 20:07,8/5/2026 11:27,6.95098,80.223967,Resolved,synthetic,2026-08
+SYN-20261025-0599,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,8/5/2026 9:38,8/7/2026 16:23,6.947129,80.188684,Pending,synthetic,2026-08
+SYN-20261025-0600,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,8/8/2026 15:25,8/10/2026 13:51,6.948618,80.224587,Pending,synthetic,2026-08
+SYN-20261025-0601,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,8/11/2026 9:39,8/11/2026 14:21,6.954002,80.218692,Pending,synthetic,2026-08
+SYN-20261025-0602,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,8/12/2026 15:43,8/13/2026 13:20,6.956907,80.208024,Resolved,synthetic,2026-08
+SYN-20261025-0603,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,8/14/2026 11:06,8/16/2026 21:45,6.948816,80.219316,Escalated,synthetic,2026-08
+SYN-20261025-0604,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,8/21/2026 21:07,8/23/2026 22:26,6.943265,80.220455,Ongoing,synthetic,2026-08
+SYN-20261025-0605,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,8/22/2026 15:25,8/25/2026 11:00,6.936917,80.204804,Resolved,synthetic,2026-08
+SYN-20261025-0606,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,8/23/2026 22:37,8/25/2026 13:41,6.954925,80.214352,Resolved,synthetic,2026-08
+SYN-20261025-0607,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,8/25/2026 10:05,8/27/2026 20:39,6.948368,80.207848,Pending,synthetic,2026-08
+SYN-20261025-0608,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,9/3/2026 11:00,9/4/2026 1:55,6.934473,80.218302,Pending,synthetic,2026-09
+SYN-20261025-0609,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,9/5/2026 13:16,9/8/2026 7:34,6.958347,80.214394,Escalated,synthetic,2026-09
+SYN-20261025-0610,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,9/11/2026 7:01,9/14/2026 2:40,6.940302,80.211474,Resolved,synthetic,2026-09
+SYN-20261025-0611,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,9/12/2026 9:11,9/13/2026 9:41,6.946961,80.210827,Resolved,synthetic,2026-09
+SYN-20261025-0612,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Neighbor / Community Issues,9/13/2026 13:47,9/13/2026 23:44,6.949677,80.218074,Ongoing,synthetic,2026-09
+SYN-20261025-0613,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,9/15/2026 19:48,9/17/2026 14:29,6.938837,80.203443,Resolved,synthetic,2026-09
+SYN-20261025-0614,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,9/18/2026 11:34,9/20/2026 3:40,6.942087,80.212379,Pending,synthetic,2026-09
+SYN-20261025-0615,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Public Nuisance / Cleanliness,9/19/2026 18:45,9/22/2026 12:42,6.957265,80.209032,Pending,synthetic,2026-09
+SYN-20261025-0616,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,9/20/2026 21:43,9/22/2026 1:39,6.950346,80.216371,Pending,synthetic,2026-09
+SYN-20261025-0617,PS-CMB-005,Avissawella Police Station,Colombo,Avissawella Division,Traffic issues,9/27/2026 18:28,9/27/2026 21:15,6.939886,80.211767,Ongoing,synthetic,2026-09
+SYN-20261025-0618,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,10/2/2025 12:28,10/3/2025 20:13,6.827292,79.991972,Resolved,synthetic,2025-10
+SYN-20261025-0619,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,10/3/2025 8:36,10/4/2025 9:53,6.831214,80.008709,Resolved,synthetic,2025-10
+SYN-20261025-0620,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,10/8/2025 7:35,10/9/2025 20:47,6.83593,79.9957,Resolved,synthetic,2025-10
+SYN-20261025-0621,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,10/9/2025 20:05,10/9/2025 22:46,6.840947,79.99419,Ongoing,synthetic,2025-10
+SYN-20261025-0622,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,10/14/2025 10:39,10/15/2025 13:20,6.83335,80.009768,Ongoing,synthetic,2025-10
+SYN-20261025-0623,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,10/15/2025 11:13,10/16/2025 20:21,6.836658,80.014971,Escalated,synthetic,2025-10
+SYN-20261025-0624,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,10/20/2025 7:26,10/22/2025 10:05,6.841146,80.010999,Ongoing,synthetic,2025-10
+SYN-20261025-0625,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,10/20/2025 21:27,10/21/2025 5:22,6.83734,80.012598,Ongoing,synthetic,2025-10
+SYN-20261025-0626,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,10/23/2025 22:33,10/25/2025 13:09,6.838364,80.005026,Resolved,synthetic,2025-10
+SYN-20261025-0627,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,10/26/2025 12:14,10/29/2025 10:26,6.841807,80.016954,Resolved,synthetic,2025-10
+SYN-20261025-0628,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,10/29/2025 11:36,10/30/2025 16:57,6.838327,79.989336,Resolved,synthetic,2025-10
+SYN-20261025-0629,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,10/30/2025 6:31,11/1/2025 12:42,6.839225,79.999498,Pending,synthetic,2025-10
+SYN-20261025-0630,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,11/3/2025 17:46,11/5/2025 2:05,6.828241,79.990992,Resolved,synthetic,2025-11
+SYN-20261025-0631,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,11/4/2025 19:37,11/5/2025 8:52,6.834802,79.997812,Resolved,synthetic,2025-11
+SYN-20261025-0632,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,11/8/2025 13:01,11/8/2025 15:45,6.834702,80.006453,Resolved,synthetic,2025-11
+SYN-20261025-0633,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,11/9/2025 7:52,11/11/2025 9:32,6.828946,80.008119,Resolved,synthetic,2025-11
+SYN-20261025-0634,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,11/9/2025 14:38,11/9/2025 20:07,6.83283,80.003416,Pending,synthetic,2025-11
+SYN-20261025-0635,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,11/13/2025 22:40,11/16/2025 1:10,6.837406,80.004617,Ongoing,synthetic,2025-11
+SYN-20261025-0636,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,11/18/2025 8:48,11/20/2025 5:05,6.840846,80.007005,Escalated,synthetic,2025-11
+SYN-20261025-0637,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,11/18/2025 14:46,11/20/2025 3:26,6.839939,80.001337,Ongoing,synthetic,2025-11
+SYN-20261025-0638,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,11/21/2025 10:34,11/22/2025 0:58,6.842872,80.004625,Ongoing,synthetic,2025-11
+SYN-20261025-0639,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,11/23/2025 11:28,11/25/2025 3:07,6.843421,80.007525,Escalated,synthetic,2025-11
+SYN-20261025-0640,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,11/23/2025 17:49,11/26/2025 0:10,6.82511,80.007248,Resolved,synthetic,2025-11
+SYN-20261025-0641,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,11/25/2025 16:13,11/26/2025 15:44,6.838497,80.022269,Resolved,synthetic,2025-11
+SYN-20261025-0642,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,11/27/2025 7:47,11/27/2025 15:08,6.842403,80.0114,Escalated,synthetic,2025-11
+SYN-20261025-0643,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,12/4/2025 21:52,12/7/2025 6:48,6.835932,79.997063,Resolved,synthetic,2025-12
+SYN-20261025-0644,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,12/6/2025 14:49,12/9/2025 5:59,6.837407,80.010331,Resolved,synthetic,2025-12
+SYN-20261025-0645,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,12/9/2025 9:14,12/9/2025 12:28,6.838332,80.00392,Resolved,synthetic,2025-12
+SYN-20261025-0646,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,12/11/2025 12:16,12/14/2025 0:14,6.838968,79.998194,Pending,synthetic,2025-12
+SYN-20261025-0647,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,12/11/2025 22:15,12/14/2025 4:13,6.836369,80.008916,Pending,synthetic,2025-12
+SYN-20261025-0648,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,12/16/2025 7:47,12/18/2025 10:39,6.838995,79.995544,Pending,synthetic,2025-12
+SYN-20261025-0649,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,12/16/2025 21:19,12/16/2025 23:52,6.843098,79.996099,Pending,synthetic,2025-12
+SYN-20261025-0650,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,12/18/2025 14:16,12/18/2025 20:27,6.838042,79.998605,Resolved,synthetic,2025-12
+SYN-20261025-0651,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,12/21/2025 20:27,12/22/2025 15:27,6.838956,80.011033,Escalated,synthetic,2025-12
+SYN-20261025-0652,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,12/23/2025 22:07,12/26/2025 14:32,6.840532,80.001288,Resolved,synthetic,2025-12
+SYN-20261025-0653,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,1/5/2026 12:37,1/6/2026 22:15,6.833901,80.001613,Resolved,synthetic,2026-01
+SYN-20261025-0654,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,1/7/2026 6:03,1/9/2026 22:00,6.838994,79.999575,Pending,synthetic,2026-01
+SYN-20261025-0655,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,1/11/2026 7:49,1/13/2026 5:33,6.839716,79.988666,Pending,synthetic,2026-01
+SYN-20261025-0656,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,1/14/2026 6:59,1/14/2026 14:58,6.834024,80.01045,Pending,synthetic,2026-01
+SYN-20261025-0657,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,1/14/2026 10:22,1/14/2026 12:48,6.828405,79.990283,Resolved,synthetic,2026-01
+SYN-20261025-0658,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,1/15/2026 22:54,1/17/2026 19:11,6.844239,80.016433,Resolved,synthetic,2026-01
+SYN-20261025-0659,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,1/16/2026 15:04,1/17/2026 15:13,6.834439,80.014122,Ongoing,synthetic,2026-01
+SYN-20261025-0660,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,1/19/2026 7:44,1/20/2026 9:14,6.835371,79.999443,Pending,synthetic,2026-01
+SYN-20261025-0661,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,1/19/2026 10:27,1/20/2026 10:32,6.846066,80.00284,Resolved,synthetic,2026-01
+SYN-20261025-0662,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,1/23/2026 9:10,1/24/2026 1:17,6.830195,80.004689,Escalated,synthetic,2026-01
+SYN-20261025-0663,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,1/23/2026 9:43,1/25/2026 15:43,6.827717,80.004016,Ongoing,synthetic,2026-01
+SYN-20261025-0664,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,1/25/2026 21:33,1/26/2026 6:49,6.831881,80.009709,Pending,synthetic,2026-01
+SYN-20261025-0665,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,1/28/2026 13:50,1/30/2026 14:08,6.839575,80.005411,Resolved,synthetic,2026-01
+SYN-20261025-0666,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,1/30/2026 13:07,2/1/2026 16:15,6.843498,80.0064,Pending,synthetic,2026-01
+SYN-20261025-0667,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,2/1/2026 12:09,2/1/2026 14:18,6.836166,79.993256,Resolved,synthetic,2026-02
+SYN-20261025-0668,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,2/3/2026 14:40,2/6/2026 1:03,6.833707,79.999759,Resolved,synthetic,2026-02
+SYN-20261025-0669,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,2/3/2026 16:30,2/5/2026 21:03,6.84469,79.995407,Escalated,synthetic,2026-02
+SYN-20261025-0670,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,2/14/2026 11:35,2/16/2026 0:21,6.826756,79.998916,Resolved,synthetic,2026-02
+SYN-20261025-0671,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,2/14/2026 20:33,2/17/2026 18:55,6.831331,80.020001,Resolved,synthetic,2026-02
+SYN-20261025-0672,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,2/15/2026 22:53,2/17/2026 17:22,6.822062,80.005333,Escalated,synthetic,2026-02
+SYN-20261025-0673,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,2/19/2026 16:05,2/21/2026 15:58,6.83299,80.013121,Pending,synthetic,2026-02
+SYN-20261025-0674,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,2/21/2026 14:03,2/22/2026 11:15,6.836297,79.995214,Resolved,synthetic,2026-02
+SYN-20261025-0675,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,2/25/2026 14:24,2/27/2026 7:21,6.839606,80.008734,Ongoing,synthetic,2026-02
+SYN-20261025-0676,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,2/26/2026 6:28,2/26/2026 19:40,6.836202,80.005029,Resolved,synthetic,2026-02
+SYN-20261025-0677,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,2/28/2026 18:47,3/2/2026 15:37,6.843728,80.009326,Resolved,synthetic,2026-02
+SYN-20261025-0678,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,3/1/2026 16:13,3/2/2026 13:34,6.841863,80.021411,Resolved,synthetic,2026-03
+SYN-20261025-0679,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,3/3/2026 12:49,3/6/2026 1:05,6.836337,79.998194,Resolved,synthetic,2026-03
+SYN-20261025-0680,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,3/6/2026 19:03,3/7/2026 6:11,6.838533,80.01219,Resolved,synthetic,2026-03
+SYN-20261025-0681,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,3/8/2026 6:47,3/10/2026 1:29,6.839583,80.005709,Resolved,synthetic,2026-03
+SYN-20261025-0682,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,3/17/2026 16:07,3/19/2026 11:50,6.824773,79.993762,Resolved,synthetic,2026-03
+SYN-20261025-0683,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,3/17/2026 18:31,3/19/2026 19:19,6.83887,80.020103,Resolved,synthetic,2026-03
+SYN-20261025-0684,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,3/23/2026 21:02,3/25/2026 11:58,6.837257,80.009407,Pending,synthetic,2026-03
+SYN-20261025-0685,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,3/25/2026 7:27,3/26/2026 4:52,6.836872,80.010585,Pending,synthetic,2026-03
+SYN-20261025-0686,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,4/2/2026 6:30,4/5/2026 5:46,6.825721,80.000737,Pending,synthetic,2026-04
+SYN-20261025-0687,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,4/2/2026 16:38,4/5/2026 7:53,6.834232,80.013094,Pending,synthetic,2026-04
+SYN-20261025-0688,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,4/4/2026 11:15,4/5/2026 20:11,6.834788,79.999491,Pending,synthetic,2026-04
+SYN-20261025-0689,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,4/4/2026 12:53,4/6/2026 2:49,6.841817,80.009887,Pending,synthetic,2026-04
+SYN-20261025-0690,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,4/6/2026 10:39,4/7/2026 10:49,6.837549,79.995562,Pending,synthetic,2026-04
+SYN-20261025-0691,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,4/9/2026 9:58,4/11/2026 4:40,6.832906,80.005521,Resolved,synthetic,2026-04
+SYN-20261025-0692,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,4/10/2026 17:09,4/11/2026 18:59,6.844819,80.004199,Escalated,synthetic,2026-04
+SYN-20261025-0693,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,4/15/2026 8:18,4/17/2026 22:27,6.823044,80.013676,Escalated,synthetic,2026-04
+SYN-20261025-0694,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,4/27/2026 9:11,4/28/2026 12:38,6.843254,79.996546,Resolved,synthetic,2026-04
+SYN-20261025-0695,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,5/2/2026 12:04,5/3/2026 9:48,6.834178,80.010004,Escalated,synthetic,2026-05
+SYN-20261025-0696,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,5/4/2026 13:36,5/5/2026 0:46,6.832911,80.008526,Ongoing,synthetic,2026-05
+SYN-20261025-0697,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,5/7/2026 20:55,5/7/2026 22:26,6.839443,80.012872,Resolved,synthetic,2026-05
+SYN-20261025-0698,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,5/8/2026 20:04,5/11/2026 17:13,6.838877,80.003687,Pending,synthetic,2026-05
+SYN-20261025-0699,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,5/19/2026 17:10,5/20/2026 18:28,6.83253,80.000395,Ongoing,synthetic,2026-05
+SYN-20261025-0700,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,5/20/2026 15:08,5/22/2026 8:55,6.826733,79.987941,Resolved,synthetic,2026-05
+SYN-20261025-0701,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,5/27/2026 13:04,5/29/2026 5:10,6.824152,79.998822,Ongoing,synthetic,2026-05
+SYN-20261025-0702,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,5/27/2026 17:44,5/29/2026 5:47,6.85352,80.001588,Resolved,synthetic,2026-05
+SYN-20261025-0703,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,5/28/2026 12:47,5/29/2026 1:40,6.831099,79.987378,Resolved,synthetic,2026-05
+SYN-20261025-0704,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,6/5/2026 15:18,6/7/2026 10:57,6.838419,80.001745,Escalated,synthetic,2026-06
+SYN-20261025-0705,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,6/5/2026 15:55,6/8/2026 6:51,6.843818,80.003745,Pending,synthetic,2026-06
+SYN-20261025-0706,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,6/12/2026 22:46,6/15/2026 2:03,6.845272,79.997911,Ongoing,synthetic,2026-06
+SYN-20261025-0707,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,6/14/2026 19:55,6/15/2026 14:12,6.841573,80.00038,Pending,synthetic,2026-06
+SYN-20261025-0708,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,6/16/2026 15:53,6/17/2026 13:30,6.835267,79.992521,Resolved,synthetic,2026-06
+SYN-20261025-0709,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,6/20/2026 20:12,6/21/2026 19:09,6.842542,80.005899,Resolved,synthetic,2026-06
+SYN-20261025-0710,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,6/21/2026 20:47,6/24/2026 10:07,6.828008,80.013009,Resolved,synthetic,2026-06
+SYN-20261025-0711,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,6/22/2026 17:58,6/22/2026 19:30,6.828286,79.998361,Pending,synthetic,2026-06
+SYN-20261025-0712,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,6/24/2026 10:35,6/25/2026 5:44,6.838827,79.999081,Pending,synthetic,2026-06
+SYN-20261025-0713,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,6/26/2026 15:49,6/26/2026 17:47,6.839467,80.011223,Pending,synthetic,2026-06
+SYN-20261025-0714,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,6/27/2026 7:39,6/29/2026 7:14,6.836631,80.005882,Resolved,synthetic,2026-06
+SYN-20261025-0715,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,7/2/2026 14:35,7/5/2026 4:28,6.826732,80.002813,Pending,synthetic,2026-07
+SYN-20261025-0716,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,7/4/2026 10:50,7/5/2026 17:13,6.839819,80.022948,Ongoing,synthetic,2026-07
+SYN-20261025-0717,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,7/5/2026 9:12,7/5/2026 22:35,6.830157,80.007825,Resolved,synthetic,2026-07
+SYN-20261025-0718,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,7/5/2026 17:58,7/7/2026 7:32,6.832169,80.002104,Resolved,synthetic,2026-07
+SYN-20261025-0719,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,7/6/2026 13:35,7/8/2026 22:09,6.829868,79.994368,Resolved,synthetic,2026-07
+SYN-20261025-0720,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,7/8/2026 17:58,7/11/2026 1:00,6.833658,80.010847,Ongoing,synthetic,2026-07
+SYN-20261025-0721,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,7/16/2026 10:47,7/19/2026 2:00,6.836868,80.003299,Resolved,synthetic,2026-07
+SYN-20261025-0722,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,7/20/2026 17:52,7/22/2026 7:27,6.820754,80.012185,Resolved,synthetic,2026-07
+SYN-20261025-0723,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,7/22/2026 13:22,7/23/2026 16:34,6.83317,80.000092,Resolved,synthetic,2026-07
+SYN-20261025-0724,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,7/25/2026 22:03,7/28/2026 20:46,6.824008,80.015137,Resolved,synthetic,2026-07
+SYN-20261025-0725,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,7/28/2026 20:50,7/31/2026 16:16,6.836998,79.995245,Escalated,synthetic,2026-07
+SYN-20261025-0726,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,7/30/2026 8:16,7/31/2026 16:46,6.822966,79.991585,Escalated,synthetic,2026-07
+SYN-20261025-0727,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,7/30/2026 22:57,8/1/2026 8:24,6.842712,80.004845,Resolved,synthetic,2026-07
+SYN-20261025-0728,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,8/2/2026 9:37,8/3/2026 9:33,6.851583,80.009694,Escalated,synthetic,2026-08
+SYN-20261025-0729,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,8/2/2026 11:41,8/5/2026 5:57,6.832102,80.004397,Pending,synthetic,2026-08
+SYN-20261025-0730,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,8/3/2026 17:29,8/3/2026 18:22,6.844852,80.00598,Resolved,synthetic,2026-08
+SYN-20261025-0731,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,8/3/2026 21:33,8/6/2026 6:54,6.824886,79.999319,Pending,synthetic,2026-08
+SYN-20261025-0732,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,8/12/2026 18:29,8/14/2026 21:08,6.837672,80.006018,Resolved,synthetic,2026-08
+SYN-20261025-0733,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,8/15/2026 6:53,8/16/2026 1:03,6.82595,80.003347,Pending,synthetic,2026-08
+SYN-20261025-0734,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,8/17/2026 11:29,8/20/2026 0:25,6.828125,80.009465,Escalated,synthetic,2026-08
+SYN-20261025-0735,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,8/17/2026 12:58,8/19/2026 21:37,6.81694,80.00386,Resolved,synthetic,2026-08
+SYN-20261025-0736,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,8/24/2026 14:09,8/27/2026 11:17,6.83752,80.002119,Resolved,synthetic,2026-08
+SYN-20261025-0737,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,8/31/2026 20:49,9/1/2026 14:02,6.830637,79.98802,Resolved,synthetic,2026-08
+SYN-20261025-0738,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,9/6/2026 16:36,9/7/2026 23:13,6.839416,79.994476,Resolved,synthetic,2026-09
+SYN-20261025-0739,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,9/8/2026 22:15,9/10/2026 1:20,6.839028,80.00184,Pending,synthetic,2026-09
+SYN-20261025-0740,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,9/10/2026 7:19,9/10/2026 22:44,6.838491,80.00588,Ongoing,synthetic,2026-09
+SYN-20261025-0741,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Public Nuisance / Cleanliness,9/11/2026 8:46,9/14/2026 2:34,6.827467,80.008443,Ongoing,synthetic,2026-09
+SYN-20261025-0742,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Neighbor / Community Issues,9/11/2026 9:15,9/12/2026 22:41,6.829344,80.001909,Resolved,synthetic,2026-09
+SYN-20261025-0743,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,9/24/2026 21:36,9/25/2026 15:52,6.83015,80.006985,Pending,synthetic,2026-09
+SYN-20261025-0744,PS-CMB-006,Homagama Police Station,Colombo,Homagama,Traffic issues,9/27/2026 21:18,9/30/2026 8:43,6.839817,79.994136,Resolved,synthetic,2026-09
+SYN-20261025-0745,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,10/1/2025 18:42,10/3/2025 19:30,6.863944,79.894224,Escalated,synthetic,2025-10
+SYN-20261025-0746,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,10/2/2025 8:15,10/3/2025 2:59,6.867549,79.878296,Resolved,synthetic,2025-10
+SYN-20261025-0747,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,10/3/2025 13:49,10/5/2025 4:13,6.870842,79.874616,Escalated,synthetic,2025-10
+SYN-20261025-0748,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,10/6/2025 6:13,10/9/2025 5:39,6.851483,79.894566,Pending,synthetic,2025-10
+SYN-20261025-0749,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,10/15/2025 9:35,10/16/2025 1:31,6.866153,79.891649,Resolved,synthetic,2025-10
+SYN-20261025-0750,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,10/21/2025 17:50,10/23/2025 8:58,6.87711,79.881296,Ongoing,synthetic,2025-10
+SYN-20261025-0751,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,10/23/2025 14:19,10/24/2025 8:10,6.854399,79.882221,Ongoing,synthetic,2025-10
+SYN-20261025-0752,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,10/23/2025 16:19,10/25/2025 7:56,6.864975,79.868656,Resolved,synthetic,2025-10
+SYN-20261025-0753,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,10/25/2025 14:19,10/27/2025 22:45,6.860233,79.879415,Resolved,synthetic,2025-10
+SYN-20261025-0754,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,10/26/2025 20:19,10/29/2025 8:54,6.879581,79.889351,Resolved,synthetic,2025-10
+SYN-20261025-0755,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,10/28/2025 19:28,10/30/2025 15:26,6.865537,79.889441,Ongoing,synthetic,2025-10
+SYN-20261025-0756,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,10/29/2025 6:51,10/30/2025 0:33,6.864454,79.888684,Resolved,synthetic,2025-10
+SYN-20261025-0757,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,10/30/2025 19:48,10/31/2025 0:42,6.871668,79.884695,Escalated,synthetic,2025-10
+SYN-20261025-0758,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/9/2025 22:40,11/11/2025 7:00,6.877166,79.884308,Pending,synthetic,2025-11
+SYN-20261025-0759,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/10/2025 19:27,11/12/2025 12:23,6.854053,79.879693,Resolved,synthetic,2025-11
+SYN-20261025-0760,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,11/24/2025 20:26,11/25/2025 0:17,6.866285,79.873862,Ongoing,synthetic,2025-11
+SYN-20261025-0761,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,11/25/2025 12:41,11/26/2025 13:10,6.861485,79.883658,Ongoing,synthetic,2025-11
+SYN-20261025-0762,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,11/27/2025 6:20,11/29/2025 20:51,6.876816,79.895184,Resolved,synthetic,2025-11
+SYN-20261025-0763,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,11/27/2025 17:57,11/27/2025 18:48,6.863953,79.861438,Pending,synthetic,2025-11
+SYN-20261025-0764,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,12/1/2025 19:21,12/3/2025 10:40,6.864955,79.878924,Resolved,synthetic,2025-12
+SYN-20261025-0765,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,12/4/2025 20:57,12/5/2025 6:40,6.875206,79.895179,Pending,synthetic,2025-12
+SYN-20261025-0766,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,12/10/2025 8:09,12/11/2025 18:46,6.871967,79.894364,Resolved,synthetic,2025-12
+SYN-20261025-0767,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,12/12/2025 19:38,12/14/2025 17:19,6.868276,79.874552,Pending,synthetic,2025-12
+SYN-20261025-0768,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,12/13/2025 13:27,12/16/2025 10:24,6.87934,79.881223,Ongoing,synthetic,2025-12
+SYN-20261025-0769,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,12/15/2025 22:51,12/16/2025 6:13,6.863531,79.876132,Resolved,synthetic,2025-12
+SYN-20261025-0770,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,12/21/2025 9:49,12/23/2025 16:25,6.869374,79.89214,Pending,synthetic,2025-12
+SYN-20261025-0771,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,12/21/2025 13:28,12/22/2025 2:39,6.870811,79.883778,Resolved,synthetic,2025-12
+SYN-20261025-0772,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,12/23/2025 20:36,12/25/2025 12:37,6.868753,79.880966,Resolved,synthetic,2025-12
+SYN-20261025-0773,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,12/31/2025 21:13,1/3/2026 17:09,6.856816,79.899246,Pending,synthetic,2025-12
+SYN-20261025-0774,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,1/5/2026 16:15,1/8/2026 7:57,6.870068,79.895151,Resolved,synthetic,2026-01
+SYN-20261025-0775,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,1/7/2026 15:03,1/9/2026 12:30,6.869683,79.881873,Resolved,synthetic,2026-01
+SYN-20261025-0776,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,1/16/2026 12:28,1/19/2026 1:46,6.863424,79.87453,Pending,synthetic,2026-01
+SYN-20261025-0777,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,1/17/2026 16:32,1/20/2026 13:13,6.871782,79.883727,Resolved,synthetic,2026-01
+SYN-20261025-0778,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,1/19/2026 10:56,1/19/2026 11:19,6.863583,79.876779,Resolved,synthetic,2026-01
+SYN-20261025-0779,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,1/19/2026 19:14,1/20/2026 23:39,6.865286,79.888035,Ongoing,synthetic,2026-01
+SYN-20261025-0780,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,1/27/2026 21:16,1/28/2026 8:48,6.87034,79.878416,Resolved,synthetic,2026-01
+SYN-20261025-0781,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,1/28/2026 9:49,1/29/2026 19:04,6.868408,79.886674,Escalated,synthetic,2026-01
+SYN-20261025-0782,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,1/30/2026 10:52,2/1/2026 6:06,6.878524,79.892903,Resolved,synthetic,2026-01
+SYN-20261025-0783,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,2/5/2026 12:41,2/8/2026 12:38,6.871361,79.879419,Resolved,synthetic,2026-02
+SYN-20261025-0784,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,2/8/2026 16:05,2/10/2026 2:34,6.870849,79.887853,Ongoing,synthetic,2026-02
+SYN-20261025-0785,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,2/11/2026 18:23,2/12/2026 10:37,6.851742,79.870481,Resolved,synthetic,2026-02
+SYN-20261025-0786,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,2/12/2026 8:51,2/12/2026 15:34,6.87624,79.885895,Pending,synthetic,2026-02
+SYN-20261025-0787,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,2/13/2026 22:40,2/15/2026 6:32,6.874907,79.886257,Pending,synthetic,2026-02
+SYN-20261025-0788,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,2/15/2026 8:16,2/16/2026 16:17,6.868373,79.886313,Resolved,synthetic,2026-02
+SYN-20261025-0789,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,2/15/2026 18:57,2/17/2026 21:15,6.871491,79.878507,Pending,synthetic,2026-02
+SYN-20261025-0790,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,2/18/2026 8:39,2/20/2026 7:09,6.861772,79.889393,Pending,synthetic,2026-02
+SYN-20261025-0791,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,2/25/2026 18:39,2/26/2026 23:26,6.871677,79.873362,Escalated,synthetic,2026-02
+SYN-20261025-0792,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,3/4/2026 20:31,3/6/2026 19:53,6.876116,79.883801,Pending,synthetic,2026-03
+SYN-20261025-0793,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/10/2026 22:11,3/12/2026 8:29,6.861294,79.885845,Resolved,synthetic,2026-03
+SYN-20261025-0794,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/12/2026 17:54,3/13/2026 2:01,6.853489,79.907142,Escalated,synthetic,2026-03
+SYN-20261025-0795,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,3/13/2026 16:01,3/14/2026 2:04,6.866871,79.883762,Pending,synthetic,2026-03
+SYN-20261025-0796,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/16/2026 12:31,3/18/2026 5:59,6.865725,79.88717,Resolved,synthetic,2026-03
+SYN-20261025-0797,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/24/2026 22:31,3/27/2026 8:15,6.870794,79.881523,Ongoing,synthetic,2026-03
+SYN-20261025-0798,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,3/28/2026 14:47,3/30/2026 7:43,6.870082,79.882348,Resolved,synthetic,2026-03
+SYN-20261025-0799,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,3/30/2026 13:18,4/2/2026 9:38,6.864288,79.882814,Resolved,synthetic,2026-03
+SYN-20261025-0800,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,3/31/2026 16:59,4/1/2026 3:15,6.853019,79.879807,Pending,synthetic,2026-03
+SYN-20261025-0801,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/2/2026 11:01,4/3/2026 18:59,6.876418,79.884898,Resolved,synthetic,2026-04
+SYN-20261025-0802,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/4/2026 12:58,4/5/2026 4:32,6.857848,79.876737,Ongoing,synthetic,2026-04
+SYN-20261025-0803,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/5/2026 12:20,4/8/2026 7:47,6.855103,79.885127,Ongoing,synthetic,2026-04
+SYN-20261025-0804,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/7/2026 10:21,4/9/2026 17:56,6.867967,79.884702,Ongoing,synthetic,2026-04
+SYN-20261025-0805,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/13/2026 20:08,4/15/2026 8:46,6.86463,79.87874,Pending,synthetic,2026-04
+SYN-20261025-0806,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/16/2026 7:17,4/16/2026 17:46,6.864355,79.895093,Resolved,synthetic,2026-04
+SYN-20261025-0807,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,4/17/2026 8:40,4/18/2026 10:55,6.881629,79.898468,Resolved,synthetic,2026-04
+SYN-20261025-0808,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/18/2026 20:25,4/21/2026 7:24,6.856412,79.899627,Resolved,synthetic,2026-04
+SYN-20261025-0809,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/21/2026 7:16,4/21/2026 23:35,6.870872,79.884503,Resolved,synthetic,2026-04
+SYN-20261025-0810,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/23/2026 16:29,4/23/2026 18:13,6.85906,79.879583,Resolved,synthetic,2026-04
+SYN-20261025-0811,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,4/23/2026 20:30,4/25/2026 16:22,6.860251,79.880519,Escalated,synthetic,2026-04
+SYN-20261025-0812,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/25/2026 16:16,4/27/2026 3:52,6.870626,79.885778,Resolved,synthetic,2026-04
+SYN-20261025-0813,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,4/30/2026 20:34,5/2/2026 10:34,6.870543,79.88176,Resolved,synthetic,2026-04
+SYN-20261025-0814,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,5/1/2026 9:46,5/3/2026 1:33,6.871517,79.888638,Escalated,synthetic,2026-05
+SYN-20261025-0815,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/4/2026 10:42,5/5/2026 6:15,6.865695,79.888537,Ongoing,synthetic,2026-05
+SYN-20261025-0816,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/5/2026 20:30,5/7/2026 9:59,6.862331,79.880794,Resolved,synthetic,2026-05
+SYN-20261025-0817,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/10/2026 14:21,5/10/2026 19:43,6.878724,79.888213,Resolved,synthetic,2026-05
+SYN-20261025-0818,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/13/2026 20:07,5/15/2026 6:53,6.856521,79.874885,Resolved,synthetic,2026-05
+SYN-20261025-0819,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,5/23/2026 13:51,5/24/2026 4:39,6.874004,79.888688,Resolved,synthetic,2026-05
+SYN-20261025-0820,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,5/24/2026 22:34,5/25/2026 6:09,6.865069,79.889114,Pending,synthetic,2026-05
+SYN-20261025-0821,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,5/26/2026 13:32,5/29/2026 2:11,6.87502,79.889297,Pending,synthetic,2026-05
+SYN-20261025-0822,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/26/2026 14:16,5/28/2026 6:44,6.864236,79.885801,Pending,synthetic,2026-05
+SYN-20261025-0823,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,5/26/2026 22:11,5/28/2026 22:15,6.869198,79.876812,Resolved,synthetic,2026-05
+SYN-20261025-0824,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/29/2026 17:08,5/30/2026 8:28,6.874051,79.887346,Ongoing,synthetic,2026-05
+SYN-20261025-0825,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/30/2026 13:54,6/1/2026 5:31,6.861839,79.868586,Resolved,synthetic,2026-05
+SYN-20261025-0826,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,5/31/2026 7:26,6/2/2026 14:37,6.861378,79.88245,Resolved,synthetic,2026-05
+SYN-20261025-0827,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,6/2/2026 9:15,6/3/2026 8:38,6.864251,79.88698,Resolved,synthetic,2026-06
+SYN-20261025-0828,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,6/3/2026 8:10,6/3/2026 18:55,6.870627,79.891465,Resolved,synthetic,2026-06
+SYN-20261025-0829,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,6/3/2026 17:20,6/6/2026 0:52,6.87354,79.88664,Resolved,synthetic,2026-06
+SYN-20261025-0830,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,6/5/2026 13:42,6/6/2026 9:15,6.861725,79.890192,Resolved,synthetic,2026-06
+SYN-20261025-0831,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,6/6/2026 6:41,6/7/2026 16:48,6.858634,79.87897,Resolved,synthetic,2026-06
+SYN-20261025-0832,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,6/9/2026 10:15,6/10/2026 10:36,6.866121,79.89135,Resolved,synthetic,2026-06
+SYN-20261025-0833,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,6/10/2026 15:26,6/12/2026 21:20,6.865183,79.884222,Escalated,synthetic,2026-06
+SYN-20261025-0834,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/17/2026 8:56,6/18/2026 3:09,6.871175,79.893155,Resolved,synthetic,2026-06
+SYN-20261025-0835,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/17/2026 14:09,6/18/2026 20:30,6.860057,79.88094,Pending,synthetic,2026-06
+SYN-20261025-0836,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,6/17/2026 18:17,6/18/2026 16:56,6.870351,79.886288,Resolved,synthetic,2026-06
+SYN-20261025-0837,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,7/2/2026 11:53,7/4/2026 9:57,6.862285,79.887051,Escalated,synthetic,2026-07
+SYN-20261025-0838,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,7/2/2026 18:04,7/4/2026 2:23,6.86751,79.877916,Ongoing,synthetic,2026-07
+SYN-20261025-0839,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,7/3/2026 7:35,7/5/2026 11:18,6.877622,79.881844,Resolved,synthetic,2026-07
+SYN-20261025-0840,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,7/5/2026 13:50,7/6/2026 23:57,6.879223,79.89432,Resolved,synthetic,2026-07
+SYN-20261025-0841,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,7/7/2026 20:22,7/9/2026 20:14,6.852626,79.878353,Escalated,synthetic,2026-07
+SYN-20261025-0842,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,7/10/2026 12:55,7/10/2026 22:09,6.865967,79.89735,Ongoing,synthetic,2026-07
+SYN-20261025-0843,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,7/19/2026 14:19,7/22/2026 2:12,6.87098,79.892653,Resolved,synthetic,2026-07
+SYN-20261025-0844,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,7/22/2026 7:04,7/23/2026 3:09,6.866952,79.888654,Resolved,synthetic,2026-07
+SYN-20261025-0845,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,7/23/2026 8:45,7/26/2026 8:19,6.867476,79.896638,Escalated,synthetic,2026-07
+SYN-20261025-0846,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,7/24/2026 11:11,7/24/2026 22:28,6.865979,79.894956,Resolved,synthetic,2026-07
+SYN-20261025-0847,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,7/25/2026 11:42,7/27/2026 12:22,6.876244,79.871927,Resolved,synthetic,2026-07
+SYN-20261025-0848,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,7/26/2026 9:31,7/26/2026 12:43,6.869125,79.883367,Ongoing,synthetic,2026-07
+SYN-20261025-0849,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,7/31/2026 10:00,8/2/2026 10:01,6.861884,79.894539,Ongoing,synthetic,2026-07
+SYN-20261025-0850,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,7/31/2026 18:38,8/2/2026 5:35,6.85981,79.899361,Resolved,synthetic,2026-07
+SYN-20261025-0851,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/4/2026 11:43,8/4/2026 20:13,6.885582,79.894667,Resolved,synthetic,2026-08
+SYN-20261025-0852,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,8/4/2026 17:51,8/4/2026 19:05,6.865342,79.88726,Escalated,synthetic,2026-08
+SYN-20261025-0853,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,8/6/2026 14:00,8/8/2026 19:31,6.849601,79.882638,Resolved,synthetic,2026-08
+SYN-20261025-0854,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,8/7/2026 8:56,8/8/2026 11:21,6.866932,79.895429,Pending,synthetic,2026-08
+SYN-20261025-0855,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,8/11/2026 21:05,8/13/2026 19:44,6.87744,79.899225,Escalated,synthetic,2026-08
+SYN-20261025-0856,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,8/16/2026 12:20,8/19/2026 12:07,6.861871,79.882167,Ongoing,synthetic,2026-08
+SYN-20261025-0857,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,8/17/2026 11:12,8/19/2026 4:16,6.876303,79.88589,Ongoing,synthetic,2026-08
+SYN-20261025-0858,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/24/2026 20:59,8/26/2026 6:02,6.870162,79.893755,Resolved,synthetic,2026-08
+SYN-20261025-0859,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,8/28/2026 8:45,8/30/2026 16:04,6.864028,79.884601,Ongoing,synthetic,2026-08
+SYN-20261025-0860,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,8/29/2026 19:14,8/30/2026 16:16,6.863967,79.894661,Ongoing,synthetic,2026-08
+SYN-20261025-0861,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,8/31/2026 9:26,8/31/2026 10:42,6.857723,79.885825,Pending,synthetic,2026-08
+SYN-20261025-0862,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/8/2026 6:14,9/8/2026 7:28,6.882628,79.881776,Resolved,synthetic,2026-09
+SYN-20261025-0863,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/9/2026 7:42,9/9/2026 12:07,6.867758,79.888375,Resolved,synthetic,2026-09
+SYN-20261025-0864,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/9/2026 9:36,9/9/2026 18:49,6.86037,79.890886,Resolved,synthetic,2026-09
+SYN-20261025-0865,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,9/10/2026 7:46,9/12/2026 13:54,6.854957,79.883549,Resolved,synthetic,2026-09
+SYN-20261025-0866,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,9/16/2026 17:14,9/16/2026 23:42,6.880523,79.879335,Resolved,synthetic,2026-09
+SYN-20261025-0867,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Traffic issues,9/20/2026 11:16,9/22/2026 20:11,6.859465,79.884864,Ongoing,synthetic,2026-09
+SYN-20261025-0868,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/23/2026 10:42,9/24/2026 5:44,6.852763,79.886558,Resolved,synthetic,2026-09
+SYN-20261025-0869,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Neighbor / Community Issues,9/27/2026 11:55,9/28/2026 18:52,6.863172,79.886844,Resolved,synthetic,2026-09
+SYN-20261025-0870,PS-CMB-007,Kohuwala Police Station,Colombo,Mount Lavinia,Public Nuisance / Cleanliness,9/29/2026 15:19,10/1/2026 13:17,6.85208,79.878386,Ongoing,synthetic,2026-09
+SYN-20261025-0871,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,10/4/2025 13:05,10/6/2025 17:45,6.909256,79.888978,Resolved,synthetic,2025-10
+SYN-20261025-0872,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,10/6/2025 20:10,10/7/2025 14:36,6.916106,79.899786,Resolved,synthetic,2025-10
+SYN-20261025-0873,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,10/7/2025 14:34,10/8/2025 21:36,6.90645,79.903964,Resolved,synthetic,2025-10
+SYN-20261025-0874,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,10/8/2025 17:24,10/9/2025 15:57,6.908869,79.895494,Pending,synthetic,2025-10
+SYN-20261025-0875,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,10/9/2025 20:46,10/12/2025 19:16,6.908636,79.885027,Pending,synthetic,2025-10
+SYN-20261025-0876,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,10/14/2025 16:10,10/16/2025 11:50,6.914927,79.884832,Ongoing,synthetic,2025-10
+SYN-20261025-0877,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,10/23/2025 19:57,10/24/2025 23:41,6.914873,79.900458,Resolved,synthetic,2025-10
+SYN-20261025-0878,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,10/25/2025 17:24,10/26/2025 10:45,6.903107,79.89051,Resolved,synthetic,2025-10
+SYN-20261025-0879,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,10/28/2025 9:49,10/30/2025 16:44,6.916053,79.887089,Ongoing,synthetic,2025-10
+SYN-20261025-0880,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,10/29/2025 14:33,10/30/2025 8:20,6.910558,79.899809,Escalated,synthetic,2025-10
+SYN-20261025-0881,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,10/30/2025 22:35,10/31/2025 23:27,6.91101,79.886816,Pending,synthetic,2025-10
+SYN-20261025-0882,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,11/1/2025 11:20,11/3/2025 19:51,6.896982,79.893957,Resolved,synthetic,2025-11
+SYN-20261025-0883,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,11/16/2025 20:27,11/18/2025 6:42,6.917113,79.903477,Escalated,synthetic,2025-11
+SYN-20261025-0884,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,11/17/2025 7:01,11/19/2025 3:32,6.915198,79.899477,Resolved,synthetic,2025-11
+SYN-20261025-0885,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,11/19/2025 7:50,11/22/2025 8:14,6.911422,79.90834,Resolved,synthetic,2025-11
+SYN-20261025-0886,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,11/21/2025 10:14,11/23/2025 19:50,6.907588,79.883064,Ongoing,synthetic,2025-11
+SYN-20261025-0887,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,11/22/2025 13:31,11/24/2025 4:19,6.908173,79.895414,Ongoing,synthetic,2025-11
+SYN-20261025-0888,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,11/23/2025 9:41,11/24/2025 17:41,6.912962,79.890211,Resolved,synthetic,2025-11
+SYN-20261025-0889,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,11/23/2025 13:29,11/25/2025 8:57,6.916254,79.899093,Pending,synthetic,2025-11
+SYN-20261025-0890,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,11/25/2025 16:20,11/28/2025 8:47,6.906865,79.89264,Resolved,synthetic,2025-11
+SYN-20261025-0891,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,11/26/2025 9:02,11/29/2025 1:26,6.90568,79.905803,Resolved,synthetic,2025-11
+SYN-20261025-0892,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,11/26/2025 14:26,11/28/2025 18:11,6.909566,79.886168,Resolved,synthetic,2025-11
+SYN-20261025-0893,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,12/3/2025 8:08,12/4/2025 18:16,6.912458,79.890513,Escalated,synthetic,2025-12
+SYN-20261025-0894,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,12/6/2025 12:29,12/6/2025 18:41,6.906281,79.904895,Escalated,synthetic,2025-12
+SYN-20261025-0895,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,12/7/2025 12:19,12/10/2025 12:16,6.908404,79.889065,Escalated,synthetic,2025-12
+SYN-20261025-0896,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,12/12/2025 13:47,12/15/2025 9:18,6.907063,79.893484,Pending,synthetic,2025-12
+SYN-20261025-0897,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,12/15/2025 15:39,12/17/2025 13:05,6.906032,79.896111,Resolved,synthetic,2025-12
+SYN-20261025-0898,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,12/19/2025 20:33,12/21/2025 15:23,6.905606,79.901694,Resolved,synthetic,2025-12
+SYN-20261025-0899,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,12/24/2025 7:40,12/26/2025 21:16,6.918643,79.886332,Pending,synthetic,2025-12
+SYN-20261025-0900,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,12/27/2025 18:44,12/28/2025 22:25,6.908883,79.910706,Resolved,synthetic,2025-12
+SYN-20261025-0901,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,12/31/2025 18:03,1/2/2026 18:34,6.91834,79.896251,Resolved,synthetic,2025-12
+SYN-20261025-0902,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,1/1/2026 22:50,1/4/2026 8:41,6.904897,79.899534,Escalated,synthetic,2026-01
+SYN-20261025-0903,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,1/6/2026 15:38,1/6/2026 20:34,6.921972,79.891198,Resolved,synthetic,2026-01
+SYN-20261025-0904,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,1/8/2026 10:31,1/10/2026 3:44,6.906507,79.90507,Ongoing,synthetic,2026-01
+SYN-20261025-0905,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/9/2026 18:53,1/11/2026 0:46,6.902905,79.881994,Pending,synthetic,2026-01
+SYN-20261025-0906,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,1/13/2026 21:05,1/14/2026 7:07,6.909431,79.89738,Ongoing,synthetic,2026-01
+SYN-20261025-0907,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/14/2026 22:57,1/16/2026 4:39,6.917566,79.897751,Resolved,synthetic,2026-01
+SYN-20261025-0908,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/15/2026 22:43,1/16/2026 13:35,6.911448,79.894393,Resolved,synthetic,2026-01
+SYN-20261025-0909,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,1/17/2026 13:26,1/19/2026 15:30,6.921534,79.906351,Ongoing,synthetic,2026-01
+SYN-20261025-0910,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/20/2026 15:25,1/23/2026 4:53,6.905558,79.892754,Resolved,synthetic,2026-01
+SYN-20261025-0911,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,1/27/2026 15:38,1/28/2026 9:48,6.91467,79.912985,Resolved,synthetic,2026-01
+SYN-20261025-0912,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,1/29/2026 21:29,2/1/2026 3:26,6.916861,79.882544,Pending,synthetic,2026-01
+SYN-20261025-0913,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/2/2026 8:15,2/2/2026 14:27,6.911242,79.912748,Resolved,synthetic,2026-02
+SYN-20261025-0914,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/4/2026 14:03,2/6/2026 13:23,6.901662,79.895176,Resolved,synthetic,2026-02
+SYN-20261025-0915,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,2/7/2026 22:44,2/10/2026 2:21,6.917519,79.890812,Ongoing,synthetic,2026-02
+SYN-20261025-0916,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,2/14/2026 6:52,2/15/2026 17:09,6.914616,79.885413,Ongoing,synthetic,2026-02
+SYN-20261025-0917,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,2/23/2026 12:20,2/23/2026 13:35,6.91359,79.890298,Resolved,synthetic,2026-02
+SYN-20261025-0918,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,2/24/2026 10:22,2/26/2026 2:37,6.920837,79.902074,Resolved,synthetic,2026-02
+SYN-20261025-0919,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,2/24/2026 14:25,2/24/2026 16:15,6.902437,79.897842,Ongoing,synthetic,2026-02
+SYN-20261025-0920,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,2/26/2026 14:19,2/26/2026 18:15,6.911773,79.895279,Ongoing,synthetic,2026-02
+SYN-20261025-0921,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/3/2026 22:58,3/6/2026 0:35,6.922082,79.884602,Ongoing,synthetic,2026-03
+SYN-20261025-0922,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,3/5/2026 16:16,3/5/2026 16:31,6.904243,79.896101,Pending,synthetic,2026-03
+SYN-20261025-0923,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/8/2026 17:01,3/10/2026 16:33,6.905977,79.902783,Resolved,synthetic,2026-03
+SYN-20261025-0924,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/13/2026 6:47,3/15/2026 3:59,6.923606,79.877379,Resolved,synthetic,2026-03
+SYN-20261025-0925,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,3/13/2026 22:53,3/16/2026 18:33,6.914923,79.889814,Pending,synthetic,2026-03
+SYN-20261025-0926,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/14/2026 15:45,3/16/2026 7:14,6.907751,79.891145,Ongoing,synthetic,2026-03
+SYN-20261025-0927,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/19/2026 15:59,3/21/2026 2:04,6.915158,79.893594,Resolved,synthetic,2026-03
+SYN-20261025-0928,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/19/2026 18:19,3/21/2026 6:47,6.914331,79.908705,Resolved,synthetic,2026-03
+SYN-20261025-0929,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,3/27/2026 7:18,3/27/2026 17:30,6.911278,79.90403,Resolved,synthetic,2026-03
+SYN-20261025-0930,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,3/30/2026 15:18,4/2/2026 9:18,6.910468,79.886989,Pending,synthetic,2026-03
+SYN-20261025-0931,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,3/31/2026 7:49,4/3/2026 2:41,6.913267,79.890855,Resolved,synthetic,2026-03
+SYN-20261025-0932,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/1/2026 15:28,4/1/2026 23:18,6.909574,79.905832,Resolved,synthetic,2026-04
+SYN-20261025-0933,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,4/2/2026 11:53,4/3/2026 16:27,6.914399,79.900839,Pending,synthetic,2026-04
+SYN-20261025-0934,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/3/2026 8:51,4/4/2026 22:22,6.906796,79.888908,Resolved,synthetic,2026-04
+SYN-20261025-0935,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,4/4/2026 17:33,4/5/2026 21:42,6.902985,79.891055,Escalated,synthetic,2026-04
+SYN-20261025-0936,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,4/9/2026 16:23,4/10/2026 17:31,6.910522,79.893974,Pending,synthetic,2026-04
+SYN-20261025-0937,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/15/2026 19:46,4/18/2026 0:18,6.899546,79.888977,Escalated,synthetic,2026-04
+SYN-20261025-0938,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/16/2026 14:25,4/18/2026 18:36,6.903332,79.88911,Resolved,synthetic,2026-04
+SYN-20261025-0939,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/25/2026 9:36,4/28/2026 1:42,6.90292,79.893119,Resolved,synthetic,2026-04
+SYN-20261025-0940,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,4/25/2026 13:42,4/27/2026 1:56,6.911091,79.895534,Pending,synthetic,2026-04
+SYN-20261025-0941,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/26/2026 7:33,4/27/2026 10:33,6.90929,79.88935,Resolved,synthetic,2026-04
+SYN-20261025-0942,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,4/28/2026 20:08,4/29/2026 23:15,6.901176,79.892998,Escalated,synthetic,2026-04
+SYN-20261025-0943,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,4/29/2026 15:38,5/2/2026 0:57,6.913903,79.901008,Pending,synthetic,2026-04
+SYN-20261025-0944,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,5/2/2026 10:08,5/5/2026 4:09,6.914663,79.892847,Resolved,synthetic,2026-05
+SYN-20261025-0945,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,5/3/2026 12:50,5/4/2026 2:22,6.903856,79.895313,Resolved,synthetic,2026-05
+SYN-20261025-0946,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,5/5/2026 15:39,5/8/2026 0:41,6.900587,79.882603,Resolved,synthetic,2026-05
+SYN-20261025-0947,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/5/2026 20:18,5/6/2026 4:28,6.906198,79.871642,Resolved,synthetic,2026-05
+SYN-20261025-0948,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,5/6/2026 14:40,5/8/2026 4:25,6.912845,79.879907,Escalated,synthetic,2026-05
+SYN-20261025-0949,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/11/2026 11:38,5/14/2026 5:13,6.903637,79.899857,Resolved,synthetic,2026-05
+SYN-20261025-0950,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/14/2026 20:39,5/14/2026 21:59,6.906527,79.895409,Escalated,synthetic,2026-05
+SYN-20261025-0951,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/17/2026 12:42,5/19/2026 16:18,6.91909,79.888624,Resolved,synthetic,2026-05
+SYN-20261025-0952,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,5/17/2026 17:01,5/20/2026 17:43,6.913232,79.897001,Pending,synthetic,2026-05
+SYN-20261025-0953,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/17/2026 20:54,5/18/2026 6:29,6.907439,79.907395,Ongoing,synthetic,2026-05
+SYN-20261025-0954,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/18/2026 17:59,5/20/2026 11:03,6.90542,79.883699,Escalated,synthetic,2026-05
+SYN-20261025-0955,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,5/18/2026 19:41,5/19/2026 0:09,6.898849,79.899375,Ongoing,synthetic,2026-05
+SYN-20261025-0956,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/20/2026 11:37,5/22/2026 17:34,6.905958,79.905917,Resolved,synthetic,2026-05
+SYN-20261025-0957,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,5/22/2026 13:16,5/23/2026 15:27,6.914254,79.887348,Resolved,synthetic,2026-05
+SYN-20261025-0958,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,5/24/2026 8:56,5/25/2026 18:45,6.913943,79.890628,Resolved,synthetic,2026-05
+SYN-20261025-0959,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,5/25/2026 22:35,5/28/2026 21:37,6.922185,79.903011,Pending,synthetic,2026-05
+SYN-20261025-0960,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,6/1/2026 11:34,6/2/2026 21:54,6.911316,79.8952,Ongoing,synthetic,2026-06
+SYN-20261025-0961,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,6/1/2026 16:46,6/3/2026 19:43,6.906499,79.887207,Pending,synthetic,2026-06
+SYN-20261025-0962,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/3/2026 6:38,6/5/2026 0:30,6.922213,79.890688,Pending,synthetic,2026-06
+SYN-20261025-0963,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/6/2026 10:01,6/7/2026 21:07,6.901192,79.892156,Escalated,synthetic,2026-06
+SYN-20261025-0964,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,6/12/2026 12:37,6/14/2026 15:55,6.911981,79.915187,Escalated,synthetic,2026-06
+SYN-20261025-0965,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,6/12/2026 13:26,6/15/2026 8:49,6.910699,79.908759,Ongoing,synthetic,2026-06
+SYN-20261025-0966,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,6/12/2026 19:57,6/15/2026 13:34,6.904306,79.895438,Pending,synthetic,2026-06
+SYN-20261025-0967,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/19/2026 20:04,6/22/2026 20:50,6.909387,79.885446,Ongoing,synthetic,2026-06
+SYN-20261025-0968,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,6/25/2026 10:19,6/28/2026 0:11,6.90204,79.891871,Pending,synthetic,2026-06
+SYN-20261025-0969,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,6/26/2026 10:59,6/29/2026 8:21,6.913488,79.916121,Pending,synthetic,2026-06
+SYN-20261025-0970,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/30/2026 10:36,7/2/2026 12:05,6.908112,79.886498,Pending,synthetic,2026-06
+SYN-20261025-0971,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,6/30/2026 18:00,7/3/2026 11:28,6.909374,79.895714,Pending,synthetic,2026-06
+SYN-20261025-0972,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,7/3/2026 9:32,7/3/2026 18:56,6.909304,79.889746,Pending,synthetic,2026-07
+SYN-20261025-0973,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/7/2026 18:00,7/10/2026 16:56,6.909234,79.907194,Ongoing,synthetic,2026-07
+SYN-20261025-0974,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,7/10/2026 16:01,7/13/2026 8:50,6.906663,79.896942,Resolved,synthetic,2026-07
+SYN-20261025-0975,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,7/10/2026 21:18,7/12/2026 9:51,6.911586,79.907057,Resolved,synthetic,2026-07
+SYN-20261025-0976,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,7/12/2026 20:02,7/14/2026 21:18,6.913007,79.891037,Resolved,synthetic,2026-07
+SYN-20261025-0977,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,7/13/2026 14:49,7/13/2026 16:36,6.911753,79.903931,Resolved,synthetic,2026-07
+SYN-20261025-0978,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,7/22/2026 20:23,7/23/2026 3:24,6.906816,79.891528,Resolved,synthetic,2026-07
+SYN-20261025-0979,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,7/25/2026 7:50,7/28/2026 6:05,6.922227,79.897105,Pending,synthetic,2026-07
+SYN-20261025-0980,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/25/2026 15:22,7/27/2026 22:17,6.918265,79.895052,Resolved,synthetic,2026-07
+SYN-20261025-0981,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/26/2026 14:08,7/28/2026 0:09,6.914511,79.889018,Resolved,synthetic,2026-07
+SYN-20261025-0982,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,7/31/2026 11:38,8/1/2026 12:04,6.912962,79.896851,Ongoing,synthetic,2026-07
+SYN-20261025-0983,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,8/5/2026 13:59,8/7/2026 9:28,6.914738,79.914224,Ongoing,synthetic,2026-08
+SYN-20261025-0984,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,8/11/2026 11:42,8/13/2026 20:28,6.910426,79.884393,Resolved,synthetic,2026-08
+SYN-20261025-0985,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,8/23/2026 6:22,8/23/2026 21:44,6.900167,79.903967,Escalated,synthetic,2026-08
+SYN-20261025-0986,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,8/24/2026 21:30,8/25/2026 15:31,6.914279,79.909631,Pending,synthetic,2026-08
+SYN-20261025-0987,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,8/28/2026 19:46,8/31/2026 14:20,6.923434,79.899334,Resolved,synthetic,2026-08
+SYN-20261025-0988,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,8/30/2026 6:42,9/2/2026 1:15,6.901297,79.892722,Resolved,synthetic,2026-08
+SYN-20261025-0989,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,8/31/2026 8:46,9/1/2026 10:52,6.901551,79.898088,Resolved,synthetic,2026-08
+SYN-20261025-0990,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,9/10/2026 15:02,9/10/2026 20:20,6.909352,79.895254,Resolved,synthetic,2026-09
+SYN-20261025-0991,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,9/16/2026 6:11,9/18/2026 9:51,6.912108,79.885573,Ongoing,synthetic,2026-09
+SYN-20261025-0992,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/19/2026 6:26,9/19/2026 17:49,6.908809,79.904305,Pending,synthetic,2026-09
+SYN-20261025-0993,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/20/2026 10:29,9/21/2026 11:41,6.926287,79.889425,Pending,synthetic,2026-09
+SYN-20261025-0994,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/20/2026 13:01,9/21/2026 7:42,6.900556,79.905982,Resolved,synthetic,2026-09
+SYN-20261025-0995,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Neighbor / Community Issues,9/22/2026 21:03,9/23/2026 15:57,6.914647,79.896013,Resolved,synthetic,2026-09
+SYN-20261025-0996,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,9/24/2026 19:47,9/25/2026 19:00,6.915804,79.90035,Resolved,synthetic,2026-09
+SYN-20261025-0997,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,9/25/2026 7:11,9/28/2026 5:23,6.909598,79.908563,Escalated,synthetic,2026-09
+SYN-20261025-0998,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,9/26/2026 19:53,9/26/2026 22:54,6.90278,79.899248,Resolved,synthetic,2026-09
+SYN-20261025-0999,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Public Nuisance / Cleanliness,9/26/2026 20:23,9/28/2026 16:08,6.901085,79.909406,Pending,synthetic,2026-09
+SYN-20261025-1000,PS-CMB-008,Welikada Police Station,Colombo,Nugegoda,Traffic issues,9/30/2026 22:25,10/3/2026 21:11,6.909421,79.901556,Escalated,synthetic,2026-09

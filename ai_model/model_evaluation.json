@@ -1,0 +1,13 @@
+{
+  "training_period": "2026-04 to 2026-06",
+  "testing_period": "2026-07 to 2026-08",
+  "training_rows": 72,
+  "testing_rows": 48,
+  "accuracy": 0.6667,
+  "precision": 0.3684,
+  "recall": 0.6364,
+  "f1": 0.4667,
+  "roc_auc": 0.6757,
+  "brier_score": 0.2109,
+  "warning": "Evaluation is experimental because only five usable training months are available."
+}

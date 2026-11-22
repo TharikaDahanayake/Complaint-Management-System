@@ -1,13 +1,28 @@
 {
-  "training_period": "2026-04 to 2026-06",
-  "testing_period": "2026-07 to 2026-08",
-  "training_rows": 72,
-  "testing_rows": 48,
-  "accuracy": 0.6667,
-  "precision": 0.3684,
-  "recall": 0.6364,
-  "f1": 0.4667,
-  "roc_auc": 0.6757,
-  "brier_score": 0.2109,
-  "warning": "Evaluation is experimental because only five usable training months are available."
+  "training_period": "2023-10 to 2025-12",
+  "validation_period": "2026-01 to 2026-03",
+  "testing_period": "2026-04 to 2026-08",
+  "training_rows": 648,
+  "validation_rows": 72,
+  "testing_rows": 120,
+  "positive_rate": 0.4136,
+  "threshold": 0.52,
+  "accuracy": 0.725,
+  "precision": 0.6102,
+  "recall": 0.7826,
+  "f1": 0.6857,
+  "roc_auc": 0.8443,
+  "brier_score": 0.1742,
+  "confusion_matrix": [
+    [
+      51,
+      23
+    ],
+    [
+      10,
+      36
+    ]
+  ],
+  "no_increase_baseline_accuracy": 0.6167,
+  "warning": "Evaluation uses synthetic data; validate with real complaints before operational use."
 }

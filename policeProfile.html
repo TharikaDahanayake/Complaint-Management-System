@@ -269,6 +269,7 @@
 			updateDoc,
 			doc
 		} from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+		import { getAuth } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
 
 		const firebaseConfig = {
 			apiKey: "AIzaSyCr5xSS_xPQO38JHoZMufQl-HEltwCvqSk",
@@ -281,6 +282,7 @@
 
 		const app = initializeApp(firebaseConfig);
 		const db = getFirestore(app);
+		const auth = getAuth(app);
 
 		const profileContent = document.getElementById("profileContent");
 
@@ -417,6 +419,19 @@
 			const email = document.getElementById("email").value.trim();
 			const oicName = document.getElementById("oicName").value.trim();
 
+			if (!currentDocId) {
+				showMessage("The police station record could not be identified. Please reload and try again.", false);
+				return;
+			}
+
+			if (!auth.currentUser) {
+				showMessage("Your session has expired. Please sign in again.", false);
+				setTimeout(() => {
+					window.location.href = "policeLogin.html";
+				}, 1200);
+				return;
+			}
+
 			// Validate all fields are filled
 			if (!contact || !email || !oicName) {
 				showMessage("All editable fields are required.", false);
@@ -465,7 +480,19 @@
 				showMessage("Profile updated successfully!", true);
 			} catch (error) {
 				console.error("Error updating profile:", error);
-				showMessage("Failed to save changes. Please try again.", false);
+
+				let message = "Failed to save changes. Please try again.";
+				if (error.code === "permission-denied") {
+					message = "You do not have permission to update this police station. Sign in with an authorized account.";
+				} else if (error.code === "unauthenticated") {
+					message = "Your session has expired. Please sign in again.";
+				} else if (error.code === "not-found") {
+					message = "The police station record no longer exists.";
+				} else if (error.code === "unavailable") {
+					message = "Firebase is unavailable or you may be offline. Check your connection and try again.";
+				}
+
+				showMessage(message, false);
 				saveBtn.disabled = false;
 				saveBtn.textContent = "Save Changes";
 			}

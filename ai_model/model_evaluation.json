@@ -1,28 +1,28 @@
 {
-  "training_period": "2023-10 to 2025-12",
-  "validation_period": "2026-01 to 2026-03",
-  "testing_period": "2026-04 to 2026-08",
+  "training_period": "2023-12 to 2026-02",
+  "validation_period": "2026-03 to 2026-05",
+  "testing_period": "2026-06 to 2026-10",
   "training_rows": 648,
   "validation_rows": 72,
   "testing_rows": 120,
-  "positive_rate": 0.4136,
-  "threshold": 0.52,
-  "accuracy": 0.725,
-  "precision": 0.6102,
-  "recall": 0.7826,
-  "f1": 0.6857,
-  "roc_auc": 0.8443,
-  "brier_score": 0.1742,
+  "positive_rate": 0.412,
+  "threshold": 0.39,
+  "accuracy": 0.925,
+  "precision": 0.9016,
+  "recall": 0.9483,
+  "f1": 0.9244,
+  "roc_auc": 0.9844,
+  "brier_score": 0.052,
   "confusion_matrix": [
     [
-      51,
-      23
+      56,
+      6
     ],
     [
-      10,
-      36
+      3,
+      55
     ]
   ],
-  "no_increase_baseline_accuracy": 0.6167,
+  "no_increase_baseline_accuracy": 0.5167,
   "warning": "Evaluation uses synthetic data; validate with real complaints before operational use."
 }

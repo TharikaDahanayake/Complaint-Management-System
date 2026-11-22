@@ -1,25 +1,25 @@
 stationID,stationName,forecastMonth,complaintCategory,probabilityOfIncrease,predictedIncrease,riskLevel
-PS-CMB-001,Maharagama Police Station,2026-12,Neighbor / Community Issues,0.267763,False,Low
-PS-CMB-001,Maharagama Police Station,2026-12,Public Nuisance / Cleanliness,0.310431,False,Low
-PS-CMB-001,Maharagama Police Station,2026-12,Traffic issues,0.70889,True,High
-PS-CMB-002,Mirihana Police Station,2026-12,Neighbor / Community Issues,0.068357,False,Low
-PS-CMB-002,Mirihana Police Station,2026-12,Public Nuisance / Cleanliness,0.883432,True,High
-PS-CMB-002,Mirihana Police Station,2026-12,Traffic issues,0.138076,False,Low
-PS-CMB-003,Piliyandala Police Station,2026-12,Neighbor / Community Issues,0.584307,True,Medium
-PS-CMB-003,Piliyandala Police Station,2026-12,Public Nuisance / Cleanliness,0.388616,False,Low
-PS-CMB-003,Piliyandala Police Station,2026-12,Traffic issues,0.758477,True,High
-PS-CMB-004,Dehiwala Police Station,2026-12,Neighbor / Community Issues,0.595079,True,Medium
-PS-CMB-004,Dehiwala Police Station,2026-12,Public Nuisance / Cleanliness,0.829803,True,High
-PS-CMB-004,Dehiwala Police Station,2026-12,Traffic issues,0.866122,True,High
-PS-CMB-005,Avissawella Police Station,2026-12,Neighbor / Community Issues,0.594786,True,Medium
-PS-CMB-005,Avissawella Police Station,2026-12,Public Nuisance / Cleanliness,0.781002,True,High
-PS-CMB-005,Avissawella Police Station,2026-12,Traffic issues,0.084653,False,Low
-PS-CMB-006,Homagama Police Station,2026-12,Neighbor / Community Issues,0.700453,True,High
-PS-CMB-006,Homagama Police Station,2026-12,Public Nuisance / Cleanliness,0.175706,False,Low
-PS-CMB-006,Homagama Police Station,2026-12,Traffic issues,0.790428,True,High
-PS-CMB-007,Kohuwala Police Station,2026-12,Neighbor / Community Issues,0.56187,True,Medium
-PS-CMB-007,Kohuwala Police Station,2026-12,Public Nuisance / Cleanliness,0.878393,True,High
-PS-CMB-007,Kohuwala Police Station,2026-12,Traffic issues,0.96416,True,High
-PS-CMB-008,Welikada Police Station,2026-12,Neighbor / Community Issues,0.066009,False,Low
-PS-CMB-008,Welikada Police Station,2026-12,Public Nuisance / Cleanliness,0.659674,True,Medium
-PS-CMB-008,Welikada Police Station,2026-12,Traffic issues,0.072183,False,Low
+PS-CMB-001,Maharagama Police Station,2026-12,Neighbor / Community Issues,0.966251,True,High
+PS-CMB-001,Maharagama Police Station,2026-12,Public Nuisance / Cleanliness,0.642007,True,Medium
+PS-CMB-001,Maharagama Police Station,2026-12,Traffic issues,0.002419,False,Low
+PS-CMB-002,Mirihana Police Station,2026-12,Neighbor / Community Issues,0.900348,True,High
+PS-CMB-002,Mirihana Police Station,2026-12,Public Nuisance / Cleanliness,0.011268,False,Low
+PS-CMB-002,Mirihana Police Station,2026-12,Traffic issues,0.000396,False,Low
+PS-CMB-003,Piliyandala Police Station,2026-12,Neighbor / Community Issues,0.317195,False,Low
+PS-CMB-003,Piliyandala Police Station,2026-12,Public Nuisance / Cleanliness,0.000885,False,Low
+PS-CMB-003,Piliyandala Police Station,2026-12,Traffic issues,0.006979,False,Low
+PS-CMB-004,Dehiwala Police Station,2026-12,Neighbor / Community Issues,0.006672,False,Low
+PS-CMB-004,Dehiwala Police Station,2026-12,Public Nuisance / Cleanliness,0.000668,False,Low
+PS-CMB-004,Dehiwala Police Station,2026-12,Traffic issues,0.52406,True,Medium
+PS-CMB-005,Homagama Police Station,2026-12,Neighbor / Community Issues,0.949708,True,High
+PS-CMB-005,Homagama Police Station,2026-12,Public Nuisance / Cleanliness,0.06151,False,Low
+PS-CMB-005,Homagama Police Station,2026-12,Traffic issues,0.000764,False,Low
+PS-CMB-006,Moratuwa Police Station,2026-12,Neighbor / Community Issues,0.555135,True,Medium
+PS-CMB-006,Moratuwa Police Station,2026-12,Public Nuisance / Cleanliness,0.002363,False,Low
+PS-CMB-006,Moratuwa Police Station,2026-12,Traffic issues,0.000892,False,Low
+PS-CMB-007,Kohuwala Police Station,2026-12,Neighbor / Community Issues,0.079778,False,Low
+PS-CMB-007,Kohuwala Police Station,2026-12,Public Nuisance / Cleanliness,0.001388,False,Low
+PS-CMB-007,Kohuwala Police Station,2026-12,Traffic issues,0.029401,False,Low
+PS-CMB-008,Nugegoda Police Station,2026-12,Neighbor / Community Issues,0.000971,False,Low
+PS-CMB-008,Nugegoda Police Station,2026-12,Public Nuisance / Cleanliness,0.001224,False,Low
+PS-CMB-008,Nugegoda Police Station,2026-12,Traffic issues,0.715817,True,High

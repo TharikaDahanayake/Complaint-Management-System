@@ -968,7 +968,7 @@
 				if (categoryExists) {
 					mapCategoryFilter.value = topPrediction.complaintCategory;
 					renderComplaintMap(complaints, getMapComplaintTimestamp);
-					mapTitle.textContent = `AI-Assisted High-Risk Areas: ${topPrediction.complaintCategory}`;
+					mapTitle.textContent = `Complaint Hotspots: ${topPrediction.complaintCategory}`;
 				}
 			} catch (error) {
 				console.error("Error loading complaint trend predictions:", error);
